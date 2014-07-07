@@ -1,0 +1,5695 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<POSSiteList>
+   <POSSite>
+	  <ID>TWN-112-535988</ID>
+      <District>北投區</District>
+      <Latitude>25.13722</Latitude>
+      <Longitude>121.50096</Longitude>
+      <Name>雙全門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875548</ID>
+      <District>北投區</District>
+      <Latitude>25.130083</Latitude>
+      <Longitude>121.49936</Longitude>
+      <Name>西安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875549</ID>
+      <District>北投區</District>
+      <Latitude>25.134851</Latitude>
+      <Longitude>121.49954</Longitude>
+      <Name>薇閣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.136463</Latitude>
+      <Longitude>121.49605</Longitude>
+      <Name>政戰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-111547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.137918</Latitude>
+      <Longitude>121.4849</Longitude>
+      <Name>中陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.12815</Latitude>
+      <Longitude>121.46845</Longitude>
+      <Name>一德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.130533</Latitude>
+      <Longitude>121.50105</Longitude>
+      <Name>大中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.13897</Latitude>
+      <Longitude>121.50184</Longitude>
+      <Name>北投門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.145233</Latitude>
+      <Longitude>121.49523</Longitude>
+      <Name>秀山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.137575</Latitude>
+      <Longitude>121.50344</Longitude>
+      <Name>和業門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.140968</Latitude>
+      <Longitude>121.49976</Longitude>
+      <Name>金和門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.133059</Latitude>
+      <Longitude>121.50311</Longitude>
+      <Name>公館門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.1295</Latitude>
+      <Longitude>121.50686</Longitude>
+      <Name>清江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.10564</Latitude>
+      <Longitude>121.51765</Longitude>
+      <Name>新豪美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.113176</Latitude>
+      <Longitude>121.51009</Longitude>
+      <Name>百齡門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.114103</Latitude>
+      <Longitude>121.51244</Longitude>
+      <Name>致遠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.120184</Latitude>
+      <Longitude>121.52016</Longitude>
+      <Name>北榮門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.11535</Latitude>
+      <Longitude>121.5155</Longitude>
+      <Name>石捷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.122755</Latitude>
+      <Longitude>121.524445</Longitude>
+      <Name>行義門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.116865</Latitude>
+      <Longitude>121.51633</Longitude>
+      <Name>振華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.121407</Latitude>
+      <Longitude>121.52279</Longitude>
+      <Name>榮總門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.128378</Latitude>
+      <Longitude>121.47208</Longitude>
+      <Name>和信醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.124521</Latitude>
+      <Longitude>121.47139</Longitude>
+      <Name>華碩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.133287</Latitude>
+      <Longitude>121.50182</Longitude>
+      <Name>光中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.11059</Latitude>
+      <Longitude>121.51465</Longitude>
+      <Name>統勝門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.118765</Latitude>
+      <Longitude>121.50277</Longitude>
+      <Name>立農門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.111446</Latitude>
+      <Longitude>121.51081</Longitude>
+      <Name>承啟門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.10946</Latitude>
+      <Longitude>121.51941</Longitude>
+      <Name>明華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.109879</Latitude>
+      <Longitude>121.52025</Longitude>
+      <Name>明德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.10896</Latitude>
+      <Longitude>121.518745</Longitude>
+      <Name>德致門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.119164</Latitude>
+      <Longitude>121.46616</Longitude>
+      <Name>知心門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.121744</Latitude>
+      <Longitude>121.467476</Longitude>
+      <Name>關渡門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.13711</Latitude>
+      <Longitude>121.50429</Longitude>
+      <Name>春天門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.143345</Latitude>
+      <Longitude>121.51862</Longitude>
+      <Name>泉源門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.112192</Latitude>
+      <Longitude>121.513535</Longitude>
+      <Name>福致門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.117453</Latitude>
+      <Longitude>121.512955</Longitude>
+      <Name>安遠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.117525</Latitude>
+      <Longitude>121.52247</Longitude>
+      <Name>振興醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.118002</Latitude>
+      <Longitude>121.5223</Longitude>
+      <Name>護專門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.126232</Latitude>
+      <Longitude>121.50145</Longitude>
+      <Name>奇岩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.11374</Latitude>
+      <Longitude>121.52384</Longitude>
+      <Name>天富門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.117453</Latitude>
+      <Longitude>121.50685</Longitude>
+      <Name>鐏賢門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.152493</Latitude>
+      <Longitude>121.54748</Longitude>
+      <Name>擎天崗門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.135782</Latitude>
+      <Longitude>121.50571</Longitude>
+      <Name>加賀屋門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.13514</Latitude>
+      <Longitude>121.5049</Longitude>
+      <Name>泉北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.116486</Latitude>
+      <Longitude>121.51795</Longitude>
+      <Name>東華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.11496</Latitude>
+      <Longitude>121.50818</Longitude>
+      <Name>富邦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>北投區</District>
+      <Latitude>25.114096</Latitude>
+      <Longitude>121.51965</Longitude>
+      <Name>懷得門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.037241</Latitude>
+      <Longitude>121.516884</Longitude>
+      <Name>國圖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044924</Latitude>
+      <Longitude>121.50944</Longitude>
+      <Name>欣漢華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.041483</Latitude>
+      <Longitude>121.508385</Longitude>
+      <Name>華慶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-100-805499</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.031164</Latitude>
+      <Longitude>121.50429</Longitude>
+      <Name>萬光門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.038452</Latitude>
+      <Longitude>121.528946</Longitude>
+      <Name>仁金門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.0455</Latitude>
+      <Longitude>121.51741</Longitude>
+      <Name>萬翔門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.047924</Latitude>
+      <Longitude>121.51708</Longitude>
+      <Name>北高鐵門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.047594</Latitude>
+      <Longitude>121.51837</Longitude>
+      <Name>台北1門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.048218</Latitude>
+      <Longitude>121.51064</Longitude>
+      <Name>台北2門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.048218</Latitude>
+      <Longitude>121.51064</Longitude>
+      <Name>台北3門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.047924</Latitude>
+      <Longitude>121.51708</Longitude>
+      <Name>台北4門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.047924</Latitude>
+      <Longitude>121.51708</Longitude>
+      <Name>台北五門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.047924</Latitude>
+      <Longitude>121.51708</Longitude>
+      <Name>台北六門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.02805</Latitude>
+      <Longitude>121.5095</Longitude>
+      <Name>汀州門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.026358</Latitude>
+      <Longitude>121.5138</Longitude>
+      <Name>鑫泉州門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.022402</Latitude>
+      <Longitude>121.52366</Longitude>
+      <Name>古亭門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.016249</Latitude>
+      <Longitude>121.5308</Longitude>
+      <Name>軍總門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.013668</Latitude>
+      <Longitude>121.53435</Longitude>
+      <Name>統全門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.026587</Latitude>
+      <Longitude>121.52075</Longitude>
+      <Name>晉江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044994</Latitude>
+      <Longitude>121.51048</Longitude>
+      <Name>中樂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.034475</Latitude>
+      <Longitude>121.50757</Longitude>
+      <Name>新愛國門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.046373</Latitude>
+      <Longitude>121.5179</Longitude>
+      <Name>捷市門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.04646</Latitude>
+      <Longitude>121.51745</Longitude>
+      <Name>捷欣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.046576</Latitude>
+      <Longitude>121.51558</Longitude>
+      <Name>捷戰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.046206</Latitude>
+      <Longitude>121.51844</Longitude>
+      <Name>鑫台北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044106</Latitude>
+      <Longitude>121.52562</Longitude>
+      <Name>華山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.042768</Latitude>
+      <Longitude>121.53045</Longitude>
+      <Name>忠聯門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.042149</Latitude>
+      <Longitude>121.53188</Longitude>
+      <Name>統聯門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.03905</Latitude>
+      <Longitude>121.52554</Longitude>
+      <Name>丹陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.042442</Latitude>
+      <Longitude>121.526566</Longitude>
+      <Name>鑫杭門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.043964</Latitude>
+      <Longitude>121.522964</Longitude>
+      <Name>千成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.042553</Latitude>
+      <Longitude>121.52254</Longitude>
+      <Name>中航門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.040173</Latitude>
+      <Longitude>121.52213</Longitude>
+      <Name>台大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044167</Latitude>
+      <Longitude>121.51353</Longitude>
+      <Name>重南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044226</Latitude>
+      <Longitude>121.51136</Longitude>
+      <Name>博美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.035486</Latitude>
+      <Longitude>121.52739</Longitude>
+      <Name>金山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.040285</Latitude>
+      <Longitude>121.5087</Longitude>
+      <Name>英雄館門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.043945</Latitude>
+      <Longitude>121.52139</Longitude>
+      <Name>青島門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044567</Latitude>
+      <Longitude>121.515884</Longitude>
+      <Name>興信鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.044641</Latitude>
+      <Longitude>121.51677</Longitude>
+      <Name>鑫公信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.036514</Latitude>
+      <Longitude>121.52328</Longitude>
+      <Name>中華電門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.036486</Latitude>
+      <Longitude>121.52271</Longitude>
+      <Name>新紹南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.035215</Latitude>
+      <Longitude>121.52535</Longitude>
+      <Name>杭信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.031126</Latitude>
+      <Longitude>121.51722</Longitude>
+      <Name>南昌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.025558</Latitude>
+      <Longitude>121.52283</Longitude>
+      <Name>同昌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.032038</Latitude>
+      <Longitude>121.51533</Longitude>
+      <Name>南海門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.014416</Latitude>
+      <Longitude>121.5311</Longitude>
+      <Name>博源門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.04704</Latitude>
+      <Longitude>121.51335</Longitude>
+      <Name>鑫大孝門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.045465</Latitude>
+      <Longitude>121.52556</Longitude>
+      <Name>紹興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.04577</Latitude>
+      <Longitude>121.5171</Longitude>
+      <Name>千翔門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.034431</Latitude>
+      <Longitude>121.53015</Longitude>
+      <Name>新雲門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.043068</Latitude>
+      <Longitude>121.51164</Longitude>
+      <Name>大永博門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.03888</Latitude>
+      <Longitude>121.50993</Longitude>
+      <Name>東祥門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-100-862920</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.045898</Latitude>
+      <Longitude>121.51226</Longitude>
+      <Name>開博門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.04616</Latitude>
+      <Longitude>121.513626</Longitude>
+      <Name>開懷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.02397</Latitude>
+      <Longitude>121.518814</Longitude>
+      <Name>牯嶺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.025583</Latitude>
+      <Longitude>121.5174</Longitude>
+      <Name>新廈門門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.037106</Latitude>
+      <Longitude>121.53249</Longitude>
+      <Name>新南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.031515</Latitude>
+      <Longitude>121.518745</Longitude>
+      <Name>寧波門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.029846</Latitude>
+      <Longitude>121.51592</Longitude>
+      <Name>鑫重寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.033081</Latitude>
+      <Longitude>121.52025</Longitude>
+      <Name>中愛門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.045115</Latitude>
+      <Longitude>121.51218</Longitude>
+      <Name>漢慶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.029604</Latitude>
+      <Longitude>121.51978</Longitude>
+      <Name>鑫國語門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.03554</Latitude>
+      <Longitude>121.508064</Longitude>
+      <Name>警廣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.042408</Latitude>
+      <Longitude>121.51279</Longitude>
+      <Name>新格蘭門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.042208</Latitude>
+      <Longitude>121.51378</Longitude>
+      <Name>鑫衡陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.040321</Latitude>
+      <Longitude>121.53117</Longitude>
+      <Name>濟新門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.03453</Latitude>
+      <Longitude>121.5278</Longitude>
+      <Name>臨沂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.045408</Latitude>
+      <Longitude>121.5141</Longitude>
+      <Name>鑫華福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.027315</Latitude>
+      <Longitude>121.521935</Longitude>
+      <Name>羅亭門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中正區</District>
+      <Latitude>25.021988</Latitude>
+      <Longitude>121.526474</Longitude>
+      <Name>新羅福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.050371</Latitude>
+      <Longitude>121.51511</Longitude>
+      <Name>鑫太原門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.05759</Latitude>
+      <Longitude>121.51923</Longitude>
+      <Name>仟發門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.057043</Latitude>
+      <Longitude>121.511185</Longitude>
+      <Name>迪化門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.057196</Latitude>
+      <Longitude>121.51753</Longitude>
+      <Name>雙連門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.056875</Latitude>
+      <Longitude>121.51499</Longitude>
+      <Name>鑫寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.063166</Latitude>
+      <Longitude>121.51629</Longitude>
+      <Name>權鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.05183</Latitude>
+      <Longitude>121.51179</Longitude>
+      <Name>延華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.058294</Latitude>
+      <Longitude>121.511604</Longitude>
+      <Name>延埕門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.05971</Latitude>
+      <Longitude>121.5114</Longitude>
+      <Name>涼州門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.065876</Latitude>
+      <Longitude>121.51114</Longitude>
+      <Name>延年門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.069155</Latitude>
+      <Longitude>121.51079</Longitude>
+      <Name>延龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.073076</Latitude>
+      <Longitude>121.51136</Longitude>
+      <Name>湧久門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.050444</Latitude>
+      <Longitude>121.516685</Longitude>
+      <Name>承華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.065245</Latitude>
+      <Longitude>121.518585</Longitude>
+      <Name>三德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.0653</Latitude>
+      <Longitude>121.518105</Longitude>
+      <Name>昌吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.072649</Latitude>
+      <Longitude>121.51885</Longitude>
+      <Name>德倫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.065794</Latitude>
+      <Longitude>121.515854</Longitude>
+      <Name>大龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.05075</Latitude>
+      <Longitude>121.51809</Longitude>
+      <Name>長峰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.052137</Latitude>
+      <Longitude>121.51067</Longitude>
+      <Name>塔城門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.053913</Latitude>
+      <Longitude>121.513</Longitude>
+      <Name>南西門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.054272</Latitude>
+      <Longitude>121.51054</Longitude>
+      <Name>詠樂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.054272</Latitude>
+      <Longitude>121.51458</Longitude>
+      <Name>圓慶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.053291</Latitude>
+      <Longitude>121.50879</Longitude>
+      <Name>稻埕門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.0557</Latitude>
+      <Longitude>121.5138</Longitude>
+      <Name>新慶陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.073896</Latitude>
+      <Longitude>121.514</Longitude>
+      <Name>哈蜜門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.071516</Latitude>
+      <Longitude>121.51358</Longitude>
+      <Name>酒泉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.065666</Latitude>
+      <Longitude>121.51391</Longitude>
+      <Name>慶吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.071882</Latitude>
+      <Longitude>121.515724</Longitude>
+      <Name>保聖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.070694</Latitude>
+      <Longitude>121.51932</Longitude>
+      <Name>圓泉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.058493</Latitude>
+      <Longitude>121.5152</Longitude>
+      <Name>靜中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.06078</Latitude>
+      <Longitude>121.51448</Longitude>
+      <Name>篷萊門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.05097</Latitude>
+      <Longitude>121.50932</Longitude>
+      <Name>中興醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-103-564897</ID>
+	  
+      <District>大同區</District>
+      <Latitude>25.049011</Latitude>
+      <Longitude>121.51574</Longitude>
+      <Name>鄭州門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.04186</Latitude>
+      <Longitude>121.54623</Longitude>
+      <Name>大安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.03429</Latitude>
+      <Longitude>121.54589</Longitude>
+      <Name>信安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.043463</Latitude>
+      <Longitude>121.54624</Longitude>
+      <Name>頂東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.03077</Latitude>
+      <Longitude>121.545975</Longitude>
+      <Name>豫銘門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.038517</Latitude>
+      <Longitude>121.53433</Longitude>
+      <Name>中廣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.037542</Latitude>
+      <Longitude>121.5385</Longitude>
+      <Name>芙蓉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.038647</Latitude>
+      <Longitude>121.54524</Longitude>
+      <Name>仁安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.03969</Latitude>
+      <Longitude>121.551926</Longitude>
+      <Name>建綸門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.036558</Latitude>
+      <Longitude>121.55424</Longitude>
+      <Name>泰利門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.038183</Latitude>
+      <Longitude>121.5469</Longitude>
+      <Name>頂好門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.03448</Latitude>
+      <Longitude>121.55018</Longitude>
+      <Name>敦信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.028109</Latitude>
+      <Longitude>121.54762</Longitude>
+      <Name>合維門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.030426</Latitude>
+      <Longitude>121.529594</Longitude>
+      <Name>永康門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.033133</Latitude>
+      <Longitude>121.52991</Longitude>
+      <Name>恆安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.040485</Latitude>
+      <Longitude>121.556366</Longitude>
+      <Name>國館門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.032265</Latitude>
+      <Longitude>121.557335</Longitude>
+      <Name>復昌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042381</Latitude>
+      <Longitude>121.55696</Longitude>
+      <Name>新國聯門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.040194</Latitude>
+      <Longitude>121.557556</Longitude>
+      <Name>靜安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.038626</Latitude>
+      <Longitude>121.550995</Longitude>
+      <Name>欣安和門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.0347</Latitude>
+      <Longitude>121.5524</Longitude>
+      <Name>敦安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.030039</Latitude>
+      <Longitude>121.5516</Longitude>
+      <Name>立仁門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.030493</Latitude>
+      <Longitude>121.552605</Longitude>
+      <Name>臨江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02045</Latitude>
+      <Longitude>121.55443</Longitude>
+      <Name>安居門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.023056</Latitude>
+      <Longitude>121.53717</Longitude>
+      <Name>辛亥門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.022127</Latitude>
+      <Longitude>121.540985</Longitude>
+      <Name>敦親門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.020414</Latitude>
+      <Longitude>121.54461</Longitude>
+      <Name>國青門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.026918</Latitude>
+      <Longitude>121.5257</Longitude>
+      <Name>和金門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.026457</Latitude>
+      <Longitude>121.53206</Longitude>
+      <Name>和泰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.026014</Latitude>
+      <Longitude>121.53361</Longitude>
+      <Name>溫東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02573</Latitude>
+      <Longitude>121.538605</Longitude>
+      <Name>禾光門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.0257</Latitude>
+      <Longitude>121.53597</Longitude>
+      <Name>龍門門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.023523</Latitude>
+      <Longitude>121.54291</Longitude>
+      <Name>龍淵門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.024519</Latitude>
+      <Longitude>121.55084</Longitude>
+      <Name>技安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02222</Latitude>
+      <Longitude>121.55463</Longitude>
+      <Name>和安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.020369</Latitude>
+      <Longitude>121.55656</Longitude>
+      <Name>富陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042522</Latitude>
+      <Longitude>121.55419</Longitude>
+      <Name>吉忠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.036636</Latitude>
+      <Longitude>121.5557</Longitude>
+      <Name>延吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042818</Latitude>
+      <Longitude>121.534256</Longitude>
+      <Name>北科大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042414</Latitude>
+      <Longitude>121.53965</Longitude>
+      <Name>佑安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.041769</Latitude>
+      <Longitude>121.5415</Longitude>
+      <Name>建忠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.041525</Latitude>
+      <Longitude>121.53822</Longitude>
+      <Name>義村門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.041067</Latitude>
+      <Longitude>121.54139</Longitude>
+      <Name>懷生門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.043524</Latitude>
+      <Longitude>121.55311</Longitude>
+      <Name>仕吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.03997</Latitude>
+      <Longitude>121.553345</Longitude>
+      <Name>統家門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042168</Latitude>
+      <Longitude>121.552246</Longitude>
+      <Name>統領門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.04213</Latitude>
+      <Longitude>121.54813</Longitude>
+      <Name>敦頂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.038084</Latitude>
+      <Longitude>121.55289</Longitude>
+      <Name>鳳翔門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.041136</Latitude>
+      <Longitude>121.54448</Longitude>
+      <Name>錢忠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02868</Latitude>
+      <Longitude>121.521965</Longitude>
+      <Name>瑞升門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-106-486943</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.036152</Latitude>
+      <Longitude>121.54668</Longitude>
+      <Name>敦維門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.036114</Latitude>
+      <Longitude>121.544266</Longitude>
+      <Name>豐安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.018066</Latitude>
+      <Longitude>121.550934</Longitude>
+      <Name>黎元門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.018364</Latitude>
+      <Longitude>121.557</Longitude>
+      <Name>麟光門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.033195</Latitude>
+      <Longitude>121.52694</Longitude>
+      <Name>金信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.029814</Latitude>
+      <Longitude>121.528435</Longitude>
+      <Name>金華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.016537</Latitude>
+      <Longitude>121.544975</Longitude>
+      <Name>興舍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.034027</Latitude>
+      <Longitude>121.53459</Longitude>
+      <Name>大信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.033709</Latitude>
+      <Longitude>121.53872</Longitude>
+      <Name>信中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.033129</Latitude>
+      <Longitude>121.54624</Longitude>
+      <Name>安信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.034348</Latitude>
+      <Longitude>121.55431</Longitude>
+      <Name>信義門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.033173</Latitude>
+      <Longitude>121.54469</Longitude>
+      <Name>信興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.036371</Latitude>
+      <Longitude>121.53727</Longitude>
+      <Name>花市門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.04427</Latitude>
+      <Longitude>121.536224</Longitude>
+      <Name>科建門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.028706</Latitude>
+      <Longitude>121.5384</Longitude>
+      <Name>建南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.023188</Latitude>
+      <Longitude>121.528564</Longitude>
+      <Name>師大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.023916</Latitude>
+      <Longitude>121.52936</Longitude>
+      <Name>龍延門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.025103</Latitude>
+      <Longitude>121.53155</Longitude>
+      <Name>新泰順門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02823</Latitude>
+      <Longitude>121.556625</Longitude>
+      <Name>欣隆昌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.017813</Latitude>
+      <Longitude>121.54534</Longitude>
+      <Name>長星門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.013771</Latitude>
+      <Longitude>121.54065</Longitude>
+      <Name>台科三門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.031425</Latitude>
+      <Longitude>121.554214</Longitude>
+      <Name>通化門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.027567</Latitude>
+      <Longitude>121.55354</Longitude>
+      <Name>華電門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042696</Latitude>
+      <Longitude>121.54454</Longitude>
+      <Name>崇光門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.028362</Latitude>
+      <Longitude>121.54541</Longitude>
+      <Name>合旺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.026283</Latitude>
+      <Longitude>121.54366</Longitude>
+      <Name>科技站門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02775</Latitude>
+      <Longitude>121.543465</Longitude>
+      <Name>喜悅門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.032398</Latitude>
+      <Longitude>121.5439</Longitude>
+      <Name>復維門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.040606</Latitude>
+      <Longitude>121.54722</Longitude>
+      <Name>敦南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.042639</Latitude>
+      <Longitude>121.550674</Longitude>
+      <Name>建安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.04043</Latitude>
+      <Longitude>121.55074</Longitude>
+      <Name>龍普門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.031105</Latitude>
+      <Longitude>121.54955</Longitude>
+      <Name>大敦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.021109</Latitude>
+      <Longitude>121.548325</Longitude>
+      <Name>昇隆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02536</Latitude>
+      <Longitude>121.549576</Longitude>
+      <Name>敦禾門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02358</Latitude>
+      <Longitude>121.548325</Longitude>
+      <Name>敦隆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.029018</Latitude>
+      <Longitude>121.54919</Longitude>
+      <Name>新東帝門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.0226</Latitude>
+      <Longitude>121.54961</Longitude>
+      <Name>樂隆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02317</Latitude>
+      <Longitude>121.546295</Longitude>
+      <Name>教育大學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.017487</Latitude>
+      <Longitude>121.533066</Longitude>
+      <Name>大台門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.028543</Latitude>
+      <Longitude>121.54105</Longitude>
+      <Name>瑞安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02569</Latitude>
+      <Longitude>121.551834</Longitude>
+      <Name>樂利門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02742</Latitude>
+      <Longitude>121.551506</Longitude>
+      <Name>樂和門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.02197</Latitude>
+      <Longitude>121.55085</Longitude>
+      <Name>樂安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.040071</Latitude>
+      <Longitude>121.533875</Longitude>
+      <Name>濟南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.019333</Latitude>
+      <Longitude>121.53</Longitude>
+      <Name>溫州門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>大安區</District>
+      <Latitude>25.017775</Latitude>
+      <Longitude>121.53528</Longitude>
+      <Name>鹿鳴門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.05044</Latitude>
+      <Longitude>121.58027</Longitude>
+      <Name>凱松門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.059101</Latitude>
+      <Longitude>121.614136</Longitude>
+      <Name>馥樺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.055052</Latitude>
+      <Longitude>121.59331</Longitude>
+      <Name>經貿門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.042837</Latitude>
+      <Longitude>121.583626</Longitude>
+      <Name>中坡門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-115-282597</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.045</Latitude>
+      <Longitude>121.58364</Longitude>
+      <Name>玉德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.054037</Latitude>
+      <Longitude>121.59487</Longitude>
+      <Name>向揚門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.041588</Latitude>
+      <Longitude>121.58783</Longitude>
+      <Name>新福玉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.05092</Latitude>
+      <Longitude>121.59407</Longitude>
+      <Name>忠陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.050259</Latitude>
+      <Longitude>121.59399</Longitude>
+      <Name>昆陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.049149</Latitude>
+      <Longitude>121.58901</Longitude>
+      <Name>雄強門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.049093</Latitude>
+      <Longitude>121.594185</Longitude>
+      <Name>聯成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.046305</Latitude>
+      <Longitude>121.587036</Longitude>
+      <Name>林坊門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.046467</Latitude>
+      <Longitude>121.588326</Longitude>
+      <Name>聯坊門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.054386</Latitude>
+      <Longitude>121.60762</Longitude>
+      <Name>佳樂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.055092</Latitude>
+      <Longitude>121.61331</Longitude>
+      <Name>香城門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.053976</Latitude>
+      <Longitude>121.59188</Longitude>
+      <Name>玉成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.053226</Latitude>
+      <Longitude>121.589836</Longitude>
+      <Name>鵬馳門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.052235</Latitude>
+      <Longitude>121.61629</Longitude>
+      <Name>耀港門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.038393</Latitude>
+      <Longitude>121.61692</Longitude>
+      <Name>庄研門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.047525</Latitude>
+      <Longitude>121.6155</Longitude>
+      <Name>研究門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.03469</Latitude>
+      <Longitude>121.61429</Longitude>
+      <Name>華技門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.03384</Latitude>
+      <Longitude>121.61063</Longitude>
+      <Name>華院門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.057142</Latitude>
+      <Longitude>121.60091</Longitude>
+      <Name>慈愛門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.03938</Latitude>
+      <Longitude>121.591446</Longitude>
+      <Name>港德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.05609</Latitude>
+      <Longitude>121.60565</Longitude>
+      <Name>港福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>南港區</District>
+      <Latitude>25.05691</Latitude>
+      <Longitude>121.605705</Longitude>
+      <Name>港興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.088348</Latitude>
+      <Longitude>121.59941</Longitude>
+      <Name>長鴻門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.067646</Latitude>
+      <Longitude>121.613365</Longitude>
+      <Name>克里斯門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.067785</Latitude>
+      <Longitude>121.611984</Longitude>
+      <Name>悅來門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084476</Latitude>
+      <Longitude>121.56699</Longitude>
+      <Name>西武門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.082329</Latitude>
+      <Longitude>121.56784</Longitude>
+      <Name>西湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.079725</Latitude>
+      <Longitude>121.57873</Longitude>
+      <Name>港鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.082512</Latitude>
+      <Longitude>121.57135</Longitude>
+      <Name>福湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.079987</Latitude>
+      <Longitude>121.57597</Longitude>
+      <Name>墘都門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.081217</Latitude>
+      <Longitude>121.57233</Longitude>
+      <Name>麗安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084648</Latitude>
+      <Longitude>121.56139</Longitude>
+      <Name>馨瑩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084528</Latitude>
+      <Longitude>121.59331</Longitude>
+      <Name>金龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.082</Latitude>
+      <Longitude>121.58966</Longitude>
+      <Name>達人門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.08243</Latitude>
+      <Longitude>121.59091</Longitude>
+      <Name>德成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.086327</Latitude>
+      <Longitude>121.58923</Longitude>
+      <Name>金聯發門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.086044</Latitude>
+      <Longitude>121.59206</Longitude>
+      <Name>碧綠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.086576</Latitude>
+      <Longitude>121.56415</Longitude>
+      <Name>金湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.078726</Latitude>
+      <Longitude>121.583374</Longitude>
+      <Name>鑫文德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.078432</Latitude>
+      <Longitude>121.57887</Longitude>
+      <Name>鑫江南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.068773</Latitude>
+      <Longitude>121.585884</Longitude>
+      <Name>民東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.067673</Latitude>
+      <Longitude>121.58058</Longitude>
+      <Name>名寶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.067675</Latitude>
+      <Longitude>121.587654</Longitude>
+      <Name>欣福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.072433</Latitude>
+      <Longitude>121.605606</Longitude>
+      <Name>康葫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.066164</Latitude>
+      <Longitude>121.59039</Longitude>
+      <Name>成功門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.07044</Latitude>
+      <Longitude>121.59032</Longitude>
+      <Name>國醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.080626</Latitude>
+      <Longitude>121.59098</Longitude>
+      <Name>紫新門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.07541</Latitude>
+      <Longitude>121.608665</Longitude>
+      <Name>康醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084854</Latitude>
+      <Longitude>121.59966</Longitude>
+      <Name>成湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084467</Latitude>
+      <Longitude>121.60005</Longitude>
+      <Name>秀湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-114-598761</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.082275</Latitude>
+      <Longitude>121.59175</Longitude>
+      <Name>德福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.076248</Latitude>
+      <Longitude>121.57901</Longitude>
+      <Name>瑞江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.076164</Latitude>
+      <Longitude>121.575455</Longitude>
+      <Name>瑞湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.065268</Latitude>
+      <Longitude>121.5776</Longitude>
+      <Name>華經門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.056973</Latitude>
+      <Longitude>121.5761</Longitude>
+      <Name>參龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.056892</Latitude>
+      <Longitude>121.57643</Longitude>
+      <Name>彩龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.063894</Latitude>
+      <Longitude>121.58012</Longitude>
+      <Name>行龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.068865</Latitude>
+      <Longitude>121.614075</Longitude>
+      <Name>明湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.072067</Latitude>
+      <Longitude>121.61561</Longitude>
+      <Name>清圳門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.06992</Latitude>
+      <Longitude>121.617096</Longitude>
+      <Name>鑫輝煌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.082191</Latitude>
+      <Longitude>121.59667</Longitude>
+      <Name>清湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.088142</Latitude>
+      <Longitude>121.58725</Longitude>
+      <Name>金碧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084383</Latitude>
+      <Longitude>121.59508</Longitude>
+      <Name>金德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.079847</Latitude>
+      <Longitude>121.59497</Longitude>
+      <Name>金雲門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.07812</Latitude>
+      <Longitude>121.59047</Longitude>
+      <Name>星成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.079039</Latitude>
+      <Longitude>121.57334</Longitude>
+      <Name>德馨門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.079048</Latitude>
+      <Longitude>121.59436</Longitude>
+      <Name>康雲門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.072727</Latitude>
+      <Longitude>121.610664</Longitude>
+      <Name>晏揚門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.071451</Latitude>
+      <Longitude>121.61219</Longitude>
+      <Name>康明門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.072186</Latitude>
+      <Longitude>121.60793</Longitude>
+      <Name>康寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.072353</Latitude>
+      <Longitude>121.60826</Longitude>
+      <Name>鑫碁泰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.073387</Latitude>
+      <Longitude>121.61953</Longitude>
+      <Name>瓏山林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.076223</Latitude>
+      <Longitude>121.62168</Longitude>
+      <Name>瓏馬門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.082956</Latitude>
+      <Longitude>121.57492</Longitude>
+      <Name>港華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.073248</Latitude>
+      <Longitude>121.575066</Longitude>
+      <Name>大眾門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.08295</Latitude>
+      <Longitude>121.57835</Longitude>
+      <Name>富港門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.074974</Latitude>
+      <Longitude>121.58531</Longitude>
+      <Name>紫陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.072742</Latitude>
+      <Longitude>121.5762</Longitude>
+      <Name>匯陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.056862</Latitude>
+      <Longitude>121.58466</Longitude>
+      <Name>成美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.054867</Latitude>
+      <Longitude>121.58106</Longitude>
+      <Name>新潭美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.070196</Latitude>
+      <Longitude>121.5803</Longitude>
+      <Name>日內瓦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.074982</Latitude>
+      <Longitude>121.57695</Longitude>
+      <Name>見晴門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.0782</Latitude>
+      <Longitude>121.57064</Longitude>
+      <Name>里昂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.079268</Latitude>
+      <Longitude>121.56897</Longitude>
+      <Name>洲子門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.073988</Latitude>
+      <Longitude>121.57606</Longitude>
+      <Name>瑞富門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.080917</Latitude>
+      <Longitude>121.568115</Longitude>
+      <Name>瑞寶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.080175</Latitude>
+      <Longitude>121.56631</Longitude>
+      <Name>瑞鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.086508</Latitude>
+      <Longitude>121.568</Longitude>
+      <Name>環湖門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.084742</Latitude>
+      <Longitude>121.57479</Longitude>
+      <Name>環金門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.061243</Latitude>
+      <Longitude>121.57817</Longitude>
+      <Name>大潤發門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>內湖區</District>
+      <Latitude>25.069483</Latitude>
+      <Longitude>121.57496</Longitude>
+      <Name>舊宗門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.111916</Latitude>
+      <Longitude>121.52782</Longitude>
+      <Name>士東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.11177</Latitude>
+      <Longitude>121.53765</Longitude>
+      <Name>德芝門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.08979</Latitude>
+      <Longitude>121.52659</Longitude>
+      <Name>文林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.090845</Latitude>
+      <Longitude>121.52582</Longitude>
+      <Name>新士林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.089542</Latitude>
+      <Longitude>121.51586</Longitude>
+      <Name>福通門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.088951</Latitude>
+      <Longitude>121.51827</Longitude>
+      <Name>豫鋒門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.118704</Latitude>
+      <Longitude>121.53124</Longitude>
+      <Name>天東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.12249</Latitude>
+      <Longitude>121.53205</Longitude>
+      <Name>天真門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.12249</Latitude>
+      <Longitude>121.53205</Longitude>
+      <Name>天真門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-111-764378</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.123966</Latitude>
+      <Longitude>121.53266</Longitude>
+      <Name>天裕門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.118896</Latitude>
+      <Longitude>121.532394</Longitude>
+      <Name>東洋門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.084873</Latitude>
+      <Longitude>121.52508</Longitude>
+      <Name>劍潭站門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.103947</Latitude>
+      <Longitude>121.526764</Longitude>
+      <Name>新忠誠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.106373</Latitude>
+      <Longitude>121.525085</Longitude>
+      <Name>蘭雅門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.094706</Latitude>
+      <Longitude>121.52379</Longitude>
+      <Name>士正門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.086119</Latitude>
+      <Longitude>121.50821</Longitude>
+      <Name>社鑽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.09474</Latitude>
+      <Longitude>121.526054</Longitude>
+      <Name>福捷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.09553</Latitude>
+      <Longitude>121.52609</Longitude>
+      <Name>福榮門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.094652</Latitude>
+      <Longitude>121.52254</Longitude>
+      <Name>福鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.095263</Latitude>
+      <Longitude>121.5262</Longitude>
+      <Name>福讚門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.118694</Latitude>
+      <Longitude>121.52747</Longitude>
+      <Name>天北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.119106</Latitude>
+      <Longitude>121.52896</Longitude>
+      <Name>天麥門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.114305</Latitude>
+      <Longitude>121.53016</Longitude>
+      <Name>天美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.116888</Latitude>
+      <Longitude>121.53324</Longitude>
+      <Name>天越門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.116812</Latitude>
+      <Longitude>121.53187</Longitude>
+      <Name>天福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.119864</Latitude>
+      <Longitude>121.52696</Longitude>
+      <Name>天鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.096115</Latitude>
+      <Longitude>121.5213</Longitude>
+      <Name>新文門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.088009</Latitude>
+      <Longitude>121.5263</Longitude>
+      <Name>士鑽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.097252</Latitude>
+      <Longitude>121.5241</Longitude>
+      <Name>丹樺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.10083</Latitude>
+      <Longitude>121.52219</Longitude>
+      <Name>德華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.118849</Latitude>
+      <Longitude>121.55288</Longitude>
+      <Name>鑫仰德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.137299</Latitude>
+      <Longitude>121.54161</Longitude>
+      <Name>文學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.136887</Latitude>
+      <Longitude>121.54148</Longitude>
+      <Name>華岡門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.100437</Latitude>
+      <Longitude>121.55093</Longitude>
+      <Name>至善天下門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.10181</Latitude>
+      <Longitude>121.52926</Longitude>
+      <Name>至誠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.108746</Latitude>
+      <Longitude>121.52442</Longitude>
+      <Name>新天強門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.084057</Latitude>
+      <Longitude>121.51004</Longitude>
+      <Name>葫東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.082014</Latitude>
+      <Longitude>121.510544</Longitude>
+      <Name>葫蘆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.085037</Latitude>
+      <Longitude>121.509605</Longitude>
+      <Name>福陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.09325</Latitude>
+      <Longitude>121.49806</Longitude>
+      <Name>洲美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.089588</Latitude>
+      <Longitude>121.50513</Longitude>
+      <Name>集鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.089214</Latitude>
+      <Longitude>121.507805</Longitude>
+      <Name>福氣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.090706</Latitude>
+      <Longitude>121.50122</Longitude>
+      <Name>聚鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.107718</Latitude>
+      <Longitude>121.53281</Longitude>
+      <Name>芝玉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.105844</Latitude>
+      <Longitude>121.5313</Longitude>
+      <Name>凱立門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.105707</Latitude>
+      <Longitude>121.52878</Longitude>
+      <Name>誠義門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.115631</Latitude>
+      <Longitude>121.53321</Longitude>
+      <Name>天成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.108994</Latitude>
+      <Longitude>121.53064</Longitude>
+      <Name>德行門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.081018</Latitude>
+      <Longitude>121.52277</Longitude>
+      <Name>承富門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.080383</Latitude>
+      <Longitude>121.52204</Longitude>
+      <Name>新承德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.092752</Latitude>
+      <Longitude>121.50673</Longitude>
+      <Name>友成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.088661</Latitude>
+      <Longitude>121.50884</Longitude>
+      <Name>社中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.098488</Latitude>
+      <Longitude>121.53226</Longitude>
+      <Name>福志門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.103245</Latitude>
+      <Longitude>121.52854</Longitude>
+      <Name>雨聲門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.085669</Latitude>
+      <Longitude>121.521545</Longitude>
+      <Name>前港門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.097088</Latitude>
+      <Longitude>121.51988</Longitude>
+      <Name>冬樂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.083225</Latitude>
+      <Longitude>121.51185</Longitude>
+      <Name>福順門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.137934</Latitude>
+      <Longitude>121.546486</Longitude>
+      <Name>文大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.136942</Latitude>
+      <Longitude>121.54645</Longitude>
+      <Name>草山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-111-355395</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.089098</Latitude>
+      <Longitude>121.52285</Longitude>
+      <Name>承河門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.08627</Latitude>
+      <Longitude>121.52495</Longitude>
+      <Name>新福慶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.137762</Latitude>
+      <Longitude>121.541756</Longitude>
+      <Name>太學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.137688</Latitude>
+      <Longitude>121.54096</Longitude>
+      <Name>新大學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.083109</Latitude>
+      <Longitude>121.519516</Longitude>
+      <Name>華齡門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.096947</Latitude>
+      <Longitude>121.53264</Longitude>
+      <Name>新福林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.102057</Latitude>
+      <Longitude>121.52237</Longitude>
+      <Name>福芝門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.08434</Latitude>
+      <Longitude>121.51749</Longitude>
+      <Name>新劍潭門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.102802</Latitude>
+      <Longitude>121.52288</Longitude>
+      <Name>芝山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.08416</Latitude>
+      <Longitude>121.52288</Longitude>
+      <Name>三樂門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.104145</Latitude>
+      <Longitude>121.52127</Longitude>
+      <Name>福溢門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.105272</Latitude>
+      <Longitude>121.52299</Longitude>
+      <Name>德天門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>士林區</District>
+      <Latitude>25.109747</Latitude>
+      <Longitude>121.53469</Longitude>
+      <Name>德東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.048326</Latitude>
+      <Longitude>121.54694</Longitude>
+      <Name>清愿門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.048367</Latitude>
+      <Longitude>121.55276</Longitude>
+      <Name>中崙門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.048086</Latitude>
+      <Longitude>121.551155</Longitude>
+      <Name>台場門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.047915</Latitude>
+      <Longitude>121.556435</Longitude>
+      <Name>新復勢門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051031</Latitude>
+      <Longitude>121.577736</Longitude>
+      <Name>松饒門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.049932</Latitude>
+      <Longitude>121.57601</Longitude>
+      <Name>松鑽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.04878</Latitude>
+      <Longitude>121.56257</Longitude>
+      <Name>威京門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.05005</Latitude>
+      <Longitude>121.576126</Longitude>
+      <Name>新饒河門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.050444</Latitude>
+      <Longitude>121.56435</Longitude>
+      <Name>影城門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.0492</Latitude>
+      <Longitude>121.56698</Longitude>
+      <Name>寶德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.052391</Latitude>
+      <Longitude>121.56388</Longitude>
+      <Name>松民門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.058079</Latitude>
+      <Longitude>121.56326</Longitude>
+      <Name>朝福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.050888</Latitude>
+      <Longitude>121.55285</Longitude>
+      <Name>北體門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.045126</Latitude>
+      <Longitude>121.54809</Longitude>
+      <Name>市大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.058517</Latitude>
+      <Longitude>121.54741</Longitude>
+      <Name>民北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.05691</Latitude>
+      <Longitude>121.54678</Longitude>
+      <Name>慶民門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.058163</Latitude>
+      <Longitude>121.55514</Longitude>
+      <Name>民復門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.05771</Latitude>
+      <Longitude>121.55108</Longitude>
+      <Name>明塑門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.05836</Latitude>
+      <Longitude>121.55047</Longitude>
+      <Name>東鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.058437</Latitude>
+      <Longitude>121.56031</Longitude>
+      <Name>東吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.058603</Latitude>
+      <Longitude>121.55817</Longitude>
+      <Name>東榮門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.049585</Latitude>
+      <Longitude>121.55947</Longitude>
+      <Name>京復門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.046293</Latitude>
+      <Longitude>121.55348</Longitude>
+      <Name>吉仁門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.056236</Latitude>
+      <Longitude>121.55642</Longitude>
+      <Name>延壽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.056713</Latitude>
+      <Longitude>121.560524</Longitude>
+      <Name>鑫壽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.050064</Latitude>
+      <Longitude>121.565445</Longitude>
+      <Name>統威門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.052477</Latitude>
+      <Longitude>121.54669</Longitude>
+      <Name>南京門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051458</Latitude>
+      <Longitude>121.55375</Longitude>
+      <Name>京育門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051767</Latitude>
+      <Longitude>121.55502</Longitude>
+      <Name>東勢門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.052052</Latitude>
+      <Longitude>121.55105</Longitude>
+      <Name>首都門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.050856</Latitude>
+      <Longitude>121.56097</Longitude>
+      <Name>吉盛門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051682</Latitude>
+      <Longitude>121.56156</Longitude>
+      <Name>京發門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051868</Latitude>
+      <Longitude>121.55798</Longitude>
+      <Name>東光門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051579</Latitude>
+      <Longitude>121.56678</Longitude>
+      <Name>通盈門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.051964</Latitude>
+      <Longitude>121.562065</Longitude>
+      <Name>新寶清門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.053225</Latitude>
+      <Longitude>121.55245</Longitude>
+      <Name>健一門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.053911</Latitude>
+      <Longitude>121.56121</Longitude>
+      <Name>婦聯門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-105-067331</ID>
+      
+      <District>松山區</District>
+      <Latitude>25.05903</Latitude>
+      <Longitude>121.546295</Longitude>
+      <Name>東復門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.05699</Latitude>
+      <Longitude>121.54485</Longitude>
+      <Name>復安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.054422</Latitude>
+      <Longitude>121.544334</Longitude>
+      <Name>復春門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.050026</Latitude>
+      <Longitude>121.54422</Longitude>
+      <Name>樂得門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.045677</Latitude>
+      <Longitude>121.54406</Longitude>
+      <Name>風復門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.056305</Latitude>
+      <Longitude>121.54829</Longitude>
+      <Name>上弘門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.063677</Latitude>
+      <Longitude>121.55188</Longitude>
+      <Name>松航門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.055717</Latitude>
+      <Longitude>121.55006</Longitude>
+      <Name>長塑門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.060102</Latitude>
+      <Longitude>121.547</Longitude>
+      <Name>敦化門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.053871</Latitude>
+      <Longitude>121.549545</Longitude>
+      <Name>敦北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.05234</Latitude>
+      <Longitude>121.5486</Longitude>
+      <Name>錢京門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.047142</Latitude>
+      <Longitude>121.54929</Longitude>
+      <Name>復旦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.056995</Latitude>
+      <Longitude>121.569595</Longitude>
+      <Name>松禾門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.058556</Latitude>
+      <Longitude>121.5659</Longitude>
+      <Name>征東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.06034</Latitude>
+      <Longitude>121.565544</Longitude>
+      <Name>征唐門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.062067</Latitude>
+      <Longitude>121.56606</Longitude>
+      <Name>福源門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.049011</Latitude>
+      <Longitude>121.554985</Longitude>
+      <Name>新育商門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.059856</Latitude>
+      <Longitude>121.56805</Longitude>
+      <Name>塔優門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>松山區</District>
+      <Latitude>25.052698</Latitude>
+      <Longitude>121.56773</Longitude>
+      <Name>聰明門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.033024</Latitude>
+      <Longitude>121.504974</Longitude>
+      <Name>大埔門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.02463</Latitude>
+      <Longitude>121.50996</Longitude>
+      <Name>中寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.029024</Latitude>
+      <Longitude>121.50483</Longitude>
+      <Name>南機場門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.026016</Latitude>
+      <Longitude>121.50825</Longitude>
+      <Name>掬華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.043056</Latitude>
+      <Longitude>121.50431</Longitude>
+      <Name>成都門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.034489</Latitude>
+      <Longitude>121.49862</Longitude>
+      <Name>宏旭門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.026285</Latitude>
+      <Longitude>121.49703</Longitude>
+      <Name>萬運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.031538</Latitude>
+      <Longitude>121.49491</Longitude>
+      <Name>園舺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.044382</Latitude>
+      <Longitude>121.5059</Longitude>
+      <Name>昆寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.04654</Latitude>
+      <Longitude>121.50689</Longitude>
+      <Name>開寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.042484</Latitude>
+      <Longitude>121.50584</Longitude>
+      <Name>新寧南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.045578</Latitude>
+      <Longitude>121.50684</Longitude>
+      <Name>漢寧門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.028042</Latitude>
+      <Longitude>121.50257</Longitude>
+      <Name>國雙門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.042765</Latitude>
+      <Longitude>121.50498</Longitude>
+      <Name>世運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.0472</Latitude>
+      <Longitude>121.50587</Longitude>
+      <Name>昆福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.03915</Latitude>
+      <Longitude>121.50419</Longitude>
+      <Name>漢陽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.036474</Latitude>
+      <Longitude>121.503426</Longitude>
+      <Name>廣明門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.026133</Latitude>
+      <Longitude>121.49438</Longitude>
+      <Name>萬忠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.022413</Latitude>
+      <Longitude>121.49801</Longitude>
+      <Name>萬長門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.04478</Latitude>
+      <Longitude>121.50721</Longitude>
+      <Name>鑫武昌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.04512</Latitude>
+      <Longitude>121.50479</Longitude>
+      <Name>鑫樂昇門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.040573</Latitude>
+      <Longitude>121.50488</Longitude>
+      <Name>新起門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.026007</Latitude>
+      <Longitude>121.50572</Longitude>
+      <Name>青園門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.021585</Latitude>
+      <Longitude>121.5024</Longitude>
+      <Name>鑫青天門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.04347</Latitude>
+      <Longitude>121.50687</Longitude>
+      <Name>新峨嵋門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.038298</Latitude>
+      <Longitude>121.50306</Longitude>
+      <Name>桂明門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.038439</Latitude>
+      <Longitude>121.49778</Longitude>
+      <Name>桂林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.033396</Latitude>
+      <Longitude>121.50044</Longitude>
+      <Name>萬華站門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.036024</Latitude>
+      <Longitude>121.50151</Longitude>
+      <Name>龍山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.03121</Latitude>
+      <Longitude>121.5006</Longitude>
+      <Name>萬華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.01996</Latitude>
+      <Longitude>121.49779</Longitude>
+      <Name>大華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-108-685526</ID>
+      
+      <District>萬華區</District>
+      <Latitude>25.020124</Latitude>
+      <Longitude>121.497604</Longitude>
+      <Name>富帆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.025251</Latitude>
+      <Longitude>121.50028</Longitude>
+      <Name>新艋舺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.026133</Latitude>
+      <Longitude>121.50065</Longitude>
+      <Name>萬大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.02788</Latitude>
+      <Longitude>121.50041</Longitude>
+      <Name>萬和門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.02046</Latitude>
+      <Longitude>121.495895</Longitude>
+      <Name>萬東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.023499</Latitude>
+      <Longitude>121.5016</Longitude>
+      <Name>克難門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.04615</Latitude>
+      <Longitude>121.50524</Longitude>
+      <Name>六福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.044046</Latitude>
+      <Longitude>121.50745</Longitude>
+      <Name>捷盟門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.041138</Latitude>
+      <Longitude>121.50684</Longitude>
+      <Name>漢中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.036581</Latitude>
+      <Longitude>121.500595</Longitude>
+      <Name>龍廣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.0341</Latitude>
+      <Longitude>121.493034</Longitude>
+      <Name>華江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.033207</Latitude>
+      <Longitude>121.49169</Longitude>
+      <Name>華雙門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.032051</Latitude>
+      <Longitude>121.49154</Longitude>
+      <Name>雙環門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.023676</Latitude>
+      <Longitude>121.495316</Longitude>
+      <Name>寶昌門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>萬華區</District>
+      <Latitude>25.027452</Latitude>
+      <Longitude>121.49332</Longitude>
+      <Name>鑫寶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.988625</Latitude>
+      <Longitude>121.54412</Longitude>
+      <Name>世新大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.987574</Latitude>
+      <Longitude>121.55214</Longitude>
+      <Name>華興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.987583</Latitude>
+      <Longitude>121.55017</Longitude>
+      <Name>試院門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.98912</Latitude>
+      <Longitude>121.56292</Longitude>
+      <Name>木柵門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.988586</Latitude>
+      <Longitude>121.55993</Longitude>
+      <Name>新安康門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.988537</Latitude>
+      <Longitude>121.56693</Longitude>
+      <Name>木盛門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.983173</Latitude>
+      <Longitude>121.56665</Longitude>
+      <Name>木新門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.980385</Latitude>
+      <Longitude>121.55635</Longitude>
+      <Name>文一門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.981203</Latitude>
+      <Longitude>121.55809</Longitude>
+      <Name>文新門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.982615</Latitude>
+      <Longitude>121.564064</Longitude>
+      <Name>文儀門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.981485</Latitude>
+      <Longitude>121.56048</Longitude>
+      <Name>新景美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.99852</Latitude>
+      <Longitude>121.54867</Longitude>
+      <Name>仙岩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.986752</Latitude>
+      <Longitude>121.56893</Longitude>
+      <Name>文山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.007988</Latitude>
+      <Longitude>121.536896</Longitude>
+      <Name>台師大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.991611</Latitude>
+      <Longitude>121.57414</Longitude>
+      <Name>新秀門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.00449</Latitude>
+      <Longitude>121.55664</Longitude>
+      <Name>辛亥站門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.982546</Latitude>
+      <Longitude>121.55963</Longitude>
+      <Name>忠順門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.984512</Latitude>
+      <Longitude>121.56238</Longitude>
+      <Name>文忠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.9876</Latitude>
+      <Longitude>121.569664</Longitude>
+      <Name>指南門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.987396</Latitude>
+      <Longitude>121.57721</Longitude>
+      <Name>金恩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.987804</Latitude>
+      <Longitude>121.57554</Longitude>
+      <Name>政大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.987331</Latitude>
+      <Longitude>121.576126</Longitude>
+      <Name>政揚門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.985138</Latitude>
+      <Longitude>121.5799</Longitude>
+      <Name>添恩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.992704</Latitude>
+      <Longitude>121.544014</Longitude>
+      <Name>漢神門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.990898</Latitude>
+      <Longitude>121.541374</Longitude>
+      <Name>景中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.995789</Latitude>
+      <Longitude>121.547035</Longitude>
+      <Name>景華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.993364</Latitude>
+      <Longitude>121.540184</Longitude>
+      <Name>景捷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.997875</Latitude>
+      <Longitude>121.54455</Longitude>
+      <Name>景高門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.995085</Latitude>
+      <Longitude>121.54486</Longitude>
+      <Name>景興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.998346</Latitude>
+      <Longitude>121.58104</Longitude>
+      <Name>動物園門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.00096</Latitude>
+      <Longitude>121.57067</Longitude>
+      <Name>萬芳門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.002163</Latitude>
+      <Longitude>121.56718</Longitude>
+      <Name>萬美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.00282</Latitude>
+      <Longitude>121.55139</Longitude>
+      <Name>北福興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.000183</Latitude>
+      <Longitude>121.55317</Longitude>
+      <Name>興岩門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.00113</Latitude>
+      <Longitude>121.550285</Longitude>
+      <Name>興隆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-116-336321</ID>
+      
+      <District>文山區</District>
+      <Latitude>25.00027</Latitude>
+      <Longitude>121.55566</Longitude>
+      <Name>康喜門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.99969</Latitude>
+      <Longitude>121.55759</Longitude>
+      <Name>萬芳醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.999279</Latitude>
+      <Longitude>121.55733</Longitude>
+      <Name>興北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.996422</Latitude>
+      <Longitude>121.560104</Longitude>
+      <Name>興芳門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.006529</Latitude>
+      <Longitude>121.53919</Longitude>
+      <Name>新萬盛門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.001654</Latitude>
+      <Longitude>121.53933</Longitude>
+      <Name>萬隆站門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.004656</Latitude>
+      <Longitude>121.53672</Longitude>
+      <Name>萬福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.002325</Latitude>
+      <Longitude>121.53856</Longitude>
+      <Name>羅斯福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>25.00001</Latitude>
+      <Longitude>121.53944</Longitude>
+      <Name>新萬隆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.990602</Latitude>
+      <Longitude>121.53962</Longitude>
+      <Name>滬江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>文山區</District>
+      <Latitude>24.992502</Latitude>
+      <Longitude>121.54083</Longitude>
+      <Name>羅捷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.043533</Latitude>
+      <Longitude>121.56883</Longitude>
+      <Name>永信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.028702</Latitude>
+      <Longitude>121.57696</Longitude>
+      <Name>松信門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.043476</Latitude>
+      <Longitude>121.57405</Longitude>
+      <Name>信吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.045582</Latitude>
+      <Longitude>121.5689</Longitude>
+      <Name>革新門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04204</Latitude>
+      <Longitude>121.56861</Longitude>
+      <Name>敦厚門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.03656</Latitude>
+      <Longitude>121.558426</Longitude>
+      <Name>仁和門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.033678</Latitude>
+      <Longitude>121.55765</Longitude>
+      <Name>光復門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.029099</Latitude>
+      <Longitude>121.56139</Longitude>
+      <Name>三興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.02676</Latitude>
+      <Longitude>121.56343</Longitude>
+      <Name>北醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.025951</Latitude>
+      <Longitude>121.561264</Longitude>
+      <Name>北醫大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.024536</Latitude>
+      <Longitude>121.56344</Longitude>
+      <Name>吳興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.025814</Latitude>
+      <Longitude>121.566345</Longitude>
+      <Name>信醫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.02222</Latitude>
+      <Longitude>121.56894</Longitude>
+      <Name>惠安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.02351</Latitude>
+      <Longitude>121.5697</Longitude>
+      <Name>總站門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.027157</Latitude>
+      <Longitude>121.56381</Longitude>
+      <Name>醫學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.01864</Latitude>
+      <Longitude>121.55899</Longitude>
+      <Name>麟運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.040915</Latitude>
+      <Longitude>121.56513</Longitude>
+      <Name>市捷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.041151</Latitude>
+      <Longitude>121.579506</Longitude>
+      <Name>光東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04077</Latitude>
+      <Longitude>121.57411</Longitude>
+      <Name>松山門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04132</Latitude>
+      <Longitude>121.56513</Longitude>
+      <Name>松捷門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04161</Latitude>
+      <Longitude>121.5791</Longitude>
+      <Name>捷忠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.040157</Latitude>
+      <Longitude>121.57174</Longitude>
+      <Name>新工農門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04083</Latitude>
+      <Longitude>121.56259</Longitude>
+      <Name>東暉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.041891</Latitude>
+      <Longitude>121.563705</Longitude>
+      <Name>聯合門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.047321</Latitude>
+      <Longitude>121.56646</Longitude>
+      <Name>道生門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.046782</Latitude>
+      <Longitude>121.56669</Longitude>
+      <Name>總部門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.038254</Latitude>
+      <Longitude>121.579445</Longitude>
+      <Name>萊福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.035809</Latitude>
+      <Longitude>121.5785</Longitude>
+      <Name>松家門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.049192</Latitude>
+      <Longitude>121.57791</Longitude>
+      <Name>松泰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04727</Latitude>
+      <Longitude>121.577576</Longitude>
+      <Name>開源門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.040966</Latitude>
+      <Longitude>121.57682</Longitude>
+      <Name>新東宮門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.02838</Latitude>
+      <Longitude>121.56823</Longitude>
+      <Name>北府門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.036844</Latitude>
+      <Longitude>121.56866</Longitude>
+      <Name>宏泰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.02679</Latitude>
+      <Longitude>121.5685</Longitude>
+      <Name>松仁門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.039356</Latitude>
+      <Longitude>121.56586</Longitude>
+      <Name>統誠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.046757</Latitude>
+      <Longitude>121.57229</Longitude>
+      <Name>松錢門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.031868</Latitude>
+      <Longitude>121.56668</Longitude>
+      <Name>信運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.03605</Latitude>
+      <Longitude>121.56589</Longitude>
+      <Name>中信金門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.032888</Latitude>
+      <Longitude>121.574745</Longitude>
+      <Name>松義門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-110-684617</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.034798</Latitude>
+      <Longitude>121.57369</Longitude>
+      <Name>信德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.037355</Latitude>
+      <Longitude>121.57521</Longitude>
+      <Name>德鄰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.03723</Latitude>
+      <Longitude>121.57697</Longitude>
+      <Name>信林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.044706</Latitude>
+      <Longitude>121.57731</Longitude>
+      <Name>鑫吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.03416</Latitude>
+      <Longitude>121.5752</Longitude>
+      <Name>嘉馥門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.04248</Latitude>
+      <Longitude>121.56495</Longitude>
+      <Name>必成門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.042841</Latitude>
+      <Longitude>121.56595</Longitude>
+      <Name>松高門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.034418</Latitude>
+      <Longitude>121.560814</Longitude>
+      <Name>國貿門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.034285</Latitude>
+      <Longitude>121.56003</Longitude>
+      <Name>凱悅門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.032024</Latitude>
+      <Longitude>121.5588</Longitude>
+      <Name>中興門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.028011</Latitude>
+      <Longitude>121.55673</Longitude>
+      <Name>昌隆門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.025805</Latitude>
+      <Longitude>121.554405</Longitude>
+      <Name>喬治門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.023994</Latitude>
+      <Longitude>121.5556</Longitude>
+      <Name>崇德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.029133</Latitude>
+      <Longitude>121.56481</Longitude>
+      <Name>松智門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.026728</Latitude>
+      <Longitude>121.56796</Longitude>
+      <Name>敬仁門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.031145</Latitude>
+      <Longitude>121.561035</Longitude>
+      <Name>興貿門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.040468</Latitude>
+      <Longitude>121.56315</Longitude>
+      <Name>新三連門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.026175</Latitude>
+      <Longitude>121.55747</Longitude>
+      <Name>信嘉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.038778</Latitude>
+      <Longitude>121.585976</Longitude>
+      <Name>留公門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>信義區</District>
+      <Latitude>25.037659</Latitude>
+      <Longitude>121.58333</Longitude>
+      <Name>福中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.052853</Latitude>
+      <Longitude>121.531685</Longitude>
+      <Name>江陵門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.051165</Latitude>
+      <Longitude>121.53159</Longitude>
+      <Name>鑫東一門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.046915</Latitude>
+      <Longitude>121.54168</Longitude>
+      <Name>東崙門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.047182</Latitude>
+      <Longitude>121.54281</Longitude>
+      <Name>潤泰門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.08308</Latitude>
+      <Longitude>121.54531</Longitude>
+      <Name>實踐大學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05078</Latitude>
+      <Longitude>121.5233</Longitude>
+      <Name>崑崙門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05986</Latitude>
+      <Longitude>121.52276</Longitude>
+      <Name>中錦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.054554</Latitude>
+      <Longitude>121.52247</Longitude>
+      <Name>長中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.052824</Latitude>
+      <Longitude>121.52341</Longitude>
+      <Name>柯鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.057434</Latitude>
+      <Longitude>121.523056</Longitude>
+      <Name>國賓門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05489</Latitude>
+      <Longitude>121.52139</Longitude>
+      <Name>翔運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.068316</Latitude>
+      <Longitude>121.52308</Longitude>
+      <Name>民美門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.06668</Latitude>
+      <Longitude>121.52264</Longitude>
+      <Name>麥田門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.065054</Latitude>
+      <Longitude>121.52276</Longitude>
+      <Name>撫順門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.062412</Latitude>
+      <Longitude>121.52906</Longitude>
+      <Name>原中門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.051786</Latitude>
+      <Longitude>121.52359</Longitude>
+      <Name>天津門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.081951</Latitude>
+      <Longitude>121.548996</Longitude>
+      <Name>欣旺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.084047</Latitude>
+      <Longitude>121.54919</Longitude>
+      <Name>直安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.084665</Latitude>
+      <Longitude>121.557304</Longitude>
+      <Name>美麗華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.082836</Latitude>
+      <Longitude>121.54643</Longitude>
+      <Name>新大直門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.057905</Latitude>
+      <Longitude>121.52448</Longitude>
+      <Name>林北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.058058</Latitude>
+      <Longitude>121.53161</Longitude>
+      <Name>中福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.058119</Latitude>
+      <Longitude>121.53593</Longitude>
+      <Name>佳佳門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.058018</Latitude>
+      <Longitude>121.5391</Longitude>
+      <Name>新西華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.062647</Latitude>
+      <Longitude>121.52003</Longitude>
+      <Name>金鑽門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.062475</Latitude>
+      <Longitude>121.52886</Longitude>
+      <Name>勝權門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.062334</Latitude>
+      <Longitude>121.53188</Longitude>
+      <Name>福權門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.062525</Latitude>
+      <Longitude>121.54358</Longitude>
+      <Name>權東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.050915</Latitude>
+      <Longitude>121.53468</Longitude>
+      <Name>伊東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05611</Latitude>
+      <Longitude>121.53029</Longitude>
+      <Name>大吉門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-104-815173</ID>
+     
+      <District>中山區</District>
+      <Latitude>25.064896</Latitude>
+      <Longitude>121.53048</Longitude>
+      <Name>吉安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.04854</Latitude>
+      <Longitude>121.53</Longitude>
+      <Name>吉林門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05148</Latitude>
+      <Longitude>121.529976</Longitude>
+      <Name>圓武門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.055826</Latitude>
+      <Longitude>121.539055</Longitude>
+      <Name>合江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.06033</Latitude>
+      <Longitude>121.53928</Longitude>
+      <Name>錦合門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.082737</Latitude>
+      <Longitude>121.5512</Longitude>
+      <Name>明水門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.050245</Latitude>
+      <Longitude>121.52563</Longitude>
+      <Name>六條通門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.059677</Latitude>
+      <Longitude>121.52564</Longitude>
+      <Name>京都門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.065</Latitude>
+      <Longitude>121.5256</Longitude>
+      <Name>林安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.061745</Latitude>
+      <Longitude>121.52552</Longitude>
+      <Name>林森門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.058498</Latitude>
+      <Longitude>121.5254</Longitude>
+      <Name>林森北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.054598</Latitude>
+      <Longitude>121.525345</Longitude>
+      <Name>晶華門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.047874</Latitude>
+      <Longitude>121.5277</Longitude>
+      <Name>森北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.056124</Latitude>
+      <Longitude>121.52479</Longitude>
+      <Name>歡唱門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05115</Latitude>
+      <Longitude>121.533226</Longitude>
+      <Name>松運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.061016</Latitude>
+      <Longitude>121.53338</Longitude>
+      <Name>松錦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.057829</Latitude>
+      <Longitude>121.53297</Longitude>
+      <Name>松鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.049068</Latitude>
+      <Longitude>121.533165</Longitude>
+      <Name>長松門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.063791</Latitude>
+      <Longitude>121.5334</Longitude>
+      <Name>權松門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05645</Latitude>
+      <Longitude>121.53329</Longitude>
+      <Name>鑫櫃門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.04943</Latitude>
+      <Longitude>121.52292</Longitude>
+      <Name>長津門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.048435</Latitude>
+      <Longitude>121.527855</Longitude>
+      <Name>長新門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.049147</Latitude>
+      <Longitude>121.52653</Longitude>
+      <Name>鑫長安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.045277</Latitude>
+      <Longitude>121.53647</Longitude>
+      <Name>江東門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.048532</Latitude>
+      <Longitude>121.53511</Longitude>
+      <Name>長通門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.048233</Latitude>
+      <Longitude>121.540665</Longitude>
+      <Name>鑫安江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.055063</Latitude>
+      <Longitude>121.523674</Longitude>
+      <Name>長北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.054905</Latitude>
+      <Longitude>121.53147</Longitude>
+      <Name>春城門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.055046</Latitude>
+      <Longitude>121.52648</Longitude>
+      <Name>春森門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.054752</Latitude>
+      <Longitude>121.54061</Longitude>
+      <Name>春龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.0547</Latitude>
+      <Longitude>121.53419</Longitude>
+      <Name>國學門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.054733</Latitude>
+      <Longitude>121.53353</Longitude>
+      <Name>莊福門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.06889</Latitude>
+      <Longitude>121.53306</Longitude>
+      <Name>承運門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.05182</Latitude>
+      <Longitude>121.52151</Longitude>
+      <Name>鑫越門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.051315</Latitude>
+      <Longitude>121.52708</Longitude>
+      <Name>國旺門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.052614</Latitude>
+      <Longitude>121.53364</Longitude>
+      <Name>松盛門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.051722</Latitude>
+      <Longitude>121.543205</Longitude>
+      <Name>威克門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.050951</Latitude>
+      <Longitude>121.53643</Longitude>
+      <Name>新寶門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.061724</Latitude>
+      <Longitude>121.53809</Longitude>
+      <Name>金宴門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.053741</Latitude>
+      <Longitude>121.53731</Longitude>
+      <Name>建欣門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.059984</Latitude>
+      <Longitude>121.528145</Longitude>
+      <Name>建錦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.065697</Latitude>
+      <Longitude>121.536766</Longitude>
+      <Name>榮鑫門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.053476</Latitude>
+      <Longitude>121.543846</Longitude>
+      <Name>復北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.060135</Latitude>
+      <Longitude>121.54398</Longitude>
+      <Name>復錦門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.06497</Latitude>
+      <Longitude>121.52805</Longitude>
+      <Name>稻江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.064642</Latitude>
+      <Longitude>121.534836</Longitude>
+      <Name>行天門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.065174</Latitude>
+      <Longitude>121.52907</Longitude>
+      <Name>農安門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.066774</Latitude>
+      <Longitude>121.52599</Longitude>
+      <Name>鑫德惠門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.079754</Latitude>
+      <Longitude>121.559235</Longitude>
+      <Name>基河門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.079592</Latitude>
+      <Longitude>121.55763</Longitude>
+      <Name>敬群門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-104-380138</ID>
+      <District>中山區</District>
+      <Latitude>25.056145</Latitude>
+      <Longitude>121.54359</Longitude>
+      <Name>興復門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.052551</Latitude>
+      <Longitude>121.54192</Longitude>
+      <Name>元大門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.060394</Latitude>
+      <Longitude>121.52508</Longitude>
+      <Name>曾德門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.060247</Latitude>
+      <Longitude>121.52357</Longitude>
+      <Name>錦北門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.060377</Latitude>
+      <Longitude>121.53491</Longitude>
+      <Name>鑫錦州門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.060299</Latitude>
+      <Longitude>121.521385</Longitude>
+      <Name>新錦祥門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.058388</Latitude>
+      <Longitude>121.54081</Longitude>
+      <Name>建龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.066902</Latitude>
+      <Longitude>121.54088</Longitude>
+      <Name>榮金門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.064825</Latitude>
+      <Longitude>121.54085</Longitude>
+      <Name>榮星門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.06016</Latitude>
+      <Longitude>121.54083</Longitude>
+      <Name>錦龍門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.066154</Latitude>
+      <Longitude>121.539345</Longitude>
+      <Name>濱江門市</Name>
+   </POSSite>
+   <POSSite>
+	  <ID>TWN-112-875547</ID>
+	  
+      <District>中山區</District>
+      <Latitude>25.065895</Latitude>
+      <Longitude>121.5242</Longitude>
+      <Name>新晴光門市</Name>
+   </POSSite>
+</POSSiteList>

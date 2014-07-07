@@ -1,0 +1,298 @@
+{% extends 'admin/master.html' %}
+
+{% block head_tail %}
+  {{ super() }}
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style type="text/css">
+
+
+</style>
+{% endblock %}
+
+
+{% block body %}
+
+  <script
+  	src="http://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC0MXBPQYPcc3IAhEJJdCDE6bGPhFobPHo&sensor=false">
+  </script>
+
+  <script type='text/javascript'>
+  	  var map;
+  	  var side_bar_html='';
+	  var gmarkers=[];
+	  var infowindow = new google.maps.InfoWindow();
+	  var gicons=[];
+	  var markers=[];
+  	  google.maps.visualRefresh=true;
+
+	  var jsonData = "";
+	  var httpRequest = new XMLHttpRequest();
+	  var frontera = '1LGdn0E6R4_OukKoV05TYtQVAt_K4DoMaeJnl4sw';
+
+      function initialize() {
+
+         loadmap();
+
+
+         borderlayer = new google.maps.FusionTablesLayer({query:{select:'geometry',from:frontera,where:'description=15'},map:map,suppressInfoWindows:true});
+      	 google.maps.event.addListener(borderlayer, 'click', function(e) {
+             windowControl(e, infoWindow, map);
+         });
+
+		 loadShelterData();
+		 loadPOSData();
+		 show('西');
+
+
+  	  }
+
+
+  	  function loadmap()
+  	  {
+  	  	  map = new google.maps.Map(document.getElementById('map_canvas'), {
+          		center: new google.maps.LatLng(35.457, 139.621),
+          		zoom: 12,
+          		mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
+      }
+
+
+
+      function loadShelterData()
+      {
+	      fetchShelter();
+      }
+
+      function loadPOSData()
+      {
+	      fetchPOS();
+      }
+
+      function myclick(i){
+  		  google.maps.event.trigger(gmarkers[i],'click');
+	  }
+
+
+      function makeSidebar(){
+  		  var html='';
+
+  		  for(var i=0; i<gmarkers.length; i++){
+
+      	      html += '<a class="item" href="javascript:myclick('+i+')">'+gmarkers[i].myname+'<\/a><br>';
+
+  		  }
+  		  document.getElementById('side_bar').innerHTML=html;
+	  }
+
+      function fetchShelter()
+	  {
+
+	      var xmlhttp;
+		  if (window.XMLHttpRequest)
+  		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  			  xmlhttp=new XMLHttpRequest();
+  		  }
+		  else
+ 	 	  {// code for IE6, IE5
+  			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  		  }
+		  xmlhttp.onreadystatechange=function()
+  		  {
+  			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    		  {
+
+    			  jsonData = xmlhttp.responseText;
+    			  var obj = eval ("(" + jsonData + ")");
+				  for(var i = 0; i < obj.data.length; i++)
+				  {
+
+				      createSheltermarker(obj.data[i].Shelter_Latitude,obj.data[i].Shelter_Longitude,obj.data[i].Shelter_Name);
+
+
+				  }
+
+				  makeSidebar();
+    		  }
+  		  }
+		  xmlhttp.open("POST","http://140.109.22.197/getShelter/",true);
+		  xmlhttp.send();
+	  }
+
+	  function fetchPOS()
+	  {
+	      var xmlhttp;
+		  if (window.XMLHttpRequest)
+  		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  			  xmlhttp=new XMLHttpRequest();
+  		  }
+		  else
+ 	 	  {// code for IE6, IE5
+  			  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  		  }
+		  xmlhttp.onreadystatechange=function()
+  		  {
+  			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    		  {
+
+    			  var POSData = xmlhttp.responseText;
+				  var rowCounts = 0;
+    			  var obj = eval ("(" + POSData + ")");
+				  for(var i = 0; i < obj.data.length; i++)
+				  {
+				      createPOSmarker(obj.data[i].POS_latitude,obj.data[i].POS_longitude,obj.data[i].POS_id);
+					  rowCounts++;
+				      var tr = $("<tr></tr>").addClass("dynamic_tr").attr("id", "trNo" + rowCounts);
+
+					  var td_name = $("<td></td>").text(obj.data[i].POS_id).attr("id", "tdName" + rowCounts);
+					  tr.append(td_name);
+
+					  var td_area = $("<td></td>").text(obj.data[i].POS_district).attr("id", "tdArea" + rowCounts);
+					  tr.append(td_area);
+
+					  var td_number = $("<td></td>").text("Null").attr("id", "tdNum" + rowCounts);
+					  tr.append(td_number);
+
+					  var td_distance = $("<td></td>").text("Null").attr("id", "tdNum" + rowCounts);
+					  tr.append(td_distance);
+
+					  var td_method = $("<select><option>District</option><option>Rectangle</option></select>").attr("id", "tdNum" + rowCounts);
+					  tr.append(td_method);
+
+					  $("#myTable").append(tr);
+
+				  }
+
+    		  }
+  		  }
+		  xmlhttp.open("POST","http://140.109.22.197/getPOS/",true);
+		  xmlhttp.send();
+	  }
+
+	  function createSheltermarker(x,y,name) {
+			var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(x,y),
+                    icon:'/static/img/shelter.png',
+                    map: map,
+                    title: name
+            });
+            marker.myname=name;
+            gmarkers.push(marker);
+
+            var html='<div style="width: 240px;"><b>'+name+'<\/b>'+'<\/div>';
+            google.maps.event.addListener(marker,'click',function(){
+    			if(infowindow){
+    				infowindow.close();
+    			}
+    			infowindow=new google.maps.InfoWindow({content:html});
+    			infowindow.open(map,marker);
+  			});
+
+	  }
+
+	  function createPOSmarker(x,y,name) {
+			var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(x,y),
+                    map: map,
+                    title: name
+            });
+
+            var html='<div style="width: 240px;"><b>'+name+'<\/b>'+'<\/div>';
+            google.maps.event.addListener(marker,'click',function(){
+    			if(infowindow){
+    				infowindow.close();
+    			}
+    			infowindow=new google.maps.InfoWindow({content:html});
+    			infowindow.open(map,marker);
+  			});
+
+	  }
+
+	  function boxclick(box,ward){
+  		  if(box.checked){
+    		  show(ward);
+  		  }
+  	  }
+
+	  function show(ward){
+  		  if (ward=='西'){map.setZoom(14);map.setCenter(new google.maps.LatLng(35.457, 139.621));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=15'}});}
+  		  if (ward=='青葉'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.56, 139.5242));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=1'}});}
+  		  if (ward=='旭'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.478, 139.5232));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=2'}});}
+  		  if (ward=='泉'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.42, 139.499));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=3'}});}
+  		  if (ward=='磯子'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.398, 139.614));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=4'}});}
+  		  if (ward=='神奈川'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.485, 139.619));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=5'}});}
+  		  if (ward=='金沢'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.3486, 139.6234));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=6'}});}
+  		  if (ward=='港南'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.395, 139.575));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=7'}});}
+  		  if (ward=='港北'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.527, 139.623));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=8'}});}
+  		  if (ward=='栄'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.363, 139.5567));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=9'}});}
+  		  if (ward=='瀬谷'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.4688, 139.488));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=10'}});}
+  		  if (ward=='都筑'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.54, 139.5776));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=11'}});}
+  		  if (ward=='鶴見'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.5177, 139.668));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=12'}});}
+  		  if (ward=='戸塚'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.403, 139.5313));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=13'}});}
+  		  if (ward=='中'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.436, 139.657));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=14'}});}
+  		  if (ward=='保土ケ谷'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.465, 139.578));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=16'}});}
+  		  if (ward=='緑'){map.setZoom(13);map.setCenter(new google.maps.LatLng(35.5153, 139.5263));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=17'}});}
+  		  if (ward=='南'){map.setZoom(14);map.setCenter(new google.maps.LatLng(35.426, 139.6019));borderlayer.setOptions({query:{select:'geometry',from:frontera,where:'description=18'}});}
+	  }
+
+	  google.maps.event.addDomListener(window, 'load', initialize);
+
+
+  </script>
+  	<div class="ui large inverted vertical sidebar menu">
+    	<div id="side_bar"></div>
+  	</div>
+
+	<div class="ui celled grid" style="width:120%;height:100%">
+
+
+    	<div class="seven wide middle column" style="width:60%">
+    		<div class="ui right floated black launch button">
+        		<i class="list layout icon"></i> Shelter List
+      		</div>
+      		<div class="ui tabular filter menu">
+        		<a class="active item" data-tab="map">MapView</a>
+        		<a class="item" data-tab="status">Published Data</a>
+        		<a class="item" data-tab="log">Log</a>
+        	</div>
+
+
+			<div id="map_canvas" style="height:500px;"></div>
+
+			<div id="ku">
+			<form action="#">
+			青葉区<input type="checkbox" id="青葉box" name="青葉box" onclick="boxclick(this,'青葉');" />　
+			旭区<input type="checkbox" id="旭box" name="旭box" onclick="boxclick(this,'旭');" />　
+			泉区<input type="checkbox" id="泉box" name="泉box" onclick="boxclick(this,'泉');" />　
+			磯子区<input type="checkbox" id="磯子box" name="磯子box" onclick="boxclick(this,'磯子');" />　
+			神奈川区<input type="checkbox" id="神奈川box" name="神奈川box" onclick="boxclick(this,'神奈川');" />　
+			金沢区<input type="checkbox" id="金沢box" name="金沢box" onclick="boxclick(this,'金沢');" />　
+			港南区<input type="checkbox" id="港南box" name="港南box" onclick="boxclick(this,'港南');" />　
+			港北区<input type="checkbox" id="港北box" name="港北box" onclick="boxclick(this,'港北');" />　
+			栄区<input type="checkbox" id="栄box" name="栄box" onclick="boxclick(this,'栄');" /><br>
+			瀬谷区<input type="checkbox" id="瀬谷box" name="瀬谷box" onclick="boxclick(this,'瀬谷');" />　
+			都筑区<input type="checkbox" id="都筑box" name="都筑box" onclick="boxclick(this,'都筑');" />　
+			鶴見区<input type="checkbox" id="鶴見box" name="鶴見box" onclick="boxclick(this,'鶴見');" />　
+			戸塚区<input type="checkbox" id="戸塚box" name="戸塚box" onclick="boxclick(this,'戸塚');" />　
+			中区<input type="checkbox" id="中box" name="中box" onclick="boxclick(this,'中');" />　
+			西区<input type="checkbox" id="西box" name="西box" onclick="boxclick(this,'西');" />　
+			保土ケ谷区<input type="checkbox" id="保土ケ谷box" name="保土ケ谷box" onclick="boxclick(this,'保土ケ谷');" />　
+			緑区<input type="checkbox" id="緑box" name="緑box" onclick="boxclick(this,'緑');" />　
+			南区<input type="checkbox" id="南box" name="南box" onclick="boxclick(this,'南');" />
+			</form>
+			</div>
+
+    	</div>
+    	<div class="nine wide right column">
+    		<table border="1" id="myTable" class="ui compact table segment">
+				<tr>
+      				<th>POS ID</th><th>POS District</th><th>Shelter Number</th><th>Nearest Shelter</th><th>Partitiond Method</th>
+      			</tr>
+			</table>
+    	</div>
+	</div>
+
+{% endblock %}

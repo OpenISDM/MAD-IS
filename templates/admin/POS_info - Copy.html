@@ -1,0 +1,151 @@
+{% extends 'admin/master.html' %} {% block head_tail %} {{ super() }}
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style type="text/css">
+</style>
+{% endblock %} {% block body %}
+
+<script type='text/javascript'>
+$(document).ready(function() {
+  var xmlhttp;
+  if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      var configInfo = xmlhttp.responseText;
+      if (configInfo != "") {
+        document.getElementById("header").innerHTML = "Check config file !";
+        var obj = eval("(" + configInfo + ")");
+
+        document.getElementById("latLng").value = obj.configInfo.coordinates;
+        document.getElementById("wardPath").value = obj.configInfo.wardpath;
+        document.getElementById("postalCodePath").value = obj.configInfo.postalcodePath;
+        var Format = obj.configInfo.format.split(",");
+        var checkboxes = document.getElementsByName('format');
+
+        for (i = 0; i < Format.length; i++) {
+          for (var checkNum = 0; checkNum < checkboxes.length; checkNum++) {
+            if (Format[i].toUpperCase() == checkboxes[checkNum].value) {
+              checkboxes[checkNum].checked = true;
+            }
+          }
+        }
+        document.getElementById("key").value = obj.configInfo.key;
+        document.getElementById("posDataPath").value = obj.configInfo.posDataPath;
+        document.getElementById("posCode").value = obj.configInfo.posCountryCode;
+      }
+
+    }
+  }
+  xmlhttp.open("POST", "http://140.109.22.197/readConfig/", true);
+  xmlhttp.send();
+});
+
+function NextStep() {
+  userInfoText = Get_allElement_Val();
+
+  var hr = new XMLHttpRequest();
+  var serverUrl = "http://140.109.22.197/admin/postConfigInfo/";
+  hr.open("POST", serverUrl, true);
+  hr.send(userInfoText);
+
+  setTimeout(
+    'window.location.replace("http://140.109.22.197/admin/")',
+    2000);
+}
+
+function Get_allElement_Val() {
+  var formatVal = "";
+  coordinatesText = document.getElementById('latLng').value;
+  wardPathText = document.getElementById('wardPath').value;
+  postalcodePathText = document.getElementById('postalCodePath').value;
+  var checkboxes = document.getElementsByName('format');
+  for (var checkNum = 0; checkNum < checkboxes.length; checkNum++) {
+    if (checkboxes[checkNum].checked) {
+      formatVal += "," + checkboxes[checkNum].value;
+    }
+  }
+  formatVal = formatVal.substring(1);
+  keyText = document.getElementById('key').value;
+  posPathText = document.getElementById('posDataPath').value;
+  posCodeText = document.getElementById('posCode').value;
+
+  allText = coordinatesText + '$' + wardPathText + '$' + postalcodePathText +
+    '$' + formatVal + '$' + keyText + '$' + posPathText + '$' + posCodeText;
+
+  return allText;
+}
+</script>
+<h2 class="ui header" id="header">Create your configuration</h2>
+
+<div id="setup">
+  <table border="1" id="myTable" class="ui compact table segment">
+    <tr>
+      <th colspan="2">Country Infotmation</th>
+    </tr>
+    <tr>
+      <td>Origin Of Coordinates</td>
+      <td>
+        <input type="text" name="coordinates" id="latLng">
+      </td>
+    </tr>
+    <tr>
+      <td>District</td>
+      <td>
+        <input type="text" name="districtPath" id="wardPath">
+      </td>
+    </tr>
+    <tr>
+      <td>Postal Code</td>
+      <td>
+        <input type="text" name="postalcodePath" id="postalCodePath">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">Facility Data</th>
+    </tr>
+    <tr>
+      <td>Format</td>
+      <td>
+        <input type="checkbox" name="format" value="JSON">JSON
+        <input type="checkbox" name="format" value="CSV">CSV
+        <input type="checkbox" name="format" value="XML">XML
+        <input type="checkbox" name="format" value="RDF">RDF
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">Boundary</th>
+    </tr>
+    <tr>
+      <td>Api Key</td>
+      <td>
+        <input type="text" name="apikey" id="key">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">POS Information</th>
+    </tr>
+    <tr>
+      <td>POS data source</td>
+      <td>
+        <input type="text" name="posdata" id="posDataPath">
+      </td>
+    </tr>
+    <tr>
+      <td>POS country code</td>
+      <td>
+        <input type="text" name="poscode" id="posCode">
+      </td>
+    </tr>
+  </table>
+  <div class="ui divider"></div>
+  <div id="setupnext" class="ui blue button" style="float: right" onclick="NextStep()">Next</div>
+</div>
+
+{% endblock %}

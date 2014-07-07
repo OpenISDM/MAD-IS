@@ -1,0 +1,255 @@
+<!--
+  Copyright (c) 2012-2015  Sinica IIS Openisdm MAD
+
+  Project Name:
+
+    MAD-IS
+
+  File Name:
+
+    setup1.html
+
+  Abstract:
+
+    This page allow user to setup the city that he/she want to serve or 
+    create new one if there have none to choose.
+
+  Authors:
+
+    Bai Shan-Wei
+-->
+
+
+<!--HTML Header-->
+{% extends 'admin/master.html' %} {% block head_tail %} {{ super() }}
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+
+{% endblock %}
+<!--END-->
+
+<!--HTML Body-->
+{% block body %}
+<script type='text/javascript'>
+/**
+ * @param {Object} [obj]  Json obj
+ * @param {String} [countryName] Record country name
+ * @param {String} [cityName] Record city name
+ * @param {String} [setupText] Record text that will be sent to server for storing in the database
+ * @param {Boolean} [findCountry] Check if user fine country that need to serve.
+ */
+
+/*
+  Description : 
+    This function initialize Ui elements property and requst the Server for information.
+---------------------------------------------------------------------------------------------------------------*/
+$(document).ready(function() {
+  $("#setNew").hide();
+  $("#selectCity").hide();
+  ReqServer();
+});
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that it request server for country information, and Server will
+    response it, then list all countries that is currently available by button.
+---------------------------------------------------------------------------------------------------------------*/
+
+function ReqServer() {
+  var xmlhttp;
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      //Count how many buttons 
+      var btnNum = 0;
+
+      //Receive Country Information Server responses
+      var countryInfo = xmlhttp.responseText;
+
+      //Add "()" and become json string for parsing
+      obj = eval("(" + countryInfo + ")");
+
+      for (var i = 0; i < obj.data.length; i++) {
+        //Declare a New button
+        var countryBtn = $("<button></button>").text(obj.data[i].Nation).attr(
+          "rowCount", btnNum).attr("id", obj.data[i].Nation);
+
+        //Event occurs when click the button.
+        countryBtn.click(function() {
+          findCountry = true;
+          $("#selectCity").show();
+          $("#setNew").hide();
+
+          //Store button name and button index 
+          countryName = $(this).attr("id");;
+          var index = $(this).attr("rowCount");
+
+          ListCities(index);
+        });
+
+        //Put the button into container.
+        $("#countryList").append(countryBtn);
+        btnNum++;
+      }
+    }
+  }
+  xmlhttp.open("POST", "http://140.109.22.197/fetch/", true);
+  xmlhttp.send('exist_Country&City');
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that show all cities on selector when click the button.
+  Arguments : 
+    index - An integer pointer that identifies the button.
+---------------------------------------------------------------------------------------------------------------*/
+
+function ListCities(index) {
+  var selection = document.getElementById("selectCity");
+  selection.innerHTML = "<option>----------</option>";
+
+  for (var cityNum = 0; cityNum < obj.data[index]["City"].length; cityNum++) {
+    var cityText = obj.data[index]["City"][cityNum].Name; //Record the city name
+
+    /*Set city as option and put it into selector*/
+    var option = document.createElement("option");
+    option.text = cityText;
+    selection.add(option);
+  }
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that show the form that user can create new country and 
+    city that want to serve.
+---------------------------------------------------------------------------------------------------------------*/
+
+function ExpandForm() {
+  findCountry = false;
+
+  $("#selectCity").hide();
+  $("#setNew").show();
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that post text to sever after finishing settting, 
+    and jump to next page.
+---------------------------------------------------------------------------------------------------------------*/
+
+function NextStep() {
+
+  var isVaidate = ValidateForm();
+  if (isVaidate == true) {
+    setupText = 'location$' + GetAllElementVal();
+    var hr = new XMLHttpRequest();
+    var serverUrl = "http://140.109.22.197/send/";
+    hr.open("POST", serverUrl, true);
+    hr.send(setupText);
+
+    setTimeout('window.location.replace("http://140.109.22.197/admin/setup/step2")', 2000);
+  } else {
+    alert('Forms must be filled out');
+  }
+
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+function ValidateForm() {
+
+  if (findCountry) {
+    cityText = selectCity.options[selectCity.selectedIndex].text;
+    if (cityText == "----------") {
+      return false;
+    } else {
+      return true;
+    }
+  } else {
+    countryText = document.getElementById('couName').value;
+    cityText = document.getElementById('cityName').value;
+    if (countryText == null || countryText == "" || cityText == null || cityText == "") {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+/*
+  Description : 
+    This function describe that combine all input text after user have chosen option or 
+    have inputed the form.
+  Return Value : 
+    allVal - The text including country and city name will be sent to server.
+---------------------------------------------------------------------------------------------------------------*/
+
+function GetAllElementVal() {
+  if (findCountry) {
+    //Record country and city after choosing the menu.
+    couNameText = countryName;
+    citynameText = selectCity.options[selectCity.selectedIndex].text;
+  } else {
+    //Record new country and city text user input.
+    couNameText = document.getElementById('couName').value;
+    citynameText = document.getElementById('cityName').value;
+  }
+
+  //Combine these texts and use '$' character to separate
+  allVal = couNameText + '$' + citynameText;
+  return allVal;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+</script>
+
+<!--Header-->
+<h2 class="ui header">Choose your country</h2>
+<!--Container thar list all country Interface Server include -->
+<div id="countryList"></div>
+</br>
+<!--Select city-->
+<select id='selectCity' onchange=""></select>
+<!--Divider-->
+<div class="ui divider"></div>
+<!--Button that user can create new country-->
+<div id="newCountry" class="ui blue button" onclick="ExpandForm()">New</div>
+<!--Divider-->
+<div class="ui divider"></div>
+
+<!--Container include two text input form-->
+<div id="setNew">
+  <table border="1" id="myTable" class="ui compact table segment">
+    <tr>
+      <th colspan="2">Country</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" name="countryname" id="couName">
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">City</th>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>
+        <input type="text" name="cityname" id="cityName">
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!--Button that user can process next step-->
+<div id="next" class="ui orange button" style="float: right" onclick="NextStep()">Next</div>
+
+{% endblock %}
+<!--END-->

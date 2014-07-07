@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://openisdm.com/MAD/property/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC217671">
+    <ns1:hasName>忠孝國中</ns1:hasName>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasAddress>大同區西寧北路32號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>131</ns1:hasTelephone>
+    <ns1:latitude>25.0512359</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:longitude>121.508221</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC257600">
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:longitude>121.520012</ns1:longitude>
+    <ns1:latitude>25.0586159</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>雙連區民活動中心　</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasTelephone>20</ns1:hasTelephone>
+    <ns1:hasAddress>萬全街42號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC672930">
+    <ns1:hasName>保生區民活動中心</ns1:hasName>
+    <ns1:hasTelephone>26</ns1:hasTelephone>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:latitude>25.0741229</ns1:latitude>
+    <ns1:longitude>121.514877</ns1:longitude>
+    <ns1:hasAddress>重慶北路三段313巷25號</ns1:hasAddress>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC941249">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>30</ns1:hasTelephone>
+    <ns1:longitude>121.5195399</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasName>明倫國小</ns1:hasName>
+    <ns1:hasAddress>大同區承德路3段285號</ns1:hasAddress>
+    <ns1:latitude>25.0732086</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC950870">
+    <ns1:hasTelephone>1000</ns1:hasTelephone>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasType>運動場館</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>臺北市大同運動中心</ns1:hasName>
+    <ns1:hasAddress>臺北市大同區大龍51號</ns1:hasAddress>
+    <ns1:longitude>121.5161459</ns1:longitude>
+    <ns1:latitude>25.0647693</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC337511">
+    <ns1:hasTelephone>23</ns1:hasTelephone>
+    <ns1:hasName>老師區民活動中心</ns1:hasName>
+    <ns1:hasAddress>敦煌路160之2號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:longitude>121.513676</ns1:longitude>
+    <ns1:latitude>25.0763299</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC470396">
+    <ns1:hasTelephone>183</ns1:hasTelephone>
+    <ns1:hasName>大同國小</ns1:hasName>
+    <ns1:longitude>121.5161459</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>大同區大龍街51號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:latitude>25.0647693</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC900850">
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>大同區重慶北路3段2號</ns1:hasAddress>
+    <ns1:hasName>大橋國小</ns1:hasName>
+    <ns1:latitude>25.0642905</ns1:latitude>
+    <ns1:hasTelephone>86</ns1:hasTelephone>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:longitude>121.5133346</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC937875">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5186207</ns1:longitude>
+    <ns1:hasAddress>臺北市大同區長安西路37之1號</ns1:hasAddress>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasName>建成國中</ns1:hasName>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasTelephone>55</ns1:hasTelephone>
+    <ns1:latitude>25.0516477</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC030814">
+    <ns1:hasName>臺北橋區民活動中心</ns1:hasName>
+    <ns1:longitude>121.5092905</ns1:longitude>
+    <ns1:hasTelephone>27</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasAddress>迪化街一段374號2樓</ns1:hasAddress>
+    <ns1:latitude>25.0631041</ns1:latitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC235913">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>70</ns1:hasTelephone>
+    <ns1:hasName>明倫高中</ns1:hasName>
+    <ns1:latitude>25.0754481</ns1:latitude>
+    <ns1:longitude>121.5199048</ns1:longitude>
+    <ns1:hasAddress>臺北市大同區承德路3段336號</ns1:hasAddress>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC504022">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>30</ns1:hasTelephone>
+    <ns1:hasName>大龍國小</ns1:hasName>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:latitude>25.0734012</ns1:latitude>
+    <ns1:longitude>121.5167088</ns1:longitude>
+    <ns1:hasAddress>大同區哈密街47號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC203031">
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:latitude>25.069322</ns1:latitude>
+    <ns1:hasTelephone>30</ns1:hasTelephone>
+    <ns1:hasName>蘭州國中</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>大同區大龍街187巷1號</ns1:hasAddress>
+    <ns1:longitude>121.5167356</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC453519">
+    <ns1:longitude>121.5179258</ns1:longitude>
+    <ns1:hasAddress>大同區敦煌路19號</ns1:hasAddress>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasTelephone>60</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>重慶國中</ns1:hasName>
+    <ns1:latitude>25.0759489</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC433162">
+    <ns1:hasName>雙蓮國小</ns1:hasName>
+    <ns1:latitude>25.060161</ns1:latitude>
+    <ns1:hasTelephone>300</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>大同區錦西街51號</ns1:hasAddress>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:longitude>121.5166898</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC438275">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasAddress>重慶北路三段76號4樓</ns1:hasAddress>
+    <ns1:latitude>25.066126</ns1:latitude>
+    <ns1:hasName>國慶區民活動中心　</ns1:hasName>
+    <ns1:longitude>121.51346</ns1:longitude>
+    <ns1:hasTelephone>50</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC669432">
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>200</ns1:hasTelephone>
+    <ns1:longitude>121.5120999</ns1:longitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:latitude>25.0538121</ns1:latitude>
+    <ns1:hasName>法主公廟</ns1:hasName>
+    <ns1:hasAddress>大同區南京西路344巷2號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC069978">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.512054</ns1:longitude>
+    <ns1:hasName>延平區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.0592239</ns1:latitude>
+    <ns1:hasTelephone>33</ns1:hasTelephone>
+    <ns1:hasAddress>保安街47之1號3樓</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC805164">
+    <ns1:latitude>25.061301</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:longitude>121.5111152</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>臺北市大同區延平北路2段266號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>永樂國小</ns1:hasName>
+    <ns1:hasTelephone>50</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC149594">
+    <ns1:hasType>防災公園</ns1:hasType>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市大同區西寧北路28號</ns1:hasAddress>
+    <ns1:longitude>121.507347</ns1:longitude>
+    <ns1:latitude>25.0497229</ns1:latitude>
+    <ns1:hasTelephone>2183</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Outdoor)</ns1:hasCategory>
+    <ns1:hasName>玉泉公園</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC894309">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:longitude>121.5184618</ns1:longitude>
+    <ns1:hasName>成淵高中</ns1:hasName>
+    <ns1:latitude>25.0611818</ns1:latitude>
+    <ns1:hasAddress>大同區承德路2段235號</ns1:hasAddress>
+    <ns1:hasTelephone>75</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC638591">
+    <ns1:latitude>25.0731504</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasTelephone>100</ns1:hasTelephone>
+    <ns1:hasAddress>大同區哈密街61號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5154297</ns1:longitude>
+    <ns1:hasName>財團法人台北保安宮</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC717221">
+    <ns1:hasAddress>大同區太原路151號</ns1:hasAddress>
+    <ns1:longitude>121.5164822</ns1:longitude>
+    <ns1:hasName>日新國小</ns1:hasName>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasTelephone>137</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0544042</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC175905">
+    <ns1:hasAddress>環河北路一段96號(300338,2772012)</ns1:hasAddress>
+    <ns1:longitude>121.5078245</ns1:longitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasTelephone>16</ns1:hasTelephone>
+    <ns1:hasName>玉泉區民活動中心　</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.0550506</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC234029">
+    <ns1:hasAddress>大同區重慶北路3段340號</ns1:hasAddress>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:latitude>25.0762909</ns1:latitude>
+    <ns1:longitude>121.513543</ns1:longitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>財團法人覺修宮</ns1:hasName>
+    <ns1:hasTelephone>200</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC807305">
+    <ns1:hasTelephone>100</ns1:hasTelephone>
+    <ns1:longitude>121.514106</ns1:longitude>
+    <ns1:latitude>25.050495</ns1:latitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasAddress>大同區華陰街100號(301042,2771674)</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasName>財團法人台北普濟寺</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC285118">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasName>民權國中</ns1:hasName>
+    <ns1:hasTelephone>30</ns1:hasTelephone>
+    <ns1:latitude>25.063737</ns1:latitude>
+    <ns1:hasAddress>大同區重慶北路3段1號</ns1:hasAddress>
+    <ns1:longitude>121.5138782</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC461842">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>大同區寧夏路35號</ns1:hasAddress>
+    <ns1:latitude>25.05642</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasTelephone>104</ns1:hasTelephone>
+    <ns1:hasName>蓬萊國小</ns1:hasName>
+    <ns1:longitude>121.5155556</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC936420">
+    <ns1:hasAddress>大同區昌吉街97號</ns1:hasAddress>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:longitude>121.5125023</ns1:longitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:hasName>延平國小</ns1:hasName>
+    <ns1:hasTelephone>88</ns1:hasTelephone>
+    <ns1:latitude>25.0660079</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC678325">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:latitude>25.0613828</ns1:latitude>
+    <ns1:hasDistrict>大同區</ns1:hasDistrict>
+    <ns1:longitude>121.5114493</ns1:longitude>
+    <ns1:hasTelephone>50</ns1:hasTelephone>
+    <ns1:hasName>太平國小</ns1:hasName>
+    <ns1:hasAddress>大同區延平北路2段239號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+</rdf:RDF>

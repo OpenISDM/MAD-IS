@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <style>
+  html, body, #map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+  }
+  </style>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC0MXBPQYPcc3IAhEJJdCDE6bGPhFobPHo&sensor=false"></script>
+  <script>
+  var map;
+  var onMarker;
+  var offMarker;
+
+  function initialize() {
+
+
+    var mapOptions = {
+      zoom: 12,
+      center: new google.maps.LatLng(25.059912, 121.550913)
+    };
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+    CreateMarker();
+
+    setInterval(function() {
+      ContactServer()
+    }, 3000);
+  }
+
+  function CreateMarker() {
+    offMarker = new google.maps.Marker({
+      position: new google.maps.LatLng(25.13722, 121.50096),
+      map: map,
+      title: 'ha'
+    });
+  }
+
+
+  function ContactServer() {
+    var xmlhttp;
+    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+    } else { // code for IE6, IE5
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        var configInfo = xmlhttp.responseText;
+        var obj = eval("(" + configInfo + ")");
+        for (var i = 0; i < obj.data.length; i++) {
+          ChangePOSmarker(obj.data[i].id, obj.data[i].latitude, obj.data[i].longitude);
+        }
+      }
+    }
+    xmlhttp.open("POST", "http://140.109.22.197/checkPOS/", true);
+    xmlhttp.send();
+  }
+
+  function ChangePOSmarker(id, lat, lng) {
+  	//offMarker.setMap(null);
+  	offMarker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png')
+    /*onMarker = new google.maps.Marker({
+      position: new google.maps.LatLng(lat, lng),
+      map: map,
+      title: id,
+      icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+    });*/
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+</head>
+
+<body>
+  <div id="map-canvas"></div>
+</body>
+
+</html>

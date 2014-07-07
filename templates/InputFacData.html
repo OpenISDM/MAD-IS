@@ -1,0 +1,438 @@
+<!--
+  Copyright (c) 2012-2015  Sinica IIS Openisdm MAD
+
+  Project Name:
+
+    MAD-IS
+
+  File Name:
+
+    InputFacData.html
+
+  Abstract:
+
+    This page allow user to insert facility information, such as name,location,telphone,etc.
+    It is needed to let original schema match with MAD schema. After finishing this action, 
+    there will list all kinds of facility which is paring from data have and classify them. 
+    Each facility will be added attributions that have 'id' and 'category'.
+
+  Authors:
+
+    Bai Shan-Wei
+-->
+
+<!--HTML Header-->
+{% extends 'admin/master.html' %} {% block head_tail %} {{ super() }}
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.js"></script>
+
+{% endblock %}
+<!--END-->
+
+<!--HTML Body-->
+{% block body %}
+
+<script type='text/javascript'>
+/**
+ * @param {String} [fileText] Record text from loading the file
+ * @param {Object} [result] Record json object after parsing the json text.
+ * @param {Array}  [originKey] Record facility's properties after parsing original json text .
+ * @param {Array}  [reOrderData] Record multiple facilities's object when parsing json text and reorganize it.
+ * @param {Array}  [fac] Store current kinds of facility such as school, hospital, etc.
+ * @param {String} [selectedIndex] Store the selected index
+ * @param {String} [typeVal] Store the value that user selected and is similar 'Type' .
+ * @param {Array}  [service] Store what purpose faility can be used such as resuce, shelter ,etc.
+ */
+
+/*
+  Description : 
+    This function describe that store the text from loading user's computer xml file. 
+    Then get properties from parsing it, and push them into each menu.
+----------------------------------------------------------------------------------------------------------------*/
+
+function loadFileAsText() {
+  var fileToLoad = document.getElementById("fileToLoad").files[0];
+  var fileReader = new FileReader();
+  fileReader.onload = function(fileLoadedEvent) {
+    var textFromFileLoaded = fileLoadedEvent.target.result;
+    document.getElementById("inputTextToSave").value = textFromFileLoaded;
+
+    fileText = textFromFileLoaded;
+
+    //Add "()" and become json string for parsing
+    jsonText = eval("(" + fileText + ")");
+
+    result = getResult();
+    originKey = result.keyArray;
+    reOrderData = result.facArray;
+
+    for (var i = 0; i < originKey.length; i++) {
+      addMenu(originKey[i]);
+    }
+  };
+  fileReader.readAsText(fileToLoad, "UTF-8");
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that parse multiple layer json text and get all keys and values. it can be recursive to be parsed again when the value still is jsonArray or jsonObject. then put scattered values to match the same properties and become a new facility object and array. 
+----------------------------------------------------------------------------------------------------------------*/
+
+function getResult() {
+  var keyArray = [];
+  var valueArray = [];
+  var facArray = [];
+
+
+  function parseData(input) {
+    $.each(input, function(property, text) {
+      if ($.type(text).toLowerCase() == 'string' ||
+        $.type(text).toLowerCase() == 'number' ||
+        $.type(text).toLowerCase() == 'null') {
+        valueArray.push(text);
+        if (keyArray.indexOf(property) == -1) {
+          keyArray.push(property);
+        }
+      } else {
+        parseData(text);
+      }
+    });
+  }
+
+  parseData(jsonText);
+
+
+  //Calculate how many facilities that data have.
+  var facNumber = valueArray.length / keyArray.length;
+
+  //Declare a object that can be added key and value and insert it to array. 
+  //Repeat these steps until there have no faility can be processed.
+  for (var f = 0; f < facNumber; f++) {
+    var facObj = new Object();
+    for (var k = 0; k < keyArray.length; k++) {
+      var number = (f * (keyArray.length)) + k;
+      facObj[keyArray[k]] = valueArray[number];
+    }
+    facArray.push(facObj);
+  }
+
+  //return a json object
+  return {
+    keyArray: keyArray,
+    facArray: facArray
+  };
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that insert item into each selector and it can be regarded as option.
+  Arguments :
+    item - The one property of facility that will be added to the menu.
+----------------------------------------------------------------------------------------------------------------*/
+
+function addMenu(item) {
+  for (var n = 1; n < 9; n++) {
+    var selection = document.getElementById("select" + n);
+    var option = document.createElement("option");
+    option.text = item;
+    selection.add(option);
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that store the value which is similar the meaning of facility type and 
+    search for what kind of facility that data include. Then show the table and choose the option.
+----------------------------------------------------------------------------------------------------------------*/
+
+function Expand() {
+  fac = [];
+  //Find which is match with 'Type' and get its 'Type' naming.
+  selectedIndex = document.getElementById("select2").selectedIndex;
+  typeVal = document.getElementsByTagName("option")[selectedIndex].value;
+  for (var i = 0; i < reOrderData.length; i++) {
+    if (fac.indexOf(reOrderData[i][typeVal]) == -1 && reOrderData[i][typeVal] != "") {
+      fac.push(reOrderData[i][typeVal]);
+    }
+  }
+  CreateFacTable();
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that show the table which list all kind of facility text with menu and
+    start to let user sort out. 
+----------------------------------------------------------------------------------------------------------------*/
+
+function CreateFacTable() {
+  service = [];
+
+  for (var f = 0; f < fac.length; f++) {
+    //Declare a new row
+    var tr = $("<tr></tr>").addClass("dynamic_tr").attr("id", "trNo" + f);
+
+    var td_name = $('<td></td>').text(fac[f]).attr("id", "tdName" + f);
+    tr.append(td_name);
+
+    var td_kind = $("<td></td>");
+    var td_select = $('<select></select>').attr("rowCount", f).attr("id", "choice" + f);
+
+    //MAD category options
+    var td_option = $('<option>Null</option>' +
+      '<option>Shelter(Outdoor)</option>' +
+      '<option>Shelter(Indoor)</option>' +
+      '<option>Rescue</option>' +
+      '<option>Medical</option>' +
+      '<option>Livelihood</option>' +
+      '<option>Volunteer</option>' +
+      '<option>Transportation</option>' +
+      '<option>Communication</option>'
+    );
+
+    //Store the value select when the selection have changed
+    td_select.change(function() {
+      var index = $(this).attr("rowCount");
+      service[index] = this.options[this.selectedIndex].text;
+    });
+
+    td_select.append(td_option);
+    td_kind.append(td_select);
+
+    //The row be added to the table 
+    tr.append(td_kind);
+    $("#facTable").append(tr);
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that post facility information to sever after finishing settting, 
+----------------------------------------------------------------------------------------------------------------*/
+
+function Save() {
+  var dbData = GetFacInfo();
+  for (var n = 0; n < dbData.length; n++) {
+    var hr = new XMLHttpRequest();
+    var serverUrl = "http://140.109.22.197/send/";
+    hr.open("POST", serverUrl, true);
+    hr.send(dbData[n]);
+  }
+  setTimeout('alert("Have stored")', 10000);
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that show the table which list all facilities text with menu.
+    And start to let user sort out. 
+  Return Value : 
+    dbData - The text including facility information will be sent to server.
+----------------------------------------------------------------------------------------------------------------*/
+
+function GetFacInfo() {
+  var selectKey = GetAllKey();
+
+  var dbData = [];
+
+  for (var i = 0; i < reOrderData.length; i++) {
+    dbData[i] = "data$" + "facility$" + "FAC" + RandomNum() + '$';
+    var category = ClassFac(reOrderData[i][typeVal]);
+    for (var j = 1; j < selectKey.length; j++) {
+      if (selectKey[j] == "Null" || reOrderData[i][selectKey[j]] == "") {
+        dbData[i] += "Null" + "$";
+      } else {
+        dbData[i] += reOrderData[i][selectKey[j]] + "$";
+      }
+    }
+    dbData[i] += category;
+  }
+
+  return dbData;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that store selected mapping property of facility from each menu. 
+  Return Value : 
+    selectKey - Store each menu's option user choose.
+----------------------------------------------------------------------------------------------------------------*/
+
+function GetAllKey() {
+  var selectKey = [];
+  for (var n = 1; n < 9; n++) {
+    var x = document.getElementById("select" + n).selectedIndex;
+    selectKey[n] = document.getElementsByTagName("option")[x].value;
+  }
+  return selectKey;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that get what kind of facility depend on user's choice. 
+  Arguments :
+    kind - The purpose of facility such as shelter, rescue, etc.
+----------------------------------------------------------------------------------------------------------------*/
+
+function ClassFac(place) {
+  var kind = "";
+  for (var k = 0; k < fac.length; k++) {
+    if (place == fac[k]) {
+      kind = service[k]
+    }
+  }
+  return kind;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that generate six digits randomly.
+  Return Value : 
+    A 6-digit number be ragard as partial of POS id.
+----------------------------------------------------------------------------------------------------------------*/
+
+function RandomNum() {
+  var digit = ""
+  for (var i = 0; i < 6; i++) {
+    digit += Math.floor(Math.random() * 10);
+  }
+  return digit;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+</script>
+
+<!--Button that store facility information-->
+<div class="ui button" id="save" style="float: right" onclick="Save()">Save</div>
+<div style="float: right">&nbsp</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- Main component-->
+<div class="ui celled grid" style="width:100%;height:100%">
+
+  <!-- Text area at the left hand side,which is used to let user browse the file-->
+  <div class="seven wide middle column">
+
+    <table border="1" id="myTable" class="ui compact table segment">
+      <tr>
+        <td colspan="3">
+          <textarea id="inputTextToSave" style="width:90%;height:600px"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td id="hint" nowrap="nowrap">Select a File to Load:</td>
+        <td>
+          <input type="file" id="fileToLoad" onchange="loadFileAsText()">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Table that do the schema mapping -->
+  <div class="nine wide right column">
+    <h1 id="header" class="ui header">Scheme Mapping</h1>
+    <table border="1" id="myTable" class="ui compact table segment">
+      <tr>
+        <th id="afterSchema">MAD Facility Schema</th>
+        <th id="beforeSchema">Original Data Scheme</th>
+      </tr>
+      <tr>
+        <td id="name">Name</td>
+        <td>
+          <select id='select1'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="type">Type</td>
+        <td>
+          <select id='select2'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="ward">District</td>
+        <td>
+          <select id='select3'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="addr">Address</td>
+        <td>
+          <select id='select4'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="tel">Telphone</td>
+        <td>
+          <select id='select5'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="lat">Latitude</td>
+        <td>
+          <select id='select6'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="lng">Longitude</td>
+        <td>
+          <select id='select7'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td id="moreInfo">MoreInfo</td>
+        <td>
+          <select id='select8'>
+            <option>Null</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- The secton let user choose what purpose of facility-->
+<h1 id="header" class="ui header">Classify facilities</h1>
+<br>
+<div id="Faility">
+  <table border="0" id="facTable" class="ui compact table segment">
+    <thead>
+      <tr>
+        <th id="facility">Faility</th>
+        <th id="kind">Category</th>
+      </tr>
+      <thead>
+  </table>
+</div>
+<br>
+
+<!--Botton that show the form table which can start to sort out the facility -->
+<div class="ui button" id="expand" style="float: right" onclick="Expand()">Load</div>
+
+
+{% endblock %}

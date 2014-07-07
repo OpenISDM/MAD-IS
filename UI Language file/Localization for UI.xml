@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<UI>
+	<Menu>
+		<English>Data,Monitor,Contact Us</English>
+		<Japanese>データ,モニター,お問い合わせ</Japanese>
+		<Chinese>資料,監測,聯絡我們</Chinese>
+	</Menu>
+	<Label>
+		<English>Schema mapping,Status</English>
+		<Japanese>スキームマッピング,ステータス</Japanese>
+		<Chinese>架構,狀態</Chinese>
+	</Label>
+	<POSTable>
+		<English>Id,District,number,method</English>
+		<Japanese>名称,区,数量,方法</Japanese>
+		<Chinese>編號,行政區,數量,方法</Chinese>
+	</POSTable>
+	<SchemeTable>
+		<English>Name,Type,District,Address,Telphone,Latitude,Longitude,MoreInfo,Schema,Original Schema</English>
+		<Japanese>名称,種類,地区,アドレス,電話,緯度,経度,詳細情報,スキーム,オリジナルスキーム</Japanese>
+		<Chinese>名稱,類型,行政區,地址,電話,緯度,經度,更多訊息,架構,原本架構</Chinese>
+	</SchemeTable>
+	<Tab>
+		<English>MapView,Published data,Log</English>
+		<Japanese>地図,既報のデータ,記録</Japanese>
+		<Chinese>地圖,發佈資料,	記錄</Chinese>
+	</Tab>
+	<Button>
+		<English>Save,Reset,Facility List</English>
+		<Japanese>貯める,リセット,施設リスト</Japanese>
+		<Chinese>儲存,重設,設施清單</Chinese>
+	</Button>
+	<Text>
+		<English>Select a file to load</English>
+		<Japanese>ロードするファイルを選択し</Japanese>
+		<Chinese>選擇要載入的檔案</Chinese>
+	</Text>
+</UI>
