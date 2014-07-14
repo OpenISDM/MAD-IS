@@ -25,12 +25,24 @@
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
 
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyC0MXBPQYPcc3IAhEJJdCDE6bGPhFobPHo&sensor=false"></script>
+
+
+<style>
+  
+  html, body , .container, #map-canvas {
+    height: 100%;
+  }
+</style>
+
 {% endblock %}
 <!--END-->
 
 <!--HTML Body-->
 {% block body %}
 <script type='text/javascript'>
+
+
 /**
  * @param {Object} [obj]  Json obj
  * @param {String} [countryName] Record country name
@@ -43,103 +55,68 @@
   Description : 
     This function initialize Ui elements property and requst the Server for information.
 ---------------------------------------------------------------------------------------------------------------*/
-$(document).ready(function() {
-  $("#setNew").hide();
-  $("#selectCity").hide();
-  ReqServer();
-});
-/*-------------------------------------------------------------------------------------------------------------*/
+function initialize() {
+  loadMap();
+  myLocation = "";
+  var markers = [];
+  var input = (document.getElementById('pac-input'));
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-/*
-  Description : 
-    This function describe that it request server for country information, and Server will
-    response it, then list all countries that is currently available by button.
----------------------------------------------------------------------------------------------------------------*/
+  var searchBox = new google.maps.places.SearchBox((input));
 
-function ReqServer() {
-  var xmlhttp;
-  if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp = new XMLHttpRequest();
-  } else {
-    // code for IE6, IE5
-    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-      //Count how many buttons 
-      var btnNum = 0;
 
-      //Receive Country Information Server responses
-      var countryInfo = xmlhttp.responseText;
+  google.maps.event.addListener(searchBox, 'places_changed', function() {
+      var places = searchBox.getPlaces();
 
-      //Add "()" and become json string for parsing
-      obj = eval("(" + countryInfo + ")");
+      if (places.length == 0) {
+        return;
+      }
+      for (var i = 0, marker; marker = markers[i]; i++) {
+        marker.setMap(null);
+      }
 
-      for (var i = 0; i < obj.data.length; i++) {
-        //Declare a New button
-        var countryBtn = $("<button></button>").text(obj.data[i].Nation).attr(
-          "rowCount", btnNum).attr("id", obj.data[i].Nation);
+      // For each place, get the icon, place name, and location.
+      markers = [];
+      var bounds = new google.maps.LatLngBounds();
+      for (var i = 0, place; place = places[i]; i++) {
+        var image = {
+          url: place.icon,
+          size: new google.maps.Size(71, 71),
+          origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(17, 34),
+          scaledSize: new google.maps.Size(25, 25)
+        };
 
-        //Event occurs when click the button.
-        countryBtn.click(function() {
-          findCountry = true;
-          $("#selectCity").show();
-          $("#setNew").hide();
-
-          //Store button name and button index 
-          countryName = $(this).attr("id");;
-          var index = $(this).attr("rowCount");
-
-          ListCities(index);
+        // Create a marker for each place.
+        var marker = new google.maps.Marker({
+          map: map,
+          icon: image,
+          title: place.name,
+          position: place.geometry.location
         });
 
-        //Put the button into container.
-        $("#countryList").append(countryBtn);
-        btnNum++;
+        markers.push(marker);
+
+        myLocation = (place.geometry.location.toString()).replace(/[\])}[{(]/g, "");
+        map.setCenter(place.geometry.location);
+        map.setZoom(12);
       }
-    }
-  }
-  xmlhttp.open("POST", "http://140.109.22.197/fetch/", true);
-  xmlhttp.send('exist_Country&City');
+    });
 }
 /*-------------------------------------------------------------------------------------------------------------*/
 
-/*
-  Description : 
-    This function describe that show all cities on selector when click the button.
-  Arguments : 
-    index - An integer pointer that identifies the button.
----------------------------------------------------------------------------------------------------------------*/
 
-function ListCities(index) {
-  var selection = document.getElementById("selectCity");
-  selection.innerHTML = "<option>----------</option>";
-
-  for (var cityNum = 0; cityNum < obj.data[index]["City"].length; cityNum++) {
-    var cityText = obj.data[index]["City"][cityNum].Name; //Record the city name
-
-    /*Set city as option and put it into selector*/
-    var option = document.createElement("option");
-    option.text = cityText;
-    selection.add(option);
-  }
+function loadMap(){
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      zoom: 2,
+      minZoom: 2,
+      maxZoom: 21,
+      center: new google.maps.LatLng(0, 0)
+  });
 }
-/*-------------------------------------------------------------------------------------------------------------*/
 
-/*
-  Description : 
-    This function describe that show the form that user can create new country and 
-    city that want to serve.
----------------------------------------------------------------------------------------------------------------*/
-
-function ExpandForm() {
-  findCountry = false;
-
-  $("#selectCity").hide();
-  $("#setNew").show();
-}
-/*-------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
 
 /*
   Description : 
@@ -148,10 +125,9 @@ function ExpandForm() {
 ---------------------------------------------------------------------------------------------------------------*/
 
 function NextStep() {
-
   var isVaidate = ValidateForm();
-  if (isVaidate == true) {
-    setupText = 'location$' + GetAllElementVal();
+  if (isVaidate) {
+    setupText = 'location$' + myLocation;
     var hr = new XMLHttpRequest();
     var serverUrl = "http://140.109.22.197/send/";
     hr.open("POST", serverUrl, true);
@@ -161,7 +137,6 @@ function NextStep() {
   } else {
     alert('Forms must be filled out');
   }
-
 }
 /*-------------------------------------------------------------------------------------------------------------*/
 
@@ -171,91 +146,23 @@ function NextStep() {
 ---------------------------------------------------------------------------------------------------------------*/
 
 function ValidateForm() {
-
-  if (findCountry) {
-    cityText = selectCity.options[selectCity.selectedIndex].text;
-    if (cityText == "----------") {
-      return false;
-    } else {
-      return true;
-    }
-  } else {
-    countryText = document.getElementById('couName').value;
-    cityText = document.getElementById('cityName').value;
-    if (countryText == null || countryText == "" || cityText == null || cityText == "") {
-      return false;
-    } else {
-      return true;
-    }
+  if (myLocation == null || myLocation == "") {
+    return false;
   }
+  return true;
 }
 /*-------------------------------------------------------------------------------------------------------------*/
-/*
-  Description : 
-    This function describe that combine all input text after user have chosen option or 
-    have inputed the form.
-  Return Value : 
-    allVal - The text including country and city name will be sent to server.
----------------------------------------------------------------------------------------------------------------*/
 
-function GetAllElementVal() {
-  if (findCountry) {
-    //Record country and city after choosing the menu.
-    couNameText = countryName;
-    citynameText = selectCity.options[selectCity.selectedIndex].text;
-  } else {
-    //Record new country and city text user input.
-    couNameText = document.getElementById('couName').value;
-    citynameText = document.getElementById('cityName').value;
-  }
+google.maps.event.addDomListener(window, 'load', initialize);
 
-  //Combine these texts and use '$' character to separate
-  allVal = couNameText + '$' + citynameText;
-  return allVal;
-}
-/*-------------------------------------------------------------------------------------------------------------*/
 </script>
+<body>
 
-<!--Header-->
-<h2 class="ui header">Choose your country</h2>
-<!--Container thar list all country Interface Server include -->
-<div id="countryList"></div>
-</br>
-<!--Select city-->
-<select id='selectCity' onchange=""></select>
-<!--Divider-->
-<div class="ui divider"></div>
-<!--Button that user can create new country-->
-<div id="newCountry" class="ui blue button" onclick="ExpandForm()">New</div>
-<!--Divider-->
-<div class="ui divider"></div>
+<div id="next" class="ui button" style="float: right" onclick="NextStep()">Next</div>
+<input id="pac-input" class="controls" type="text" placeholder="Search Box" style="width: 400px;margin: 25px 11px 0 13px">
+<div id="map-canvas" style="width:90%"></div>
 
-<!--Container include two text input form-->
-<div id="setNew">
-  <table border="1" id="myTable" class="ui compact table segment">
-    <tr>
-      <th colspan="2">Country</th>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>
-        <input type="text" name="countryname" id="couName">
-      </td>
-    </tr>
-    <tr>
-      <th colspan="2">City</th>
-    </tr>
-    <tr>
-      <td>Name</td>
-      <td>
-        <input type="text" name="cityname" id="cityName">
-      </td>
-    </tr>
-  </table>
-</div>
-
-<!--Button that user can process next step-->
-<div id="next" class="ui orange button" style="float: right" onclick="NextStep()">Next</div>
+</body>
 
 {% endblock %}
 <!--END-->
