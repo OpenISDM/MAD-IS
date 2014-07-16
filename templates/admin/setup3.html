@@ -24,12 +24,13 @@
 <link type="text/css" href="/static/css/bar.css" rel="stylesheet">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
 <script type="text/javascript" src="/static/javascript/jquery.tablesorter.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC0MXBPQYPcc3IAhEJJdCDE6bGPhFobPHo&sensor=false">
+</script>
 {% endblock %}
 <!--END-->
 
 <!--HTML Body-->
 {% block body %}
-
 
 <script type='text/javascript'>
 /**
@@ -50,10 +51,24 @@
     This function initialize Ui elements property and requst the Server for information.
 /*--------------------------------------------------------------------------------------------------------------*/
 $(document).ready(function() {
+  loadMap();
   $("#pos_bar").hide();
   ReqServer();
 });
 /*-------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that find google map element and set its propeties.
+/*--------------------------------------------------------------------------------------------------------------*/
+
+function loadMap() {
+    map = new google.maps.Map(document.getElementById('map_canvas'), {
+      zoom: 11,
+      maxZoom: 21
+    });
+  }
+  /*-------------------------------------------------------------------------------------------------------------*/
 
 /*
   Description : 
@@ -76,18 +91,13 @@ function ReqServer() {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 
       //Receive region information from server's response
-      var regionInfo = xmlhttp.responseText;
+      var info = xmlhttp.responseText;
 
       //Add "()" and become json string for parsing
-      var obj = eval("(" + regionInfo + ")");
-      for (var i = 0; i < obj.data.length; i++) {
+      var obj = eval("(" + info + ")");
 
-        //Create new object to record each region properties and push into an array.
-        var area = new Object();
-        area.name = obj.data[i].District;
-        area.postalCode = obj.data[i].Code;
-        region.push(area);
-      }
+      SetCenter(obj.coordinates);
+
     }
   }
   xmlhttp.open("POST", "http://140.109.22.197/fetch/", true);
@@ -98,21 +108,45 @@ function ReqServer() {
 
 /*
   Description : 
+    This function describe that use geocode api to convert the address into 
+    a coordinate(Latitude&Longitude).Then jump that position on google maps
+  Arguments : 
+    address - The city's location.
+/*--------------------------------------------------------------------------------------------------------------*/
+
+function SetCenter(address) {
+
+    //It is the process of finding associated geographic coordinates from other geographic data, 
+    //such as street addresses, or ZIP codes (postal codes).
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode({
+      'address': address
+    }, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        map.setCenter(results[0].geometry.location);
+      }
+    });
+  }
+  /*--------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+  Description : 
     This function describe that store the text from loading user's computer xml file.
 ----------------------------------------------------------------------------------------------------------------*/
 
 function LoadFileAsText() {
-  var fileToLoad = document.getElementById("fileToLoad").files[0];
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
 
-  var fileReader = new FileReader();
-  fileReader.onload = function(fileLoadedEvent) {
-    var textFromFileLoaded = fileLoadedEvent.target.result;
-    document.getElementById("inputTextToSave").value = textFromFileLoaded;
-    xmlData = textFromFileLoaded;
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) {
+      var textFromFileLoaded = fileLoadedEvent.target.result;
+      document.getElementById("inputTextToSave").value = textFromFileLoaded;
+      xmlData = textFromFileLoaded;
+    }
+    fileReader.readAsText(fileToLoad, "UTF-8");
   }
-  fileReader.readAsText(fileToLoad, "UTF-8");
-}
-/*--------------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------------------------------------*/
 
 /*
   Description : 
@@ -121,105 +155,82 @@ function LoadFileAsText() {
 ----------------------------------------------------------------------------------------------------------------*/
 
 function ShowPOSInfo() {
-  pos = [];
+    pos = [];
 
-  $("#pos_bar").show();
-  $("#countryCode").hide();
+    $("#pos_bar").show();
+    $("#countryCode").hide();
 
-  if (window.DOMParser) {
-    parser = new DOMParser();
-    xmlDoc = parser.parseFromString(xmlData, "text/xml");
-  } else {
-    // Internet Explorer
-    xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-    xmlDoc.async = false;
-    xmlDoc.loadXML(xmlData);
-  }
-  var num = 0;
-  for (var i = 0; i < xmlDoc.getElementsByTagName("POSSite").length; i=i+50) {
+    if (window.DOMParser) {
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(xmlData, "text/xml");
+    } else {
+      // Internet Explorer
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.loadXML(xmlData);
+    }
+    var num = 0;
+    for (var i = 0; i < xmlDoc.getElementsByTagName("POSSite").length; i = i + 50) {
 
-    //Create new object to record each POS properties and push into an array.
-    var posObj = new Object();
-    posObj.ward = xmlDoc.getElementsByTagName("District")[i].childNodes[0].nodeValue;
-    //Create POS server own id
-    //posObj.special_id = document.getElementById('nationCode').value + "-" + GetCode(posObj.ward) + "-" + RandomNum();
-    posObj.special_id = xmlDoc.getElementsByTagName("ID")[i].childNodes[0].nodeValue;
-    posObj.lat = xmlDoc.getElementsByTagName("Latitude")[i].childNodes[0].nodeValue;
-    posObj.lng = xmlDoc.getElementsByTagName("Longitude")[i].childNodes[0].nodeValue;
-    pos.push(posObj);
+      //Create new object to record each POS properties and push into an array.
+      var posObj = new Object();
+      posObj.ward = xmlDoc.getElementsByTagName("District")[i].childNodes[0].nodeValue;
+      posObj.special_id = xmlDoc.getElementsByTagName("ID")[i].childNodes[0].nodeValue;
+      posObj.lat = xmlDoc.getElementsByTagName("Latitude")[i].childNodes[0].nodeValue;
+      posObj.lng = xmlDoc.getElementsByTagName("Longitude")[i].childNodes[0].nodeValue;
+      pos.push(posObj);
 
-    num++;
+      num++;
 
-    BuildposTable(posObj.special_id, posObj.ward, posObj.lat, posObj.lng, num);
-  }
-}
-/*--------------------------------------------------------------------------------------------------------------*/
+      createMarker(posObj);
 
-/*
-  Description : 
-    This function describe that get postalcode by using district to match.
-  Arguments :
-    district - A division area that POS server live in.
-----------------------------------------------------------------------------------------------------------------*/
-
-function GetCode(district) {
-  for (var j = 0; j < region.length; j++) {
-    if (district == region[j].name) {
-      return region[j].postalCode;
     }
   }
-}
-/*--------------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------------------------------------*/
+  /*
+    Description : 
+      This function describe that get postalcode by using district to match.
+    Arguments :
+      district - A division area that POS server live in.
+  ----------------------------------------------------------------------------------------------------------------*/
 
-/*
-  Description : 
-    This function describe that use passing values to declare a new row, then add into the data table.
-  Arguments : 
-    id - POS ID
-    area - POS District
-    lat - The north-south position of a POS 
-    lng - The east-west position of a POS 
-----------------------------------------------------------------------------------------------------------------*/
-
-function BuildposTable(id, area, x, y, rowCounts) {
-  //Declare a new row
-  var tr = $("<tr></tr>").addClass("dynamic_tr").attr("id", "trNo" + rowCounts);
-
-  var td_name = $('<td></td>').text(id).attr("id", "tdName" + rowCounts);
-  tr.append(td_name);
-
-  var td_area = $('<td></td>').text(area).attr("id", "td_area" + rowCounts);
-  tr.append(td_area);
-
-  var td_lat = $('<td></td>').text(x).attr("id", "td_lat" + rowCounts);
-  tr.append(td_lat);
-
-  var td_lng = $('<td></td>').text(y).attr("id", "td_lng" + rowCounts);
-  tr.append(td_lng);
-
-  //The row be added to the table 
-  $("#posTable").append(tr);
-
-  //Sortable table
-  $('#posTable').tablesorter();
-}
-/*--------------------------------------------------------------------------------------------------------------*/
-
-/*
-  Description : 
-    This function describe that generate six digits randomly.
-  Return Value : 
-    A 6-digit number be ragard as partial of POS id.
-----------------------------------------------------------------------------------------------------------------*/
-
-function RandomNum() {
-  var digit = ""
-  for (var i = 0; i < 6; i++) {
-    digit += Math.floor(Math.random() * 10);
+function GetCode(district) {
+    for (var j = 0; j < region.length; j++) {
+      if (district == region[j].name) {
+        return region[j].postalCode;
+      }
+    }
   }
-  return digit;
-}
-/*--------------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------------------------------------*/
+
+/*
+  Description : 
+    This function describe that place a marker for identifying a location on a map.
+  Arguments : 
+    place - The POS or other facilities object.
+    placeName - The POS or other facilities name which people get used to call.
+---------------------------------------------------------------------------------------------------------------*/
+
+function createMarker(pos) {
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(pos.lat, pos.lng),
+      map: map,
+      title: pos.special_id,
+    });
+
+    var html = '<div style="width: 240px; height: 50px"><b>' + pos.special_id + '<\/b><br>' + '<\/div>';
+
+    google.maps.event.addListener(marker, 'click', function() {
+      if (infoWindow) {
+        infoWindow.close();
+      }
+      infoWindow = new google.maps.InfoWindow({
+        content: html
+      });
+      infoWindow.open(map, marker);
+    });
+  }
+  /*-------------------------------------------------------------------------------------------------------------*/
 
 /*
   Description : 
@@ -227,11 +238,9 @@ function RandomNum() {
 -----------------------------------------------------------------------------------------------------------------*/
 
 function BackStep() {
-  setTimeout('window.location.replace("http://140.109.22.197/admin/setup/step1")',
-    2000);
-}
-/*---------------------------------------------------------------------------------------------------------------*/
-
+    setTimeout('window.location.replace("http://140.109.22.197/admin/setup/step2")', 2000);
+  }
+  /*---------------------------------------------------------------------------------------------------------------*/
 
 /*
   Description : 
@@ -240,37 +249,34 @@ function BackStep() {
 ----------------------------------------------------------------------------------------------------------------*/
 
 function NextStep() {
-  for (var i = 0; i < pos.length; i++) {
-    posText = "data$" + "posServer$" + GetPOSInfo(i);
+    for (var i = 0; i < pos.length; i++) {
+      posText = "data$" + "posServer$" + GetPOSInfo(i);
 
-    var hr = new XMLHttpRequest();
-    var serverUrl = "http://140.109.22.197/send/";
-    hr.open("posT", serverUrl, true);
-    hr.send(posText);
+      var hr = new XMLHttpRequest();
+      var serverUrl = "http://140.109.22.197/send/";
+      hr.open("posT", serverUrl, true);
+      hr.send(posText);
+    }
+    setTimeout('window.location.replace("http://140.109.22.197/admin/")', 10000);
   }
-  setTimeout('window.location.replace("http://140.109.22.197/admin/")', 10000);
-}
-/*--------------------------------------------------------------------------------------------------------------*/
+  /*--------------------------------------------------------------------------------------------------------------*/
 
 /*
   Description : 
-    This function describe that store the text from loading user's computer xml file.
+    This function describe that store each text from loading user's computer xml file and these values combine the string .
   Return Value : 
     allText - The text user inputed will be sent to server.
 ----------------------------------------------------------------------------------------------------------------*/
 
 function GetPOSInfo(num) {
 
-  //get country code  value from input text form
-  //nationCode = document.getElementById('nationCode').value;
+    //Combine these POS information and use '$' character to separate
+    allText = 'nationCode' + '$' + pos[num].special_id + '$' + pos[num].ward + '$' + pos[num].lat + '$' +
+      pos[num].lng;
 
-  //Combine these POS information and use '$' character to separate
-  allText = 'nationCode' + '$' + pos[num].special_id + '$' + pos[num].ward + '$' + pos[num].lat + '$' +
-    pos[num].lng;
-
-  return allText;
-}
-/*--------------------------------------------------------------------------------------------------------------*/
+    return allText;
+  }
+  /*--------------------------------------------------------------------------------------------------------------*/
 </script>
 <!--Header-->
 <h2 class="ui header" id="header">Create POS configuration</h2>
@@ -278,49 +284,36 @@ function GetPOSInfo(num) {
 <!--Button that can process previous/next page-->
 <div id="setupnext" class="ui blue button" style="float: right" onclick="NextStep()">Next</div>
 <div style="float: right">&nbsp</div>
-<div id="setupback" class="ui blue button" style="float: right" onclick="">Back</div>
+<div id="setupback" class="ui blue button" style="float: right" onclick="BackStep()">Back</div>
+
+
 
 <!-- Main component-->
-<div class="ui celled grid" style="width:100%;height:100%">
-  <!-- Text area at the left hand side,which is used to let user browse the file-->
-  <div class="seven wide middle column">
+<div class="ui celled grid" style="width:100%;height:700px">
+  <!-- Map element at the left hand side-->
+  <div class="eight wide column">
+    <div id="map_canvas" style="height:100%;"></div>
+  </div>
+
+  <!-- Form at the left hand side-->
+  <div class="eight wide column">
     <table border="1" id="myTable" class="ui compact table segment">
       <tr>
         <td colspan="3">
-          <textarea id="inputTextToSave" style="width:90%;height:400px"></textarea>
+          <textarea id="inputTextToSave" placeholder="Please import file for POS servers information" style="width:90%; height:400px; resize:none"></textarea>
         </td>
       </tr>
       <tr>
-        <td id="hint" nowrap="nowrap">Select a pos data to Load:</td>
+        <td id="hint" nowrap="nowrap">Select a File to Load:</td>
         <td>
           <input type="file" id="fileToLoad" onchange="LoadFileAsText()">
         </td>
       </tr>
     </table>
-    <!-- Button that show the data table-->
     <div class="ui button" id="load" onclick="ShowPOSInfo()">Load</div>
   </div>
-
-  <div class="nine wide right column">
-    <!-- Text form that be inputted country code -->
-    <!--<div id="countryCode">pos country code
-      <input type="text" name="countryCode" id="nationCode">
-    </div>-->
-
-    <!-- POS table content-->
-    <div id="pos_bar">
-      <h1 id="header" class="ui header">Point of servers Information</h1>
-      <table border="1" id="posTable" class="tablesorter">
-        <tr>
-          <th>Id</th>
-          <th>District</th>
-          <th>Latitude</th>
-          <th>Longitude</th>
-        </tr>
-      </table>
-    </div>
-  </div>
 </div>
+
 
 {% endblock %}
 <!--END-->
