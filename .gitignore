@@ -1,0 +1,17 @@
+# Virtualenv
+.Python
+bin
+lib
+include
+
+# Mac OS X custom attribute files
+.DS_Store
+
+# Python binary files
+*.pyc
+*.pyo
+
+# Other we could ignore files
+*.whoosh
+*.db
+*.egg-info
