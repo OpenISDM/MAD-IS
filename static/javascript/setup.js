@@ -169,7 +169,7 @@ function closeCheck() {
 // check if you can combine this with Save() in inputFacData()
 function completeSetup() {
 
-    /*jsonData = createJsonText();
+    jsonData = createJsonText();
     jsonData = JSON.stringify(jsonData);
 
     //alert(jsonData);
@@ -178,13 +178,13 @@ function completeSetup() {
     var hr = new XMLHttpRequest();
     var serverUrl = "http://140.109.22.197/send/";
     hr.open("POST", serverUrl, true);
-    hr.send(jsonData);*/
+    hr.send(jsonData);
     
     SendFacInfo();
     document.getElementById('next').className = 'ui green button';
     document.getElementById('next').innerHTML = '<i class=\"loading icon\"></i> Saving';
 
-    //setTimeout('window.location.replace("http://140.109.22.197/admin/home/")', 20000);
+    setTimeout('window.location.replace("http://140.109.22.197/admin/home/")', 20000);
 }
 
 
