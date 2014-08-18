@@ -43,7 +43,6 @@ demand = Blueprint('demand', __name__)
 import json
 import uuid
 import requests
-import IS
 import time
 postInfo = "Null"
 need_validate = False
