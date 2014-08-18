@@ -1,0 +1,109 @@
+{% extends 'admin/model/list.html' %}
+{% import 'admin/model/layout.html' as model_layout with context %}
+{% block head %}
+	<link rel="stylesheet"  type=text/css href="/static/css/semantic.css"></link>
+	<link rel="stylesheet"  type=text/css href="/static/css/facility.css"></link>
+	<link rel="stylesheet"  type=text/css href="/static/css/home.css"></link>
+	<script type="text/javascript" src="/static/javascript/semantic.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+{% endblock %}
+
+{% block brand %}
+
+	<div class="ui vertical inverted fixed labeled icon menu" id="sidebar">
+        <a class="item" id="testicon" title="User"><i class="blue user icon"></i></a>
+
+        <!-- listPOS and listFac in map view -->
+        <a class="item" id="listPOS" title="POS List">
+            <i class="red map marker icon"></i>
+        </a>
+        <a class="item" id="listFac" title="Facility List">
+            <i class="green building icon"></i>
+        </a>
+
+        <!-- addOptions and removeOptions in table view -->
+        <a class="item" id="posOptions" title="View POS Table">
+            <i class="red table icon"></i>
+        </a>
+        <a class="item" id="facOptions" title="View Facility Table">
+            <i class="green table icon"></i>
+        </a>
+
+        <a class="item" id="switchMode" title="Switch View">
+            <i class="teal file icon"></i>
+        </a>
+
+        <!--	SETTING AND LOGOUT BUTTONS
+		<a class="item" href="johnson.jpg" title="Settings"><i class="settings icon"></i></a>-->
+        <a class="item" id="logoutView" title="Logout"><i class="blue sign out icon"></i></a>
+
+    </div>
+
+
+    <!--<h2 id="brand">{{ admin_view.name|capitalize }} list</h2>
+    {% if admin_view.can_create %}
+    <div class="btn-menu">
+        <a href="{{ url_for('.create_view', url=return_url) }}" class="btn btn-primary pull-left">{{ _gettext('Create') }}</a>
+    </div>
+
+    <div class="btn-menu">
+        <a href="{{ url_for('.deleteAll_view', url=return_url) }}" class="btn btn-primary pull-left">{{ _gettext('Remove all') }}</a>
+    </div>
+    {% endif %}
+
+    {% if filter_groups %}
+    <div class="btn-group btn-menu">
+        {{ model_layout.filter_options(btn_class='btn dropdown-toggle btn-title') }}
+    </div>
+    {% endif %}
+
+    {% if actions %}
+    <div class="btn-group btn-menu">
+        {{ actionlib.dropdown(actions, btn_class='btn dropdown-toggle btn-title') }}
+    </div>
+    {% endif %}
+
+    {% if search_supported %}
+    <div class="search-form btn-menu">
+        {{ model_layout.search_form(input_class='span2 btn-title') }}
+    </div>
+    {% endif %}
+    <div class="clearfix"></div>
+    <hr>-->
+{% endblock %}
+
+{% block model_menu_bar %}
+<ul class="nav nav-tabs">
+        <li class="active">
+            <a href="javascript:void(0)">{{ _gettext('List') }} ({{ count }})</a>
+        </li>
+        {% if admin_view.can_create %}
+        <li>
+            <a href="{{ url_for('.create_view', url=return_url) }}">{{ _gettext('Create') }}</a>
+        </li>
+        {% endif %}
+
+        {% if filter_groups %}
+        <li class="dropdown">
+            {{ model_layout.filter_options() }}
+        </li>
+        {% endif %}
+
+        {% if actions %}
+        <li class="dropdown">
+            {{ actionlib.dropdown(actions) }}
+        </li>
+        {% endif %}
+
+        {% if search_supported %}
+        <li>
+            {{ model_layout.search_form() }}
+        </li>
+        {% endif %}
+    </ul>
+    {% endblock %}
+
+    {% if filter_groups %}
+        {{ model_layout.filter_form() }}
+        <div class="clearfix"></div>
+    {% endif %}

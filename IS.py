@@ -78,11 +78,9 @@ class User(db.Model):
     login = db.Column(db.String(80), unique=True)
     password = db.Column(db.String(64))
     country = db.Column(db.String(32))
-    city = db.Column(db.String(32))
-    is_finish_setup1 = db.Column(db.Boolean, nullable=False)
-    is_finish_setup2 = db.Column(db.Boolean, nullable=False)
-    is_finish_setup3 = db.Column(db.Boolean, nullable=False)
-    #ui_language = db.Column(db.String(32))
+    location = db.Column(db.String(32))
+    coordinates = db.Column(db.String(32))
+    is_finish_setup = db.Column(db.Boolean, nullable=False)
 
     # Flask-Login integration
     def is_authenticated(self):
@@ -192,19 +190,45 @@ def init_login():
     def load_user(user_id):
         return db.session.query(User).get(user_id)
 
-class MyModelView(sqla.ModelView):
+class PosView(sqla.ModelView):
+    #list_template = 'admin/home.html'
 
     '''
         Create customized model view class.
     '''
-    def is_accessible(self):
-        return login.current_user.is_authenticated()
+    column_searchable_list = ('id',)
+    #list_template = 'listPOS.html'
+
+    @expose('/delete', methods=('GET', 'POST'))
+    def deleteAll_view(self):
+        #shelter = Shelter('shit')
+        db.session.query(POS).delete()
+        db.session.commit()
+
+        return redirect(url_for('.index_view'))
 
     def is_visible(self):
-        if show_menu == True:
-            return True
-        else :
-            return False
+        return False
+
+
+class FacView(sqla.ModelView):
+    #list_template = 'admin/home.html'
+
+    '''
+        Create customized model view class.
+    '''
+    column_searchable_list = ('id',)
+    list_template = 'listFac.html'
+
+    @expose('/delete', methods=('GET', 'POST'))
+    def deleteAll_view(self):
+        db.session.query(Facility).delete()
+        db.session.commit()
+
+        return redirect(url_for('.index_view'))
+
+    def is_visible(self):
+        return False
 
 class MyAdminIndexView(admin.AdminIndexView):
     '''
@@ -216,6 +240,7 @@ class MyAdminIndexView(admin.AdminIndexView):
             Enter the index View.
         '''
         global show_menu
+
         if not login.current_user.is_authenticated():
             '''
                 if user have not been authenticated, got to login view.
@@ -229,33 +254,24 @@ class MyAdminIndexView(admin.AdminIndexView):
                     Find user, and if there have not setting about country, start the setup.
                     Otherwise, enter the view that have already setup.
                 '''
-                if u.is_finish_setup1 == False:
+                if u.is_finish_setup == False:
                     show_menu = False
-                    return redirect(url_for('.setup_view',step='step1'))
-                elif u.is_finish_setup2 == False :
-                    show_menu = False
-                    return redirect(url_for('.setup_view',step='step2'))
-                elif u.is_finish_setup3 == False :
-                    show_menu = False
-                    return redirect(url_for('.setup_view',step='step3'))
+                    return redirect(url_for('.setup_view'))
                 else :
                     show_menu = True
 
-        return super(MyAdminIndexView, self).index()
+        return redirect(url_for('.home_view'))
+
+        #return super(MyAdminIndexView, self).index()
 
 
-    @expose('/setup/<step>')
-    def setup_view(self,step):
+    @expose('/setup/')
+    def setup_view(self):
         '''
             Setup View, and if there have not setting about country, start the setup.
             Otherwise, enter the view that have already finished the setup.
         '''
-        if step == 'step1':
-            return self.render('admin/setup1.html')
-        if step == 'step2':
-            return self.render('admin/setup2.html')
-        if step == 'step3':
-            return self.render('admin/setup3.html')
+        return self.render('admin/setup.html')
 
 
     @expose('/login/', methods=('GET', 'POST'))
@@ -284,7 +300,7 @@ class MyAdminIndexView(admin.AdminIndexView):
         '''
         form = RegistrationForm(request.form)
         if helpers.validate_form_on_submit(form):
-            user = User(is_finish_setup1=False,is_finish_setup2=False,is_finish_setup3=False)
+            user = User(is_finish_setup=False)
 
             form.populate_obj(user)
 
@@ -306,49 +322,20 @@ class MyAdminIndexView(admin.AdminIndexView):
         login.logout_user()
         return redirect(url_for('.index'))
 
-class MonitorView(admin.BaseView):
+    @expose('/home/')
+    def home_view(self):
+        return self.render('admin/home.html')
+
+class Home(admin.BaseView):
     '''
         Create customized index view class that handles the monitor of POS servers status
     '''
     @admin.expose('/')
     def index(self):
-        return self.render('monitor.html')
+        return self.render('home.html')
 
     def is_accessible(self):
         return login.current_user.is_authenticated()
-
-    def is_visible(self):
-        if show_menu == True:
-            return True
-        else :
-            return False
-
-class ImportDataView(admin.BaseView):
-    '''
-        Create customized index view class that handles the monitor of POS servers status
-    '''
-    @admin.expose('/')
-    def index(self):
-        return self.render('InputFacData.html')
-
-    def is_accessible(self):
-        return login.current_user.is_authenticated()
-
-    def is_visible(self):
-        if show_menu == True:
-            return True
-        else :
-            return False
-
-
-class ContactView(admin.BaseView):
-    @admin.expose('/')
-    def index(self):
-        return self.render('contact.html')
-
-    def is_accessible(self):
-        return login.current_user.is_authenticated()
-
 
     def is_visible(self):
         if show_menu == True:
@@ -366,27 +353,26 @@ class Information:
             Initialize user and its city and country he/she serve
         '''
         self.user = User.query.filter_by(id=login.current_user.get_id()).first()
-        self.country=self.user.country
-        self.city=self.user.city
 
+        self.login = self.user.login
+        self.location=self.user.location
+        self.coordinates = self.user.coordinates
 
-    def store_location(self,country,city):
+    def store_location(self,coordinates,location):
+
         '''
             Store user's location when sending the registration form.
         '''
-        self.user.country=country
-        self.user.city=city
+        self.user.location = location
+        self.user.coordinates = coordinates
         db.session.commit()
 
-    def finish_setup_step(self,step):
-        if step == "step1":
-            self.user.is_finish_setup1=True
-        elif step == "step2":
-            self.user.is_finish_setup2=True
-        elif step == "step3":
-            self.user.is_finish_setup3=True
-        else:
-            pass
+    def finish_setup(self):
+        '''
+            Store user's location when sending the registration form.
+        '''
+
+        self.user.is_finish_setup=True
         db.session.commit()
 
     def get_config(self,configdir):
@@ -403,22 +389,20 @@ class Information:
                 If the function find the file, the returned is a json object of configuration content;
                 otherwise, the returned value is null.
         '''
-        filename = configdir+'/'+self.country+'/'+self.city+'.ini'
+        filename = configdir+'/'+self.login+'/'+self.login+'.ini'
         if os.path.exists(filename):
             # if file is exist, get its content.
             config = ConfigObj(filename)
             config_info = {
-                "coordinates" : config['Country Information']['Origin Of Coordinates'],
                 "wardpath" : config['Country Information']['District Info Path'],
-                "key" : config['Boundary']['ApiKey'],
-                "posCountryCode" : config['POS Information']['POS_country_code']
+                "key" : config['Boundary']['ApiKey']
             }
             return config_info
         else:
             # file is not exist, return null.
             return 'Null'
 
-    def create_config(self,mydir,coordinate,key):
+    def create_config(self,mydir,key):
         '''
             Create the configuration file
 
@@ -437,14 +421,12 @@ class Information:
         '''
 
         config = ConfigObj()
-        config.filename = mydir+'/ConfigFile/'+self.country+'/'+self.city+'.ini'
+        config.filename = mydir+'/ConfigFile/'+self.login+'/'+self.login+'.ini'
         config['Country Information']={}
-        config['Country Information']['Origin Of Coordinates']=coordinate
-        config['Country Information']['District Info Path']=mydir+"/District Info/"+self.city+'.xml'
+        #config['Country Information']['Origin Of Coordinates']=coordinate
+        config['Country Information']['District Info Path']=mydir+"/District Info/"+self.login+'.xml'
         config['Boundary']={}
         config['Boundary']['ApiKey']=key
-        config['POS Information']={}
-        config['POS Information']['POS_country_code']=""
         config.write()
 
     def get_district(self,key,mydir):
@@ -468,7 +450,7 @@ class Information:
                 Start to parse xml file
             '''
             region_info = []
-            tree = ET.parse(mydir+'/District Info/'+self.city+'.xml')
+            tree = ET.parse(mydir+'/District Info/'+self.login+'.xml')
             root = tree.getroot()
             for info in root.findall('District'):
                 data = {
@@ -494,11 +476,11 @@ class Information:
 
         if content[1] == 'posServer':
 
-            '''
-                Store information of POS server
-            '''
+
+            #Store the information of POS server
+
             topic_path = server_location + '/static/Topic/'+content[3]
-            pos = POS(id=content[3],city=self.city,
+            pos = POS(id=content[3],city=self.location,
                       district=content[4].decode('utf8'),
                       partition_method='District',
                       latitude=content[5],longitude=content[6],
@@ -507,11 +489,10 @@ class Information:
             db.session.add(pos)
 
         elif content[1] == 'facility':
-            '''
-                Store information of facility
-            '''
 
-            facility = Facility(city=self.city,id=content[2],
+            #Store the information of facility
+
+            facility = Facility(city=self.location,id=content[2],
                                 name=content[3].decode('utf8'),
                                 type=content[4].decode('utf8'),
                                 district=content[5].decode('utf8'),
@@ -522,8 +503,40 @@ class Information:
                                 description=content[10].decode('utf8'),
                                 category=content[11])
 
+
             db.session.add(facility)
 
+        db.session.commit()
+
+    def store_pos(self,city,content,server_location):
+
+        for p in range(len(content)):
+
+            topic_path = server_location + '/static/Topic/'+content[p]["special_id"]
+
+            pos = POS(id=content[p]["special_id"],city=city,
+                      district=content[p]["ward"],partition_method='District',
+                      latitude=content[p]["lat"],longitude=content[p]["lng"],
+                      topic_dir=topic_path,is_subscribe=False)
+
+            db.session.add(pos)
+            db.session.commit()
+
+    def store_fac(self,city,content):
+        #for f in range(len(content)):
+
+        facility = Facility(city=city,id=content["id"],
+                            name=content["name"],
+                            type=content["type"],
+                            district=content["district"],
+                            address=content["address"],
+                            telephone=content["telephone"],
+                            latitude=content["latitude"],
+                            longitude=content["longitude"],
+                            description=content["description"],
+                            category=content["category"])
+
+        db.session.add(facility)
         db.session.commit()
 
     def get_facility_info(self):
@@ -538,7 +551,7 @@ class Information:
         all_fac = []
         # Start to query from Facility data table
         for f in db.session.query(Facility):
-            if f.city == self.city:
+            if f.city == self.location:
                 fac={
                     'id' : f.id,
                     'name' : f.name,
@@ -570,7 +583,7 @@ class Information:
         # Start to query from POS data table
         for p in db.session.query(POS):
             #Find the POS server location which is same as user's.
-            if p.city == self.city:
+            if p.city == self.location:
                 pos={
                     'id' : p.id,
                     'district' : p.district,
@@ -583,7 +596,7 @@ class Information:
                 }
                 all_pos.append(pos)
             else:
-                all_fac = []
+                all_pos = []
 
         return all_pos
 
@@ -594,7 +607,6 @@ class Information:
             POSInfo :
                 The new update of POS server
         '''
-
         # Start to query from POS data table
         for p in db.session.query(POS):
 
@@ -673,6 +685,12 @@ def store_subscriber(topic_url,callback_url):
     print 'have stored the subscription'
 
 def content_distribution(sub_url):
+
+    '''
+        Prepare file that will send the subscriber, then publish to the corresponding subscriber.
+    '''
+
+    #search the corresponding POS ID according the subscriber url
     if sub_url is not None:
         for p in db.session.query(POS):
             if p.callback_url == sub_url:
@@ -682,8 +700,6 @@ def content_distribution(sub_url):
             'rdf'  : fs.my_topic_dir + pos_id +'/' + pos_id +'.rdf'
         }
 
-
-
         for x in topic_dictionary:
             files = {'file': open(topic_dictionary[x], 'rb')}
             r = requests.post(sub_url, files=files)
@@ -691,24 +707,26 @@ def content_distribution(sub_url):
     else:
         print "This POS server have not subscribed"
 
-# Flask views
+'''# Flask views
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html')'''
 
 
 # Initialize flask-login
 init_login()
 
 # Create admin
-admin = admin.Admin(app, 'MAD-IS', index_view=MyAdminIndexView(), base_template='my_master.html')
-#admin = admin.Admin(index_view=MyAdminIndexView())
-admin.add_view(MonitorView(name="Monitor"))
+admin = admin.Admin(app, 'MAD-IS', index_view=MyAdminIndexView())
+#admin = admin.Admin(app, 'MAD-IS', index_view=MyAdminIndexView(), base_template='admin/home.html')
+#admin.add_view(Home(name="Monitor"))
 
-admin.add_view(ImportDataView(category='Data'))
-admin.add_view(MyModelView(POS, db.session, category='Data'))
-admin.add_view(MyModelView(Facility, db.session, category='Data'))
-admin.add_view(ContactView(name='Contact Us'))
+admin.add_view(PosView(POS, db.session))
+admin.add_view(FacView(Facility, db.session))
+#admin.add_view(ImportDataView(category='Data'))
+#admin.add_view(MyModelView(POS, db.session, category='Data'))
+#admin.add_view(MyModelView(Facility, db.session, category='Data'))
+#admin.add_view(ContactView(name='Contact Us'))
 
 def build_sample_db():
     """
@@ -719,9 +737,7 @@ def build_sample_db():
 
     db.drop_all()
     db.create_all()
-    test_user = User(login="test", password="test",
-                     is_finish_setup1=False,is_finish_setup2=False,
-                     is_finish_setup3=False)
+    test_user = User(login="test", password="test",is_finish_setup=False)
     db.session.add(test_user)
 
     array = [
@@ -740,15 +756,17 @@ def build_sample_db():
 
 
 def answer(request):
+
     info = Information()
 
     jsonText = {'status' : 'OK',
-                'country' : info.country,
-                'city' : info.city}
+                'coordinates' : info.coordinates,
+                "cityLocation" : info.location
+               }
 
-    if request == 'cityInfo':
-        data = info.get_config(fs.mydir+'/ConfigFile')
-    elif request == 'geoInfo':
+    data = ""
+
+    if request == 'geoInfo':
         data = info.get_district('district',fs.mydir)
     elif request == 'exist_Country&City':
         data = fs.search_dir_file('/ConfigFile')
@@ -765,33 +783,19 @@ def answer(request):
 
     return jsonText
 
-def bulid_info(string):
+def build_info(data):
     info = Information()
-    my_ip_address = '140.109.22.197'
     topic_path = '/static/Topic/'
-    if string[0]=='location':
-        info.store_location(string[1],string[2])
-        fs.create_folder('/ConfigFile/'+string[1])
-        info.finish_setup_step('step1')
-    elif string[0]=='geo':
-        info.create_config(fs.mydir,string[1],string[2])
-        fs.create_xml_file(info.city,string[3])
-        info.finish_setup_step('step2')
-    elif string[0]=='data':
-        info.store_db(string,fs.my_web_addr)
-        info.finish_setup_step('step3')
-    elif string[0]=='update':
-        sub_url = info.update_db(string)
-        rdf_text = json2rdf.generate_rdf_text(string[5])
-        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,string[1],'png',string[6],'wb')
-        print sub_url
-        content_distribution(sub_url)
-    elif string[0]=='download':
-        fs.create_folder(topic_path+string[1])
-        rdf_text = json2rdf.generate_rdf_text(string[2])
-        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,string[1],'png',string[3],'wb')
+    if data["purpose"]=='setup':
+        fs.create_folder('/ConfigFile/'+info.login)
+        info.store_location(data["latLng"], data["location"])
+        info.create_config(fs.mydir,data["key"])
+        fs.create_xml_file(info.login,data["wardInfo"].encode('utf-8'))
+        info.store_pos(data["location"],data["posArray"],fs.my_web_addr)
+        #info.store_fac(data["location"],data["facArray"])
+        info.finish_setup()
+    elif data["purpose"]=='facility':
+        info.store_fac(info.location,data)
 
 if __name__ == '__main__':
     # Build a sample db on the fly, if one does not exist yet.
@@ -801,7 +805,7 @@ if __name__ == '__main__':
         build_sample_db()
 
     # Start app
-    #app.run(host= fs.my_web_addr, port=int("80"), debug=True)
-    app.run(host= socket.gethostbyname(socket.gethostname()), port=int("80"))
+    app.run(host= socket.gethostbyname(socket.gethostname()), port=int("80"), debug=True)
+    #app.run(host= socket.gethostbyname(socket.gethostname()), port=int("80"))
 
 

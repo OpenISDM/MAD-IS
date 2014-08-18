@@ -1,0 +1,51 @@
+body {
+	border: 0;
+	margin: 0;
+}
+
+html, body, #mainCanvas, #map-canvas, #tablecanvas, #posEdit, #facEdit {
+	height: 100%;
+}
+
+#posTableContainer {
+	width: 95%;
+	margin: auto;
+}
+
+#sidebar {
+	height: 100%;
+}
+
+#posMenu, #facMenu, #addMenu, #removeMenu {
+	z-index: 1;
+	color: white;
+	background-color: #595959;
+	opacity: 0.85;
+}
+
+#tablecanvas {
+	background-color: #7f7f7f;
+	overflow-y: scroll;
+}
+
+h1 {
+	text-align: center;
+}
+
+#posTable a:hover {
+	cursor: pointer;
+}
+
+#posEdit, #facEdit {
+	overflow: hidden;
+}
+
+#posEdit, iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#facEdit, iframe {
+	width: 100%;
+	height: 100%;
+}

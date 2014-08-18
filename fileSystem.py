@@ -126,6 +126,7 @@ class FileSystem:
             content:
                 The xml content that will be inserted.
         '''
+
         filedir = FileSystem.mydir+"/District Info/"+city+'.xml'
         f = open(filedir, "w")
         f.write(content)
@@ -133,7 +134,7 @@ class FileSystem:
 
     def download_file(self,topic_dir,pos_id,format,content,mode):
         '''
-            Create topic file that can various formats.
+            Create topic file that have various formats.
 
             topic_dir:
                 Path that place topic files.

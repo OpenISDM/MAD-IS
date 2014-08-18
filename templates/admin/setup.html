@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--HTML Header-->
+<html>
+  <head>
+    <title>Setup</title>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyC0MXBPQYPcc3IAhEJJdCDE6bGPhFobPHo&sensor=false"></script>
+
+    <!--including css file here-->
+    <link rel="stylesheet" type="text/css" href="/static/css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/setup.css">
+
+    <!--including Javascript file here-->
+    <script type="text/javascript" src="/static/javascript/setup.js"></script>
+    <script type="text/javascript" src="/static/javascript/InputFacData.js"></script>
+    <script type="text/javascript" src="/static/javascript/semantic.js"></script>
+  </head>
+
+
+<!--END-->
+
+<!--HTML Body-->
+<body>
+  <div class="content">
+    <div class="main">
+
+      <div id="stepContainer">
+        <div id="step" class="ui four steps">
+          <div id="active1" class="ui active step">Location</div>
+          <div id="active2" class="ui disabled step">District Information</div>
+          <div id="active3" class="ui disabled step">POS Information</div>
+          <div id="active4" class="ui disabled step">Facility Input</div>
+        </div>
+        <div id="stepControl">
+          <div id="prev" class="ui disabled button">Back</div>
+          <div id="next" class="ui green button">Next</div>
+        </div>
+      </div>
+
+      <div id="header" class="ui top inverted black segment attached">
+        <h1>Find your Location
+          <br>
+          <span class="description">Step 1 - Search for location and press next</span>
+        </h1>
+      </div>
+
+      <div id="first" class="ui vertical segment">
+        <!-- step1-->
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+        <div id="map-canvas1"></div>
+        <!--end step1-->
+      </div>
+
+      <div id="second" class="ui vertical segment">
+        <!-- step2-->
+        <div class="ui celled grid">
+          <!-- Map element at the left hand side-->
+          <div class="eight wide column">
+            <div id="map-canvas2"></div>
+          </div>
+
+          <!-- Form at the left hand side-->
+          <div class="eight wide column">
+            <div id="myward" class="3 fluid ui inverted black buttons"></div>
+            <div id="countryInfo">
+              <textarea id="inputTextToSave1" placeholder="Please import file for district or region information"></textarea>
+              <strong>Select a File to Load:</strong>
+              <label class="ui gray button">Choose File<input type="file" id="fileToLoad1"></label>
+              <div id="load1" class="ui blue button">Load</div>
+              <br/><br/>
+              <strong>Fusion table ID</strong>
+              <input type="text" name="apikey" id="key" placeholder="Optional">                            
+            </div>
+          </div>   
+        </div>
+        <!--end step2-->
+      </div>
+
+      <div id="third" class="ui vertical segment">
+        <!--step3-->
+        <div class="ui celled grid">
+          <!-- Map element at the left hand side-->
+          <div class="eight wide column">
+            <div id="map-canvas3"></div>
+          </div>
+
+          <!-- Form at the left hand side-->
+          <div class="eight wide column">
+            <div id="posInfo">
+              <textarea id="inputTextToSave2" placeholder="Please import file for POS server information"></textarea>
+              <strong>Select a File to Load:</strong>
+              <label class="ui gray button">Choose File<input type="file" id="fileToLoad2"></label>
+              <div id="load2" class="ui blue button">Load</div>
+            </div>
+          </div>
+        </div>
+        <!--end step3-->
+      </div>
+
+      <div id="fourth" class="ui vertical segment">
+        <!-- step4-->
+        <div class="ui celled grid">
+          <!-- Table that do the schema mapping -->
+          <div class="eight wide column">
+            <h1 id="header" class="ui black inverted attached header">Scheme Mapping</h1>
+            <textarea id="inputTextToSave3" placeholder="Please import file for Facility Information"></textarea>
+            <strong>Select a File to Load:</strong>
+            <label class="ui gray button">Choose File<input type="file" id="fileToLoad3"></label>
+            <div class="ui disabled button" id="expand" style="float: right">Load</div>
+            <table border="1" id="myTable" class="ui compact inverted black table segment">
+              <tr>
+                <th id="afterSchema">MAD Facility Schema</th>
+                <th id="beforeSchema">Original Data Scheme</th>
+              </tr>
+              <tr>
+                <td id="name">Name</td>
+                <td>
+                  <select id='select1'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="type">Type</td>
+                <td>
+                  <select id='select2'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="ward">District</td>
+                <td>
+                  <select id='select3'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="addr">Address</td>
+                <td>
+                  <select id='select4'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="tel">Telphone</td>
+                <td>
+                  <select id='select5'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="lat">Latitude</td>
+                <td>
+                  <select id='select6'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="lng">Longitude</td>
+                <td>
+                  <select id='select7'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td id="moreInfo">More Info</td>
+                <td>
+                  <select id='select8'>
+                    <option>Null</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- The secton let user choose what purpose of facility-->
+          <div class="eight wide column">
+            <h1 id="header" class="ui black inverted attached header">Classify facilities</h1>
+            <div id="Facility">
+              <table border="0" id="facTable" class="ui compact inverted black table segment">
+                <thead>
+                  <tr>
+                    <th id="facility">Facility</th>
+                    <th id="kind">Category</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--end step4-->
+      </div>
+    </div>
+  </div><!-- close content-->
+
+
+    <!-- Reminder-->
+  <div class="ui modal">
+    <div class="header">
+      Complete Setup
+    </div>
+    <div class="content">
+      <div class="center">The setup will be submitted, please check it again.</div>
+    </div>
+    <div class="actions">
+      <div class="ui red button" id ="cancel">
+        Cancel
+      </div>
+      <div class="ui blue button" id ="confirm">
+        Confirm
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<!--END-->

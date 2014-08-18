@@ -74,8 +74,8 @@ def create_info():
         Receive the information from client side and store it.
     '''
     if request.method == 'POST':
-        string = (request.data).split('$')
-        IS.bulid_info(string)
+        data = json.loads(request.data)
+        IS.build_info(data)
         return 'ok'
         #return redirect(url_for('.setup_view',step=request.args.get('request')))
 
