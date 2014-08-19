@@ -59,6 +59,18 @@ def answer(request):
         jsonText['configInfo'] = config_info
         jsonText['wardInfo'] = ward_info
         jsonText['posInfo'] = pos_info
+    elif request=='update':
+        sub_url = info.update_db(string)
+        rdf_text = json2rdf.generate_rdf_text(string[5])
+        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
+        fs.download_file(topic_path,string[1],'png',string[6],'wb')
+        print sub_url
+        content_distribution(sub_url)
+    elif request=='download':
+        fs.create_folder(topic_path+string[1])
+        rdf_text = json2rdf.generate_rdf_text(string[2])
+        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
+        fs.download_file(topic_path,string[1],'png',string[3],'wb')
 
     jsonText['data'] = data
 
