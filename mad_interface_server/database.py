@@ -38,9 +38,22 @@
 import sys
 from flask_sqlalchemy import SQLAlchemy
 # from wtforms import form, fields, validators
-
 from mad_interface_server import app
 db = SQLAlchemy(app)
+
+'''from sqlalchemy import create_engine, Column, Integer, String, Boolean
+from sqlalchemy.orm import scoped_session, sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+
+engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'],
+                       convert_unicode=True,
+                       **app.config['DATABASE_CONNECT_OPTIONS'])
+db = scoped_session(sessionmaker(autocommit=False,
+                                 autoflush=False,
+                                 bind=engine))
+
+Model = declarative_base(name='Model')
+Model.query = db.query_property()'''
 
 def build_sample_db():
     """

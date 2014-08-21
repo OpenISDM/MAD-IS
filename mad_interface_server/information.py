@@ -35,6 +35,15 @@
         2014/5/1: complete version 1.0
 '''
 
+from mad_interface_server.database import db, User, POS, Facility
+from flask.ext import login
+from fileSystem import FileSystem
+from configobj import ConfigObj
+import xml.etree.ElementTree as ET
+import os
+
+
+fs = FileSystem()
 
 def answer(request):
 
@@ -59,18 +68,7 @@ def answer(request):
         jsonText['configInfo'] = config_info
         jsonText['wardInfo'] = ward_info
         jsonText['posInfo'] = pos_info
-    elif request=='update':
-        sub_url = info.update_db(string)
-        rdf_text = json2rdf.generate_rdf_text(string[5])
-        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,string[1],'png',string[6],'wb')
-        print sub_url
-        content_distribution(sub_url)
-    elif request=='download':
-        fs.create_folder(topic_path+string[1])
-        rdf_text = json2rdf.generate_rdf_text(string[2])
-        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,string[1],'png',string[3],'wb')
+
 
     jsonText['data'] = data
 
@@ -86,14 +84,23 @@ def build_info(data):
         info.create_config(fs.mydir, data["key"])
         fs.create_xml_file(info.login, data["wardInfo"].encode('utf-8'))
         info.store_pos(data["location"], data["posArray"], fs.my_web_addr)
-        # info.store_fac(data["location"],data["facArray"])
         info.finish_setup()
     elif data["purpose"] == 'facility':
         info.store_fac(info.location, data)
+    elif data["purpose"]=='update':
+        sub_url = info.update_db(data)
+        rdf_text = json2rdf.generate_rdf_text(string[5])
+        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
+        fs.download_file(topic_path,string[1],'png',string[6],'wb')
+        content_distribution(sub_url)
+    elif data["purpose"]=='download':
+        fs.create_folder(topic_path+string[1])
+        rdf_text = json2rdf.generate_rdf_text(string[2])
+        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
+        fs.download_file(topic_path,string[1],'png',string[3],'wb')
 
 
 class Information:
-
     '''
         The class "information" allow you/me insert and extract data.
     '''
@@ -102,9 +109,7 @@ class Information:
         '''
             Initialize user and its city and country he/she serve
         '''
-        self.user = User.query.filter_by(
-            id=login.current_user.get_id()).first()
-
+        self.user = User.query.filter_by(id=login.current_user.get_id()).first()
         self.login = self.user.login
         self.location = self.user.location
         self.coordinates = self.user.coordinates

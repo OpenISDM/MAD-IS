@@ -39,6 +39,7 @@
 from flask import Flask,request,jsonify,render_template,after_this_request,make_response
 from flask import Blueprint
 
+
 demand = Blueprint('demand', __name__)
 import json
 import uuid
@@ -64,7 +65,8 @@ def receive_req():
     '''
         Receive a request from client side and response according different demands
     '''
-    response = IS.answer(request.data)
+    import information
+    response = information.answer(request.data)
     return jsonify(response)
 
 @demand.route('/send/', methods=['GET', 'POST'])
@@ -72,9 +74,11 @@ def create_info():
     '''
         Receive the information from client side and store it.
     '''
+
+    import information
     if request.method == 'POST':
         data = json.loads(request.data)
-        IS.build_info(data)
+        information.build_info(data)
         return 'ok'
         #return redirect(url_for('.setup_view',step=request.args.get('request')))
 

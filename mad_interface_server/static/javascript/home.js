@@ -2,8 +2,6 @@ window.onload = function() {
     // Initialize all onclick events and div positioning
     init();
 
-    //$("#facOptions").on("click", facHandle);
-    //$("#posOptions").on("click", posHandle);
     $("#logoutView").on("click", logout);
 
     // If in data view mode, re-bind all onclick events
@@ -72,7 +70,6 @@ function sidebarPopup() {
             $(this).popup("show");
         }
     });
-
 }
 
 // Set up sidebar toggle functionality
@@ -114,8 +111,6 @@ function sidebarToggleActiveElement() {
     }
 }
 
-//setTimeout("location.reload();",5000);
-
 // Initialize a map with imported data (TODO!!)
 function initialize() {
     // INITIALIZE MAP
@@ -126,7 +121,6 @@ function initialize() {
         disableDoubleClickZoom: true
     });
 
-    //grid = new Graticule(map);
     setup();
 
     // CHECK MAP BOUNDS
@@ -154,20 +148,14 @@ function initialize() {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 /// google map object
-var grid;
 var rectangle;
 var infoWindow = new google.maps.InfoWindow();
 var facMarkers = [];
 var posMarkers = [];
 var geocoder = new google.maps.Geocoder();
 
-//record each POS bound range
-var boundArray = [];
-
-var originLatLng = "";
-var pos_index = "";
-var rowIds = 0; //record table row count
-var frontera = ""; //fusion table key
+var boundArray = [];    //record each POS bound range
+var frontera = "";      //fusion table key
 var posServer = [];
 var fac = [];
 var allWard = [];
@@ -246,12 +234,10 @@ function setPOS(posData) {
     }
 }
 
-
 function addPOSList(posServer, i){
 	var html = $("#posMenu").html() + '<a class="ui fluid inverted purple button item" href="javascript:posPosition('+i+')">' + posServer.myname + '<\/a>';
 	$("#posMenu").html(html);
 }
-
 
 function posPosition(index) {
 
@@ -260,7 +246,6 @@ function posPosition(index) {
     } else {
         rectangleMethod(index);
     }
-	//switchMethod(index);
 	openInfoWindow(posMarkers[index], index, "");
 }
 
@@ -272,12 +257,6 @@ function createMarker(place, placeType, index) {
         map: map,
         title: place.myname
     });
-    marker.myname = place.myname;
-    marker.myward = place.myward;
-    marker.mylat = place.lat;
-    marker.mylon = place.lng;
-
-    //var html = '<div style="width: 240px; height: 50px"><b>' + place.myname + '<\/b><br>' + '<\/div>';
 
     if (placeType == 'fac') {
         marker.setIcon('/static/img/facility.png')
@@ -287,7 +266,7 @@ function createMarker(place, placeType, index) {
         content = getFacContent(index);
         
         google.maps.event.addListener(marker, 'click', function() {
-    		openInfoWindow(facMarkers[index], index, content);
+    		openInfoWindow(marker, index, content);
   		});
     } else {
         if (place.isexist == true) {
@@ -297,9 +276,8 @@ function createMarker(place, placeType, index) {
 
         google.maps.event.addListener(marker, "click", function (e) { 
             switchMethod(index);
-            openInfoWindow(posMarkers[index], index, content);
+            openInfoWindow(marker, index, content);
             changeColumnVal(index,  getFacInfo(index));
-	      	//posPosition(index);
 	    });
     }
 }
@@ -318,7 +296,6 @@ function getFacContent(index){
     return contentStr;
 } 
 
-
 function switchMethod(index){
   if (posServer[index].cutWay == 'District') {
       posServer[index].cutWay = 'Rectangle';
@@ -329,13 +306,12 @@ function switchMethod(index){
   }
 }
 
-
 function openInfoWindow(marker, index, content) {
 
     if (content == "") {
         content = '<div style="width: 400px; height: 150px">' +
-            '<b>Name : ' + marker.myname + '<\/b><br>' +
-            '<b>District : ' + marker.myward + '<\/b><br>' +
+            '<b>Name : ' + posServer[index].myname + '<\/b><br>' +
+            '<b>District : ' + posServer[index].myward + '<\/b><br>' +
             '<b>Number of facility : ' + getFacInfo(index) + '<\/b><br>' +
             '<b>Partition Method : ' + posServer[index].cutWay + '<\/b><br>';
     }
@@ -424,29 +400,28 @@ function getFacInfo(index) {
 
     if (posServer[index].cutWay == 'District') {
         imgUrl += "&zoom=14"
-        for (var k = 0; k < facMarkers.length; k++) {
-            if (facMarkers[k].myward == posServer[index].myward) {
+        for (var k = 0; k < fac.length; k++) {
+            if (fac[k].myward == posServer[index].myward) {
                 num++;
                 facElement = createFacElement(k);
 
-                if ((imgUrl + setUrl(facMarkers[k].mylat, facMarkers[k].mylon)).length < 2000) {
-                    imgUrl += setUrl(facMarkers[k].mylat, facMarkers[k].mylon);
+                if ((imgUrl + setUrl(fac[k].lat, fac[k].lng)).length < 2000) {
+                    imgUrl += setUrl(fac[k].lat, fac[k].lng);
                 }
                 jsonArrayText.push(facElement);
             }
         }
     } else {
-        //var html = '';
         imgUrl += "&zoom=14"
-        for (var m = 0; m < facMarkers.length; m++) {
-            if (((boundArray[index].minLat < facMarkers[m].mylat) && (facMarkers[m].mylat < boundArray[index].maxLat)) && ((boundArray[index].minLng < facMarkers[m].mylon) && (facMarkers[m].mylon < boundArray[index].maxLng))) {
+        for (var m = 0; m < fac.length; m++) {
+            if (((boundArray[index].minLat < fac[m].lat) && (fac[m].lat < boundArray[index].maxLat)) && ((boundArray[index].minLng < fac[m].lng) && (fac[m].lng < boundArray[index].maxLng))) {
 
-                html += '<a class="ui fluid inverted purple button item" href="javascript:Fac_Position(' + m + ')">' + facMarkers[m].myname + '<\/a>';
+                html += '<a class="ui fluid inverted purple button item" href="javascript:Fac_Position(' + m + ')">' + fac[m].myname + '<\/a>';
                 num++;
 
                 facElement = createFacElement(m);
-                if ((imgUrl + setUrl(facMarkers[m].mylat, facMarkers[m].mylon)).length < 2000) {
-                    imgUrl += setUrl(facMarkers[m].mylat, facMarkers[m].mylon);
+                if ((imgUrl + setUrl(fac[m].lat, fac[m].lng)).length < 2000) {
+                    imgUrl += setUrl(fac[m].lat, fac[m].lng);
                 }
                 jsonArrayText.push(facElement);
             }
@@ -560,11 +535,6 @@ function postServer(index, purpose) {
             serverUrl = "http://140.109.22.197/send/";
             break;
 
-        case "Publish":
-            str = posServer[index].myname;
-            serverUrl = "http://140.109.22.197/Publish/";
-            break;
-
         case "Update":
             str = 'update$' + posServer[index].myname + '$' + posServer[index].cutWay + '$' + boundArray[index].minPoint + '$' + boundArray[index].maxPoint + '$' + topicText[index] + '$' + staticImg[index];
             serverUrl = "http://140.109.22.197/send/";
@@ -592,7 +562,6 @@ function SwitchMethod(selector) {
     postServer(posIndex, "Update");
 }
 
-
 function switchArea(number) {
     for (var n = 0; n < allWard.length; n++) {
         if (posServer[number].myward == allWard[n]) {
@@ -606,10 +575,10 @@ function showFacility(number) {
     var html = '';
     html += '<h1>' + posServer[number].myward + '</h1>';
 
-    for (var n = 0; n < facMarkers.length; n++) {
-        if (facMarkers[n].myward == posServer[number].myward) {
+    for (var n = 0; n < fac.length; n++) {
+        if (fac[n].myward == posServer[number].myward) {
             facMarkers[n].setMap(map);
-            html += '<a class="ui fluid inverted purple button item" href="javascript:Fac_Position(' + n + ')">' + facMarkers[n].myname + '<\/a>';
+            html += '<a class="ui fluid inverted purple button item" href="javascript:Fac_Position(' + n + ')">' + fac[n].myname + '<\/a>';
         } else {
             facMarkers[n].setMap(null);
         }
@@ -671,9 +640,9 @@ function showNearFac(index) {
     var maxX = boundArray[index].maxLng + (parseFloat(0.01)) * 3;
     var minY = boundArray[index].minLat - (parseFloat(0.005)) * 3;
     var maxY = boundArray[index].maxLat + (parseFloat(0.005)) * 3;
-    for (var k = 0; k < facMarkers.length; k++) {
-        if (((minY < facMarkers[k].mylat) && (facMarkers[k].mylat < maxY)) && (
-            (minX < facMarkers[k].mylon) && (facMarkers[k].mylon < maxX))) {
+    for (var k = 0; k < fac.length; k++) {
+        if (((minY < fac[k].lat) && (fac[k].lat < maxY)) && (
+            (minX < fac[k].lng) && (fac[k].lng < maxX))) {
             facMarkers[k].setMap(map);
         } else {
             facMarkers[k].setMap(null);
@@ -711,7 +680,6 @@ function facHandle(){
 function posHandle(){
     setTimeout('window.location.replace("http://140.109.22.197/admin/posview/")', 100);
 }
-
 
 function logout(){
     setTimeout('window.location.replace("http://140.109.22.197/admin/logout/")', 100);

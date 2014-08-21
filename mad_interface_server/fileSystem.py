@@ -54,54 +54,6 @@ class FileSystem:
 
     my_topic_dir = mydir + '/static/Topic/'
 
-    def search_dir_file(self,config_dir):
-        '''
-            Search the file and directory on assigned path.
-
-            config_dir:
-                Path that place configuration files.
-
-            Returned Value:
-                If the function find the file, the returned is an array of directory information;
-        '''
-        print FileSystem.mydir
-        path = FileSystem.mydir+config_dir
-        dir_list = []
-        file_list = []
-        diretory_info = []
-        items = os.listdir(path)
-        '''
-            Look for folder and append when find it.
-        '''
-        for f in items:
-            if(os.path.isdir(path + '/' + f)):
-                if(f[0] == '.'):
-                    '''
-                        if filename's first character is ".", pass
-                    '''
-                    pass
-                else:
-                    '''
-                        Otherwise, append it
-                    '''
-                    dir_list.append(f)
-        for dl in dir_list:
-            country={
-                "Nation" : dl,
-                "City":[]
-            }
-            files = os.listdir(path+ '/' + dl)
-            for f in files:
-                if(os.path.isfile(path + '/' + dl + '/' + f)):
-                    '''
-                        if find file, append it
-                    '''
-                    file_list.append(f)
-                    country["City"].append({"Name":f[:-4]})
-
-            diretory_info.append(country)
-        return diretory_info
-
     def create_folder(self,foldername):
 
         '''
