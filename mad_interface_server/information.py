@@ -41,6 +41,7 @@ from fileSystem import FileSystem
 from configobj import ConfigObj
 import xml.etree.ElementTree as ET
 import os
+import json2rdf
 
 
 fs = FileSystem()
@@ -69,11 +70,9 @@ def answer(request):
         jsonText['wardInfo'] = ward_info
         jsonText['posInfo'] = pos_info
 
-
     jsonText['data'] = data
 
     return jsonText
-
 
 def build_info(data):
     info = Information()
@@ -89,15 +88,15 @@ def build_info(data):
         info.store_fac(info.location, data)
     elif data["purpose"]=='update':
         sub_url = info.update_db(data)
-        rdf_text = json2rdf.generate_rdf_text(string[5])
-        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,string[1],'png',string[6],'wb')
-        content_distribution(sub_url)
+        rdf_text = json2rdf.generate_rdf_text(data["textContent"])
+        fs.download_file(topic_path,data["posName"],'rdf',rdf_text,'w')
+        fs.download_file(topic_path,data["posName"],'png',data["imgUrl"],'wb')
+        #content_distribution(sub_url)
     elif data["purpose"]=='download':
-        fs.create_folder(topic_path+string[1])
-        rdf_text = json2rdf.generate_rdf_text(string[2])
-        fs.download_file(topic_path,string[1],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,string[1],'png',string[3],'wb')
+        fs.create_folder(topic_path+data["posName"])
+        rdf_text = json2rdf.generate_rdf_text(data["textContent"])
+        fs.download_file(topic_path,data["posName"],'rdf',rdf_text,'w')
+        fs.download_file(topic_path,data["posName"],'png',data["imgUrl"],'wb')
 
 
 class Information:
@@ -179,7 +178,6 @@ class Information:
         config.filename = mydir + '/ConfigFile/' + \
             self.login + '/' + self.login + '.ini'
         config['Country Information'] = {}
-        #config['Country Information']['Origin Of Coordinates']=coordinate
         config['Country Information']['District Info Path'] = mydir + \
             "/District Info/" + self.login + '.xml'
         config['Boundary'] = {}
@@ -318,8 +316,6 @@ class Information:
                     'description': f.description
                 }
                 all_fac.append(fac)
-            else:
-                all_fac = []
 
         return all_fac
 
@@ -348,8 +344,6 @@ class Information:
                     'isContact': p.is_subscribe
                 }
                 all_pos.append(pos)
-            else:
-                all_pos = []
 
         return all_pos
 
@@ -364,10 +358,10 @@ class Information:
         for p in db.session.query(POS):
 
             # Find the specified POS server
-            if p.id == POSInfo[1]:
+            if p.id == POSInfo["posName"]:
                 sub_url = p.callback_url
 
-                p.partition_method = POSInfo[2]
+                p.partition_method = POSInfo["posMethod"]
                 if p.partition_method == 'District':
 
                     '''
@@ -379,7 +373,7 @@ class Information:
                     '''
                         Set value to text user send while method is "district"
                     '''
-                    p.bound_min_point = POSInfo[3]
-                    p.bound_max_point = POSInfo[4]
+                    p.bound_min_point = POSInfo["boundMinPoint"]
+                    p.bound_max_point = POSInfo["boundMaxPoint"]
         db.session.commit()
         return sub_url
