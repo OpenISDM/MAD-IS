@@ -190,7 +190,7 @@ function setup() {
             showBoundary(obj.configInfo.key);
         }
     };
-    xmlhttp.open("POST", "http://140.109.22.197/fetch/", true);
+    xmlhttp.open("POST", "/fetch/", true);
     xmlhttp.send("setupInfo");
 }
 
@@ -552,7 +552,7 @@ function postServer(index, purpose) {
             break;
     }
     sendData = JSON.stringify(sendData);
-    serverUrl = "http://140.109.22.197/send/";
+    serverUrl = "/send/";
     hr.open("POST", serverUrl, true);
     hr.send(sendData);
 }
@@ -668,13 +668,13 @@ function changeColumnVal(index, number) {
 }
 
 function facHandle() {
-    setTimeout('window.location.replace("http://140.109.22.197/admin/facilityview/")', 100);
+    setTimeout('window.location.replace("/admin/facilityview/")', 100);
 }
 
 function posHandle() {
-    setTimeout('window.location.replace("http://140.109.22.197/admin/posview/")', 100);
+    setTimeout('window.location.replace("/admin/posview/")', 100);
 }
 
 function logout() {
-    setTimeout('window.location.replace("http://140.109.22.197/admin/logout/")', 100);
+    setTimeout('window.location.replace("/admin/logout/")', 100);
 }

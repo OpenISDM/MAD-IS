@@ -11,7 +11,14 @@ include
 *.pyc
 *.pyo
 
+
 # Other we could ignore files
 *.whoosh
 *.db
 *.egg-info
+.project
+.pydevproject
+
+# MAD-IS
+Topic
+*.sqlite

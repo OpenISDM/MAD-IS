@@ -214,7 +214,7 @@ function sendFacInfo() {
       facObj = JSON.stringify(facObj);
 
       var hr = new XMLHttpRequest();
-      var serverUrl = "http://140.109.22.197/send/";
+      var serverUrl = "/send/";
       hr.open("POST", serverUrl, true);
       hr.send(facObj);
   }

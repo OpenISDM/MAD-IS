@@ -173,7 +173,7 @@ function completeSetup() {
     jsonData = JSON.stringify(jsonData);
 
     var hr = new XMLHttpRequest();
-    var serverUrl = "http://140.109.22.197/send/";
+    var serverUrl = "/send/";
     hr.open("POST", serverUrl, true);
     hr.send(jsonData);
 
@@ -181,7 +181,7 @@ function completeSetup() {
     document.getElementById('next').className = 'ui green button';
     document.getElementById('next').innerHTML = '<i class=\"loading icon\"></i> Saving';
 
-    setTimeout('window.location.replace("http://140.109.22.197/admin/home/")', 90000);
+    setTimeout('window.location.replace("/admin/home/")', 90000);
 }
 
 
