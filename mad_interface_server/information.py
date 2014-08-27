@@ -37,7 +37,7 @@
 
 from mad_interface_server.database import db, User, POS, Facility
 from flask.ext import login
-from fileSystem import FileSystem
+from file_system import FileSystem
 from configobj import ConfigObj
 import xml.etree.ElementTree as ET
 import os

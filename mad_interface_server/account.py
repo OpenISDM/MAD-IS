@@ -42,11 +42,12 @@ from flask_admin import helpers, expose
 from flask import redirect, url_for, request
 
 from mad_interface_server import app
-from mad_interface_server.Customform import LoginForm, RegistrationForm
+from mad_interface_server.custom_form import LoginForm, RegistrationForm
 from mad_interface_server import database
-from mad_interface_server.fileSystem import FileSystem as fs
+from mad_interface_server.file_system import FileSystem 
 
 show_menu = False
+fs = FileSystem()
 
 
 def init_login():
