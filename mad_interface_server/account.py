@@ -1,4 +1,6 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
+
 '''
     Copyright (c) 2014  OpenISDM
 
@@ -66,29 +68,19 @@ def init_admin():
     # Create admin
     global admin
     admin = admin.Admin(app, 'MAD-IS', index_view=MyAdminIndexView())
-    #admin = admin.Admin(app, 'MAD-IS', index_view=MyAdminIndexView(), base_template='admin/home.html')
-    # admin.add_view(Home(name="Monitor"))
-
     admin.add_view(PosView(database.POS, database.db.session))
-    admin.add_view(FacView(database.Facility, database.db.session))
-    # admin.add_view(ImportDataView(category='Data'))
-    #admin.add_view(MyModelView(POS, db.session, category='Data'))
-    #admin.add_view(MyModelView(Facility, db.session, category='Data'))
-    #admin.add_view(ContactView(name='Contact Us'))
-
-
+    admin.add_view(FacView(database.Facility, database.db.session))
 class PosView(sqla.ModelView):
-    #list_template = 'admin/home.html'
+    # list_template = 'admin/home.html'
 
     '''
         Create customized model view class.
     '''
     column_searchable_list = ('id',)
-    #list_template = 'listPOS.html'
+    # list_template = 'listPOS.html'
 
     @expose('/delete', methods=('GET', 'POST'))
     def deleteAll_view(self):
-        #shelter = Shelter('shit')
         database.db.session.query(POS).delete()
         database.db.session.commit()
 
@@ -99,7 +91,7 @@ class PosView(sqla.ModelView):
 
 
 class FacView(sqla.ModelView):
-    #list_template = 'admin/home.html'
+    # list_template = 'admin/home.html'
 
     '''
         Create customized model view class.
@@ -120,30 +112,23 @@ class FacView(sqla.ModelView):
 
 class MyAdminIndexView(admin.AdminIndexView):
 
-    '''
-        Create customized index view class that handles login & registration & setup
-    '''
+    """        Create customized index view class that handles        login & registratio & setup
+    """
     @expose('/')
-    def index(self):
-        '''
-            Enter the index View.
-        '''
-        global show_menu
-
+    def index(self):
+        global show_menu        """
+            if user have not been authenticated, got to login view.
+        """
         if not login.current_user.is_authenticated():
-            '''
-                if user have not been authenticated, got to login view.
-            '''
-            return redirect(url_for('.login_view'))
-
-        # Start to query the match user
+            return redirect(url_for('.login_view'))
+        """
+            Find user, and if there have not setting about country,
+            start the setup.Otherwise, enter the view that have already
+            setup.
+        """
         for u in database.db.session.query(database.User):
             if login.current_user.get_id() == u.id:
-                '''
-                    Find user, and if there have not setting about country, start the setup.
-                    Otherwise, enter the view that have already setup.
-                '''
-                if u.is_finish_setup == False:
+                if u.is_finish_setup is False:
                     show_menu = False
                     return redirect(url_for('.setup_view'))
                 else:
@@ -155,10 +140,11 @@ class MyAdminIndexView(admin.AdminIndexView):
 
     @expose('/setup/')
     def setup_view(self):
-        '''
-            Setup View, and if there have not setting about country, start the setup.
-            Otherwise, enter the view that have already finished the setup.
-        '''
+        """
+            Setup View, and if there have not setting about country,
+            start the setup.Otherwise, enter the view that have
+            already finished the setup.
+        """
         return self.render('admin/setup.html')
 
     @expose('/login/', methods=('GET', 'POST'))
@@ -217,9 +203,10 @@ class MyAdminIndexView(admin.AdminIndexView):
 
 class Home(admin.BaseView):
 
-    '''
-        Create customized index view class that handles the monitor of POS servers status
-    '''
+    """
+        Create customized index view class that handles
+        the monitor of POS servers status
+    """
     @admin.expose('/')
     def index(self):
         return self.render('home.html')
@@ -228,22 +215,22 @@ class Home(admin.BaseView):
         return login.current_user.is_authenticated()
 
     def is_visible(self):
-        if show_menu == True:
+        if show_menu is True:
             return True
         else:
             return False
 
 
 def determine_topic_and_hub(pos_id, pos_type):
-    '''
-        Decide which topic address and hub address will be assigned the subscriber and
-        return the json object that include their values.
+    """
+        Decide which topic address and hub address will
+        be assigned the subscriber and return the json
+        object that include their values.
 
-        pos_id: The POS server ID
+        pos_id : The POS server ID
 
-        pos_type:
-            The fix type or mobile type of POS server
-    '''
+        pos_type : The fix type or mobile type of POS server
+    """
 
     reply = {
         'hub_url': fs.my_web_addr + '/subscribe/',
@@ -261,17 +248,7 @@ def determine_topic_and_hub(pos_id, pos_type):
     return reply
 
 
-def match_url(topic_url):
-    '''
-        Decide which topic address and hub address will be assigned the subscriber and
-        return the json object that include their values.
-
-        pos_id: The POS server ID
-
-        pos_type:
-            The fix type or mobile type of POS server
-    '''
-
+def match_url(topic_url):
     is_find = False
     for p in database.db.session.query(POS):
         if p.topic_dir == topic_url:
@@ -289,12 +266,11 @@ def store_subscriber(topic_url, callback_url):
 
 
 def content_distribution(sub_url):
-    '''
-        Prepare file that will send the subscriber, then publish to the corresponding subscriber.
-    '''
-
-    # search the corresponding POS ID according the subscriber url
-    if sub_url is not None:
+    """
+        Prepare file that will send the subscriber,
+        then publish to the corresponding subscriber.
+    """    # search the corresponding POS ID according the subscriber url
+    if sub_url is not None:
         for p in database.db.session.query(POS):
             if p.callback_url == sub_url:
                 pos_id = p.id

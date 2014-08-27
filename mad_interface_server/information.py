@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 '''
     Copyright (c) 2014  OpenISDM
 
@@ -46,6 +46,7 @@ import json2rdf
 
 fs = FileSystem()
 
+
 def answer(request):
 
     info = Information()
@@ -73,7 +74,7 @@ def answer(request):
     jsonText['data'] = data
 
     return jsonText
-
+
 def build_info(data):
     info = Information()
     topic_path = '/static/Topic/'
@@ -86,17 +87,17 @@ def build_info(data):
         info.finish_setup()
     elif data["purpose"] == 'facility':
         info.store_fac(info.location, data)
-    elif data["purpose"]=='update':
+    elif data["purpose"] == 'update':
         sub_url = info.update_db(data)
         rdf_text = json2rdf.generate_rdf_text(data["textContent"])
-        fs.download_file(topic_path,data["posName"],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,data["posName"],'png',data["imgUrl"],'wb')
-        #content_distribution(sub_url)
-    elif data["purpose"]=='download':
+        fs.download_file(topic_path, data["posName"], 'rdf', rdf_text, 'w')
+        fs.download_file(            topic_path, data["posName"], 'png', data["imgUrl"], 'wb')
+        # content_distribution(sub_url)
+    elif data["purpose"] == 'download':
         fs.create_folder(topic_path+data["posName"])
         rdf_text = json2rdf.generate_rdf_text(data["textContent"])
-        fs.download_file(topic_path,data["posName"],'rdf',rdf_text,'w')
-        fs.download_file(topic_path,data["posName"],'png',data["imgUrl"],'wb')
+        fs.download_file(topic_path, data["posName"], 'rdf', rdf_text, 'w')
+        fs.download_file(            topic_path, data["posName"], 'png', data["imgUrl"], 'wb')
 
 
 class Information:
@@ -108,7 +109,8 @@ class Information:
         '''
             Initialize user and its city and country he/she serve
         '''
-        self.user = User.query.filter_by(id=login.current_user.get_id()).first()
+        self.user = User.query.filter_by(
+            id=login.current_user.get_id()).first()
         self.login = self.user.login
         self.location = self.user.location
         self.coordinates = self.user.coordinates
@@ -140,7 +142,8 @@ class Information:
                 configuration file's path
 
             Returned Value:
-                If the function find the file, the returned is a json object of configuration content;
+                If the function find the file, the returned is a json
+                object of configuration content;
                 otherwise, the returned value is null.
         '''
         filename = configdir + '/' + self.login + '/' + self.login + '.ini'
@@ -148,7 +151,7 @@ class Information:
             # if file is exist, get its content.
             config = ConfigObj(filename)
             config_info = {
-                "wardpath": config['Country Information']['District Info Path'],
+                "wardpath": config['Country Info']['District Info Path'],
                 "key": config['Boundary']['ApiKey']
             }
             return config_info
@@ -157,7 +160,7 @@ class Information:
             return 'Null'
 
     def create_config(self, mydir, key):
-        '''
+        """
             Create the configuration file
 
             mydir:
@@ -170,15 +173,15 @@ class Information:
                 The cloud document ID
 
             Returned Value:
-                If the function find the file, the returned is a json object of configuration content;
-                otherwise, the returned value is null.
-        '''
+                If the function find the file, the returned is a json object
+                of configuration content;                otherwise, the returned value is null.
+        """
 
         config = ConfigObj()
         config.filename = mydir + '/ConfigFile/' + \
             self.login + '/' + self.login + '.ini'
-        config['Country Information'] = {}
-        config['Country Information']['District Info Path'] = mydir + \
+        config['Country Info'] = {}
+        config['Country Info']['District Info Path'] = mydir + \
             "/District Info/" + self.login + '.xml'
         config['Boundary'] = {}
         config['Boundary']['ApiKey'] = key

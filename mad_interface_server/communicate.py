@@ -19,8 +19,8 @@
         Mobile Assistance for Disasters (MAD) in the OpenISDM
         Virtual Repository project.
 
-        Establish communication with client side, and server will do some actions
-        according different request.
+        Establish communication with client side, and server will
+        do some actions according different request.
 
     Authors:
 
@@ -36,23 +36,24 @@
         2014/6/5: complete version 1.0
 '''
 
-from flask import Flask,request,jsonify,render_template,after_this_request,make_response
-from flask import Blueprint
-
+from flask import Flask, request, jsonify, render_template
+from flask import Blueprint, after_this_request, make_response
 
 demand = Blueprint('demand', __name__)
 import json
 import uuid
 import requests
 import time
+
 postInfo = "Null"
 need_validate = False
+
 
 @demand.teardown_request
 def teardown_request(exception):
     global postInfo
     postData = postInfo
-    if postData !="Null":
+    if postData != "Null":
         time.sleep(2)
         validate_topic_url(postData)
         postInfo = 'Null'
@@ -60,15 +61,17 @@ def teardown_request(exception):
     else:
         return 'thx'
 
+
 @demand.route('/fetch/', methods=['POST', 'GET'])
 def receive_req():
     '''
-        Receive a request from client side and response according different demands
+        Receive a request from client side and response
+        according different demands
     '''
     import information
     response = information.answer(request.data)
     return jsonify(response)
-
+
 @demand.route('/send/', methods=['GET', 'POST'])
 def create_info():
     '''
@@ -79,8 +82,7 @@ def create_info():
     if request.method == 'POST':
         data = json.loads(request.data)
         information.build_info(data)
-        return 'ok'
-        #return redirect(url_for('.setup_view',step=request.args.get('request')))
+        return 'ok'
 
 @demand.route('/hub/', methods=['GET', 'HEAD'])
 def discovery():
@@ -99,7 +101,7 @@ def discovery():
     print 'return response'
     print dt
 
-    #print >> sys.stderr, "/hub GET HEAD..."
+    # print >> sys.stderr, "/hub GET HEAD..."
     resp = make_response(render_template('ok.html'), 200)
     resp.headers['link'] = '<' + dt['hub_url'] + '>; rel="hub", <' \
         + dt['topic_url'] + '>; rel="self"'
@@ -110,7 +112,7 @@ def discovery():
     #
     # result = determineTopic(request.query_string)
     #
-
+
 @demand.route('/subscribe/', methods=['POST'])
 def hub():
     print 'hello'
@@ -128,17 +130,12 @@ def hub():
     # hub.topic
     #
     # hub.lease_seconds(Optional) -
-    #     The hub-determined number of seconds that the subscription will stay active before expiring,
-    #     measured from the time the verification request was made from the hub to the subscriber.
-    #
-    # hub.secret(Optional) -
-    #     A subscriber-provided secret string that will be used to compute an HMAC digest
-    #     for authorized content distribution.
-    #
-
+    #     The hub-determined number of seconds that the subscription will    #     stay active before expiring, measured from the time the verification
+    #     request was made from the hub to the subscriber.    #
+    # hub.secret(Optional) -    #     A subscriber-provided secret string that will be used to compute an    #     HMAC digest for authorized content distribution.
+    #
     global postInfo
 
-    #postData = json.loads(request.data)
     postData = request.form
     print postData
     if postData['hub.mode'] and postData['hub.topic'] \
@@ -147,8 +144,8 @@ def hub():
             #
             # solve postData to Global context
             #
-            #g.postData = postData
-            #is_find_url = info.match_url(postInfo['hub.topic'])
+            # g.postData = postData
+            # is_find_url = info.match_url(postInfo['hub.topic'])
             postInfo = postData
 
             resp = make_response(render_template('Accepted.html'), 202)
@@ -172,28 +169,28 @@ def hub():
     # elif postData['hub.mode'] == 'publish':
     #     return 'publish'
     #
-
+
 def validate_topic_url(postData):
 
     #
-    # Subscriptions MAY be validated by the Hubs who may require more details to accept or refuse a subscription.
-    # The Hub MAY also check with the publisher whether the subscription should be accepted.
-    # Hubs MUST preserve the query string during subscription verification
-    # by appending new parameters to the end of the list using the & (ampersand) character to join.
-    #
-    # If topic URL is correct from publisher, the hub MUST perform verification of intent of the subscirber
-    # if denied, hub must infrom GET request to subscriber's callback URL []
-    #
+    # Subscriptions MAY be validated by the Hubs who may require more details
+    # to accept or refuse a subscription.The Hub MAY also check with the
+    # publisher whether the subscription should be accepted.Hubs MUST preserve
+    # the query string during subscription verification by appending new
+    # parameters to the end of the list using the & (ampersand) character
+    # to join.    #
+    # If topic URL is correct from publisher, the hub MUST perform verification
+    # of intent of the subscirber if denied, hub must infrom GET request to
+    # subscriber's callback URL []    #
 
-    #print >> sys.stderr, 'validate_topic_url'
-    #answer = fromDb(postData['hub.topic'])
-
+    # print >> sys.stderr, 'validate_topic_url'
+    # answer = fromDb(postData['hub.topic'])
 
     answer_reason = 'No this topic'
     print postInfo['hub.topic']
     is_find_url = IS.match_url(postInfo['hub.topic'])
     # if answer.judge:
-    if is_find_url == True:
+    if is_find_url is True:
 
         #
         # Verifie Intent of the Subscribers
@@ -201,7 +198,7 @@ def validate_topic_url(postData):
         #
         # hub.mode
         # hub.topic
-        # hub.challage - A hub-generated, random string that MUST be echoed by the subscriber to verify the subscription.
+        # hub.challage - A hub-generated, random string that MUST be echoed        #                by the subscriber to verify the subscription.
         # hub.lease_seconds(Optional)
         #
 
@@ -215,20 +212,18 @@ def validate_topic_url(postData):
         print payload
         print postInfo['hub.callback']
         print str(req.status_code)
-        if str(req.status_code)[:1] == '2' and str(req.content) == str(randomKey):
-            IS.store_subscriber(postInfo['hub.topic'],postInfo['hub.callback'])
-            IS.content_distribution(postInfo['hub.callback'])
-            #postInfo = 'null'
-
-            #print >> sys.stderr, 'storeTheSubscribers: %s' % g.postData[
-                #'hub.callback']
+        if (
+                str(req.status_code)[:1] == '2' and
+                str(req.content) == str(randomKey)):
+            IS.store_subscriber(postInfo['hub.topic'],
+                                postInfo['hub.callback'])            IS.content_distribution(postInfo['hub.callback'])
             print 'success'
         else:
             print 'fail'
             # 'verification to have failed.'
             # storefailedSubscritions(g.postData['hub.callback'])
-            #print >> sys.stderr, 'storefailedSlubscritions: %s' % g.postData[
-                #'hub.callback']
+            # print >> sys.stderr, 'storefailedSlubscritions: %s' % g.postData[
+            # 'hub.callback']
     else:
 
         #
@@ -245,19 +240,17 @@ def validate_topic_url(postData):
                    'hub.topic': postInfo['hub.topic'],
                    'hub.reason': answer_reason}
         req = requests.get(postInfo['hub.callback'], params=payload)
-
+
 @demand.route('/textView/')
 def show_text():
     '''
         Display the topic content with text.
     '''
     return render_template('textview.html')
-
+
 @demand.route('/imgView/')
 def show_img():
     '''
         Display the topic content with image.
     '''
     return render_template('imageView.html')
-
-

@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 '''
     Copyright (c) 2014  OpenISDM
 
@@ -55,6 +55,7 @@ db = scoped_session(sessionmaker(autocommit=False,
 Model = declarative_base(name='Model')
 Model.query = db.query_property()'''
 
+
 def build_sample_db():
     """
         Populate a db with some entries.
@@ -64,7 +65,7 @@ def build_sample_db():
 
     db.drop_all()
     db.create_all()
-    test_user = User(login="test", password="test",is_finish_setup=False)
+    test_user = User(login="test", password="test", is_finish_setup=False)
     db.session.add(test_user)
 
     array = [
@@ -84,9 +85,9 @@ def build_sample_db():
 
 class User(db.Model):
 
-    '''
-       Create user model. For simplicity, it will store passwords in plain text.
-    '''
+    """
+       Create user model. For simplicity, it will store passwords       in plain text.
+    """
     id = db.Column(db.Integer, primary_key=True)
     login = db.Column(db.String(80), unique=True)
     password = db.Column(db.String(64))
@@ -111,43 +112,6 @@ class User(db.Model):
     # Required for administrative interface
     def __unicode__(self):
         return self.username
-
-#-*- coding: utf-8 -*-
-'''
-    Copyright (c) 2014  OpenISDM
-
-    Project Name:
-
-        OpenISDM MAD-IS
-
-    Version:
-
-        1.0
-
-    File Name:
-
-        interfaceServer.py
-
-    Abstract:
-
-        interfaceServer.py is a module of Interface Server (IS) of
-        Mobile Assistance for Disasters (MAD) in the OpenISDM
-        Virtual Repository project.
-        It create admin interface, database, and activate the server.
-
-    Authors:
-
-        Bai Shan-Wei, k0969032@gmail.com
-
-    License:
-
-        GPL 3.0 This file is subject to the terms and conditions defined
-        in file 'COPYING.txt', which is part of this source code package.
-
-    Major Revision History:
-
-        2014/5/1: complete version 1.0
-'''
 
 
 class POS(db.Model):
@@ -190,4 +154,4 @@ class Facility(db.Model):
     description = db.Column(db.Unicode(255))
 
     def __unicode__(self):
-        return self.name
+        return self.name

@@ -15,8 +15,8 @@
 
     Abstract:
 
-        json2rdf.py is a components of URI Search Service (USS) of X2R in the OpenISDM Virtual Repository project.
-        It convert json string to rdf string.
+        json2rdf.py is a components of URI Search Service (USS) of X2R
+        in the OpenISDM Virtual Repository project. It convert json        string to rdf string.
 
     Authors:
 
@@ -84,24 +84,23 @@ class JSON2RDF:
             if "Type" in keys:
                 self.add_triple(idURI, Vocabulary.TYPE, json_obj["Type"])
             if "Category" in keys:
-                self.add_triple(idURI, Vocabulary.CATEGORY, json_obj["Category"])
+                self.add_triple(                    idURI, Vocabulary.CATEGORY, json_obj["Category"])
             if "Telephone" in keys:
-                self.add_triple(idURI, Vocabulary.TELEPHONE, json_obj["Telephone"])
+                self.add_triple(                    idURI, Vocabulary.TELEPHONE, json_obj["Telephone"])
             if "Address" in keys:
                 self.add_triple(idURI, Vocabulary.ADDRESS, json_obj["Address"])
             if "Name" in keys:
                 self.add_triple(idURI, Vocabulary.NAME, json_obj["Name"])
             if "District" in keys:
-                self.add_triple(idURI, Vocabulary.DISTRICT, json_obj["District"])
+                self.add_triple(                    idURI, Vocabulary.DISTRICT, json_obj["District"])
             if "Longitude" in keys:
-                self.add_triple(idURI, Vocabulary.LONGITUDE, json_obj["Longitude"])
+                self.add_triple(                    idURI, Vocabulary.LONGITUDE, json_obj["Longitude"])
             if "Latitude" in keys:
-                self.add_triple(idURI, Vocabulary.LATITUDE, json_obj["Latitude"])
+                self.add_triple(                    idURI, Vocabulary.LATITUDE, json_obj["Latitude"])
             if "MoreInfo" in keys:
-                self.add_triple(idURI, Vocabulary.MOREINFO, json_obj["MoreInfo"])
+                self.add_triple(                    idURI, Vocabulary.MOREINFO, json_obj["MoreInfo"])
         else:
-            pass # TODO: Log errors
-
+            pass  # TODO: Log errors
 
     def translate(self, json_str):
         '''This function is used to extract URIs.
@@ -121,10 +120,10 @@ class JSON2RDF:
 
 
 class Vocabulary(object):
-    #TODO: initialize this class from configuration file
-    #Object_ID_Prefix
+    # TODO: initialize this class from configuration file
+    # Object_ID_Prefix
     ID_PREFIX = "http://openisdm.com/MAD/facility/"
-    #Attributes
+    # Attributes
     NAME = "http://openisdm.com/MAD/property/hasName"
     TYPE = "http://openisdm.com/MAD/property/hasType"
     CATEGORY = "http://openisdm.com/MAD/property/hasCategory"
@@ -134,7 +133,7 @@ class Vocabulary(object):
     LATITUDE = "http://openisdm.com/MAD/property/latitude"
     LONGITUDE = "http://openisdm.com/MAD/property/longitude"
     MOREINFO = "http://openisdm.com/MAD/property/moreInfo"
-    #Facility Categories
+    # Facility Categories
     SHELTER_INDOOR = "SHELTER INDOOR"
     SHELTER_OUTDOOR = "SHELTER OUTDOOR"
     MEDICAL = "MEDICAL"
@@ -160,9 +159,8 @@ def reset_test_data():
     config['Attributes']["Longitude"] = "http://cool_uri/hasLongitude"
     config['Attributes']["MoreInfo"] = "http://cool_uri/hasMoreInfo"
     config.write()
-
+
 def generate_rdf_text(json_str):
     j2r = JSON2RDF()
     reset_test_data()
     return j2r.translate(json_str)
-

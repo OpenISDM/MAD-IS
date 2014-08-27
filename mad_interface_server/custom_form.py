@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 '''
     Copyright (c) 2014  OpenISDM
 
@@ -36,7 +36,7 @@
 '''
 
 from wtforms import form, fields, validators
-from mad_interface_server.database import db,User
+from mad_interface_server.database import db, User
 
 
 class LoginForm(form.Form):
