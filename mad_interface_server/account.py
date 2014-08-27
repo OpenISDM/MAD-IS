@@ -36,10 +36,10 @@
 
         2014/5/1: complete version 1.0
 '''
-from flask_admin.contrib import sqla
-from flask.ext import admin, login
-from flask_admin import helpers, expose
 from flask import redirect, url_for, request
+from flask.ext import admin, login
+from flask.ext.admin import expose, helpers
+from flask.ext.admin.contrib import sqla
 
 from mad_interface_server import app
 from mad_interface_server.custom_form import LoginForm, RegistrationForm
@@ -70,7 +70,9 @@ def init_admin():
     global admin
     admin = admin.Admin(app, 'MAD-IS', index_view=MyAdminIndexView())
     admin.add_view(PosView(database.POS, database.db.session))
-    admin.add_view(FacView(database.Facility, database.db.session))
+    admin.add_view(FacView(database.Facility, database.db.session))
+
+
 class PosView(sqla.ModelView):
     # list_template = 'admin/home.html'
 
@@ -113,15 +115,20 @@ class FacView(sqla.ModelView):
 
 class MyAdminIndexView(admin.AdminIndexView):
 
-    """        Create customized index view class that handles        login & registratio & setup
+    """
+        Create customized index view class that handles
+        login & registratio & setup
     """
     @expose('/')
-    def index(self):
-        global show_menu        """
+    def index(self):
+
+        global show_menu
+        """
             if user have not been authenticated, got to login view.
         """
         if not login.current_user.is_authenticated():
-            return redirect(url_for('.login_view'))
+            return redirect(url_for('.login_view'))
+
         """
             Find user, and if there have not setting about country,
             start the setup.Otherwise, enter the view that have already
@@ -234,7 +241,7 @@ def determine_topic_and_hub(pos_id, pos_type):
     """
 
     reply = {
-        'hub_url': fs.my_web_addr + '/subscribe/',
+        'hub_url': app.config['WEB_URL'] + '/subscribe/',
     }
 
     reply['topic_url'] = 'Not found'
@@ -249,7 +256,8 @@ def determine_topic_and_hub(pos_id, pos_type):
     return reply
 
 
-def match_url(topic_url):
+def match_url(topic_url):
+
     is_find = False
     for p in database.db.session.query(POS):
         if p.topic_dir == topic_url:
@@ -270,14 +278,17 @@ def content_distribution(sub_url):
     """
         Prepare file that will send the subscriber,
         then publish to the corresponding subscriber.
-    """    # search the corresponding POS ID according the subscriber url
-    if sub_url is not None:
+    """
+
+    # search the corresponding POS ID according the subscriber url
+    if sub_url is not None:
+
         for p in database.db.session.query(POS):
             if p.callback_url == sub_url:
                 pos_id = p.id
         topic_dictionary = {
-            'png': fs.my_topic_dir + pos_id + '/' + pos_id + '.png',
-            'rdf': fs.my_topic_dir + pos_id + '/' + pos_id + '.rdf'
+            'png': app.config['TOPIC_DIR'] + pos_id + '/' + pos_id + '.png',
+            'rdf': app.config['TOPIC_DIR'] + pos_id + '/' + pos_id + '.rdf'
         }
 
         for x in topic_dictionary:

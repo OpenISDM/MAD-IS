@@ -71,7 +71,8 @@ def receive_req():
     import information
     response = information.answer(request.data)
     return jsonify(response)
-
+
+
 @demand.route('/send/', methods=['GET', 'POST'])
 def create_info():
     '''
@@ -82,7 +83,8 @@ def create_info():
     if request.method == 'POST':
         data = json.loads(request.data)
         information.build_info(data)
-        return 'ok'
+        return 'ok'
+
 
 @demand.route('/hub/', methods=['GET', 'HEAD'])
 def discovery():
@@ -112,7 +114,8 @@ def discovery():
     #
     # result = determineTopic(request.query_string)
     #
-
+
+
 @demand.route('/subscribe/', methods=['POST'])
 def hub():
     print 'hello'
@@ -130,10 +133,15 @@ def hub():
     # hub.topic
     #
     # hub.lease_seconds(Optional) -
-    #     The hub-determined number of seconds that the subscription will    #     stay active before expiring, measured from the time the verification
-    #     request was made from the hub to the subscriber.    #
-    # hub.secret(Optional) -    #     A subscriber-provided secret string that will be used to compute an    #     HMAC digest for authorized content distribution.
-    #
+    #     The hub-determined number of seconds that the subscription will
+    #     stay active before expiring, measured from the time the verification
+    #     request was made from the hub to the subscriber.
+    #
+    # hub.secret(Optional) -
+    #     A subscriber-provided secret string that will be used to compute an
+    #     HMAC digest for authorized content distribution.
+    #
+
     global postInfo
 
     postData = request.form
@@ -169,7 +177,8 @@ def hub():
     # elif postData['hub.mode'] == 'publish':
     #     return 'publish'
     #
-
+
+
 def validate_topic_url(postData):
 
     #
@@ -178,10 +187,12 @@ def validate_topic_url(postData):
     # publisher whether the subscription should be accepted.Hubs MUST preserve
     # the query string during subscription verification by appending new
     # parameters to the end of the list using the & (ampersand) character
-    # to join.    #
+    # to join.
+    #
     # If topic URL is correct from publisher, the hub MUST perform verification
     # of intent of the subscirber if denied, hub must infrom GET request to
-    # subscriber's callback URL []    #
+    # subscriber's callback URL []
+    #
 
     # print >> sys.stderr, 'validate_topic_url'
     # answer = fromDb(postData['hub.topic'])
@@ -198,7 +209,8 @@ def validate_topic_url(postData):
         #
         # hub.mode
         # hub.topic
-        # hub.challage - A hub-generated, random string that MUST be echoed        #                by the subscriber to verify the subscription.
+        # hub.challage - A hub-generated, random string that MUST be echoed
+        #                by the subscriber to verify the subscription.
         # hub.lease_seconds(Optional)
         #
 
@@ -216,7 +228,8 @@ def validate_topic_url(postData):
                 str(req.status_code)[:1] == '2' and
                 str(req.content) == str(randomKey)):
             IS.store_subscriber(postInfo['hub.topic'],
-                                postInfo['hub.callback'])            IS.content_distribution(postInfo['hub.callback'])
+                                postInfo['hub.callback'])
+            IS.content_distribution(postInfo['hub.callback'])
             print 'success'
         else:
             print 'fail'
@@ -240,14 +253,16 @@ def validate_topic_url(postData):
                    'hub.topic': postInfo['hub.topic'],
                    'hub.reason': answer_reason}
         req = requests.get(postInfo['hub.callback'], params=payload)
-
+
+
 @demand.route('/textView/')
 def show_text():
     '''
         Display the topic content with text.
     '''
     return render_template('text_view.html')
-
+
+
 @demand.route('/imgView/')
 def show_img():
     '''

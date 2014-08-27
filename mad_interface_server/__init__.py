@@ -51,6 +51,9 @@ app.config.from_object('isconfig')
 # app.register_blueprint(action)
 app.register_blueprint(demand)
 
+print app.config['WEB_URL']
+print app.config['APP_DIR']
+print app.config['TOPIC_DIR']
 
 @app.errorhandler(404)
 def not_found(error):

@@ -36,7 +36,7 @@
 '''
 
 import sys
-from flask_sqlalchemy import SQLAlchemy
+from flask.ext.sqlalchemy import SQLAlchemy
 # from wtforms import form, fields, validators
 from mad_interface_server import app
 db = SQLAlchemy(app)
@@ -86,7 +86,8 @@ def build_sample_db():
 class User(db.Model):
 
     """
-       Create user model. For simplicity, it will store passwords       in plain text.
+       Create user model. For simplicity, it will store passwords
+       in plain text.
     """
     id = db.Column(db.Integer, primary_key=True)
     login = db.Column(db.String(80), unique=True)
@@ -154,4 +155,4 @@ class Facility(db.Model):
     description = db.Column(db.Unicode(255))
 
     def __unicode__(self):
-        return self.name
+        return self.name
