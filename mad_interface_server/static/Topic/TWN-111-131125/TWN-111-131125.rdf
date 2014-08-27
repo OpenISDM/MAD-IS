@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://openisdm.com/MAD/property/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC838347">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:latitude>25.1197914</ns1:latitude>
+    <ns1:hasDistrict>士林區</ns1:hasDistrict>
+    <ns1:hasName>天母國小</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>士林區天玉街12號</ns1:hasAddress>
+    <ns1:longitude>121.5275331</ns1:longitude>
+    <ns1:hasTelephone>28723336*9502</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC819050">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:longitude>121.5373072</ns1:longitude>
+    <ns1:hasName>三玉國小</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.1180236</ns1:latitude>
+    <ns1:hasAddress>士林區天母東路116號</ns1:hasAddress>
+    <ns1:hasDistrict>士林區</ns1:hasDistrict>
+    <ns1:hasTelephone>28751369#717</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC076784">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>天母國中</ns1:hasName>
+    <ns1:latitude>25.1180132</ns1:latitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>士林區</ns1:hasDistrict>
+    <ns1:hasTelephone>28754864#275</ns1:hasTelephone>
+    <ns1:longitude>121.5381469</ns1:longitude>
+    <ns1:hasAddress>士林區天母東路120號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC192185">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.123421</ns1:latitude>
+    <ns1:hasDistrict>士林區</ns1:hasDistrict>
+    <ns1:longitude>121.532946</ns1:longitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasName>天母區民活動中心</ns1:hasName>
+    <ns1:hasAddress>中山北路7段154巷6號4樓</ns1:hasAddress>
+    <ns1:hasTelephone>28826200*6013</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC152116">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>士林區</ns1:hasDistrict>
+    <ns1:hasAddress>天福里天母東路臨6號</ns1:hasAddress>
+    <ns1:hasName>三玉宮</ns1:hasName>
+    <ns1:longitude>121.5301029</ns1:longitude>
+    <ns1:latitude>25.1182594</ns1:latitude>
+    <ns1:hasTelephone>2871-3000 </ns1:hasTelephone>
+    <ns1:hasType>寺廟</ns1:hasType>
+  </rdf:Description>
+</rdf:RDF>

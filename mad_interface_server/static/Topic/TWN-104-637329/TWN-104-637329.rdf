@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://openisdm.com/MAD/property/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC516304">
+    <ns1:latitude>25.0497428</ns1:latitude>
+    <ns1:hasName>長安國小</ns1:hasName>
+    <ns1:hasAddress>中山區吉林路15號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:longitude>121.5301663</ns1:longitude>
+    <ns1:hasTelephone>25617600#130</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC744179">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:longitude>121.545773</ns1:longitude>
+    <ns1:hasAddress>北安路759巷6號</ns1:hasAddress>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:latitude>25.079549</ns1:latitude>
+    <ns1:hasName>北安區民活動中心</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC668868">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasName>長安國中</ns1:hasName>
+    <ns1:hasTelephone>25112382#128</ns1:hasTelephone>
+    <ns1:longitude>121.531854</ns1:longitude>
+    <ns1:hasAddress>中山區松江路70巷11號</ns1:hasAddress>
+    <ns1:latitude>25.049368</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC490330">
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:latitude>25.0681</ns1:latitude>
+    <ns1:longitude>121.535104</ns1:longitude>
+    <ns1:hasAddress>民族東路282號4樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>行孝區民活動中心</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC964671">
+    <ns1:hasName>興亞區民活動中心</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasAddress>松江路26巷18號</ns1:hasAddress>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0469609</ns1:latitude>
+    <ns1:longitude>121.532006</ns1:longitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC891768">
+    <ns1:hasTelephone>2771-1417</ns1:hasTelephone>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:longitude>121.5413616</ns1:longitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0498811</ns1:latitude>
+    <ns1:hasAddress>朱崙街36號</ns1:hasAddress>
+    <ns1:hasName>慧日講堂</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC565094">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>85020126-402</ns1:hasTelephone>
+    <ns1:longitude>121.5608874</ns1:longitude>
+    <ns1:latitude>25.079736</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasName>濱江國中</ns1:hasName>
+    <ns1:hasAddress>中山區樂群二路262號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC438008">
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0484504</ns1:latitude>
+    <ns1:longitude>121.5359793</ns1:longitude>
+    <ns1:hasTelephone>2507-3148#241</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>中山女中</ns1:hasName>
+    <ns1:hasAddress>中山區長安東路2段141號</ns1:hasAddress>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC344182">
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:longitude>121.5339182</ns1:longitude>
+    <ns1:hasTelephone>25024366#153</ns1:hasTelephone>
+    <ns1:hasName>長春國小</ns1:hasName>
+    <ns1:latitude>25.0549293</ns1:latitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>中山區長春路165號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC395997">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>民安區民活動中心</ns1:hasName>
+    <ns1:longitude>121.5209542</ns1:longitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:latitude>25.0502099</ns1:latitude>
+    <ns1:hasAddress>長安西路3號3樓之3</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC712410">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>農安街87號</ns1:hasAddress>
+    <ns1:hasName>財團法人台北市妙道院</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasTelephone>2594-5420</ns1:hasTelephone>
+    <ns1:latitude>25.0649749</ns1:latitude>
+    <ns1:longitude>121.528863</ns1:longitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC376475">
+    <ns1:longitude>121.538864</ns1:longitude>
+    <ns1:hasName>榮星花園公園</ns1:hasName>
+    <ns1:hasCategory>Shelter(Outdoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.063371</ns1:latitude>
+    <ns1:hasTelephone>2585-1430</ns1:hasTelephone>
+    <ns1:hasType>防災公園</ns1:hasType>
+    <ns1:hasAddress>臺北市中山區民權東路3段1號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC636488">
+    <ns1:hasTelephone>2502-7924</ns1:hasTelephone>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>財團法人台北行天宮</ns1:hasName>
+    <ns1:longitude>121.5338733</ns1:longitude>
+    <ns1:hasAddress>民權東路2段109號</ns1:hasAddress>
+    <ns1:latitude>25.0628658</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC719738">
+    <ns1:hasName>中嶽殿</ns1:hasName>
+    <ns1:longitude>121.538393</ns1:longitude>
+    <ns1:hasTelephone>2505-4267</ns1:hasTelephone>
+    <ns1:hasAddress>民族東路115號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:latitude>25.068383</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC337650">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasAddress>大直街1號4樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.080345</ns1:latitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasName>大直二區民活動中心</ns1:hasName>
+    <ns1:longitude>121.546969</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC823657">
+    <ns1:hasName>臺北市中山運動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>運動場館</ns1:hasType>
+    <ns1:hasAddress>臺北市中山區中山北路2段44巷2號</ns1:hasAddress>
+    <ns1:hasTelephone>25702330#6422 </ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5213932</ns1:longitude>
+    <ns1:latitude>25.0548895</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC297812">
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>中山北路4段71巷2弄臨5號</ns1:hasAddress>
+    <ns1:longitude>121.52585</ns1:longitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasTelephone>2885-6791</ns1:hasTelephone>
+    <ns1:hasName>大忠宮</ns1:hasName>
+    <ns1:latitude>25.079833</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC844928">
+    <ns1:longitude>121.5423362</ns1:longitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasName>長春區民活動中心</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0547293</ns1:latitude>
+    <ns1:hasAddress>長春路299號3樓</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC659048">
+    <ns1:hasAddress>中山區明水路325號</ns1:hasAddress>
+    <ns1:hasTelephone>25333888-240</ns1:hasTelephone>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:longitude>121.5416463</ns1:longitude>
+    <ns1:hasName>北安國中</ns1:hasName>
+    <ns1:latitude>25.077734</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC267493">
+    <ns1:hasName>大直國小</ns1:hasName>
+    <ns1:hasAddress>中山區大直街2號</ns1:hasAddress>
+    <ns1:latitude>25.0804685</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasTelephone>25333953轉31</ns1:hasTelephone>
+    <ns1:longitude>121.5464344</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC092472">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>金泰區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasAddress>敬業三路160號2樓</ns1:hasAddress>
+    <ns1:longitude>121.5568655</ns1:longitude>
+    <ns1:latitude>25.0795262</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC621426">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>中山區五常街16號</ns1:hasAddress>
+    <ns1:hasTelephone>25023416轉832</ns1:hasTelephone>
+    <ns1:latitude>25.064141</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5422256</ns1:longitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasName>五常國小</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC147379">
+    <ns1:hasName>朱崙區民活動中心</ns1:hasName>
+    <ns1:hasAddress>龍江路15號3樓</ns1:hasAddress>
+    <ns1:latitude>25.047492</ns1:latitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:longitude>121.540498</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC623304">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>中山區安東街16巷2號</ns1:hasAddress>
+    <ns1:hasName>懷生國小</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0452404</ns1:latitude>
+    <ns1:hasTelephone>27710846-511</ns1:hasTelephone>
+    <ns1:longitude>121.5417844</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC359825">
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>財團法人劍潭古寺</ns1:hasName>
+    <ns1:hasAddress>北安路805巷6號</ns1:hasAddress>
+    <ns1:hasTelephone>2532-3834</ns1:hasTelephone>
+    <ns1:longitude>121.5553568</ns1:longitude>
+    <ns1:latitude>25.086177</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC180486">
+    <ns1:hasAddress>龍江路168號地下室</ns1:hasAddress>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:longitude>121.5406283</ns1:longitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasName>朱馥區民活動中心</ns1:hasName>
+    <ns1:latitude>25.0572159</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC571523">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasName>財團法人景福宮</ns1:hasName>
+    <ns1:hasTelephone>2596-9325</ns1:hasTelephone>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasAddress>德惠街11號</ns1:hasAddress>
+    <ns1:latitude>25.066943</ns1:latitude>
+    <ns1:longitude>121.5255499</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC978481">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasTelephone>25070932#105</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5404169</ns1:longitude>
+    <ns1:latitude>25.0512812</ns1:latitude>
+    <ns1:hasAddress>中山區龍江路62號</ns1:hasAddress>
+    <ns1:hasName>中正國小</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC164613">
+    <ns1:hasAddress>通北街143號2樓</ns1:hasAddress>
+    <ns1:latitude>25.084918</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasName>崇實區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:longitude>121.538043</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC229942">
+    <ns1:hasName>大直高中</ns1:hasName>
+    <ns1:latitude>25.0794612</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>25334017轉142</ns1:hasTelephone>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasAddress>中山區北安路420號</ns1:hasAddress>
+    <ns1:longitude>121.5431734</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC836387">
+    <ns1:hasAddress>敬業三路196號</ns1:hasAddress>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:longitude>121.5563275</ns1:longitude>
+    <ns1:hasTelephone>2532-2416</ns1:hasTelephone>
+    <ns1:latitude>25.080057</ns1:latitude>
+    <ns1:hasName>下塔悠福德爺宮</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC639745">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasAddress>龍江路429巷10號3樓</ns1:hasAddress>
+    <ns1:hasName>下埤區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.047635</ns1:latitude>
+    <ns1:longitude>121.540291</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC260300">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasName>永安國小</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0787761</ns1:latitude>
+    <ns1:hasTelephone>25335672#230</ns1:hasTelephone>
+    <ns1:longitude>121.5494063</ns1:longitude>
+    <ns1:hasAddress>臺北市中山區明水路397巷19弄1號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC501671">
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasName>大直區民活動中心</ns1:hasName>
+    <ns1:longitude>121.546886</ns1:longitude>
+    <ns1:latitude>25.0816649</ns1:latitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasAddress>大直街21巷2號4樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC680399">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5616374</ns1:longitude>
+    <ns1:hasName>濱江國小</ns1:hasName>
+    <ns1:latitude>25.0780023</ns1:latitude>
+    <ns1:hasAddress>中山區樂群2路266巷99號</ns1:hasAddress>
+    <ns1:hasTelephone>85021571＃1401</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC964414">
+    <ns1:latitude>25.068955</ns1:latitude>
+    <ns1:hasAddress>濱江街180巷13號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasTelephone>2503-2358</ns1:hasTelephone>
+    <ns1:hasName>台北神德宮</ns1:hasName>
+    <ns1:longitude>121.538181</ns1:longitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC465695">
+    <ns1:hasName>新興國中</ns1:hasName>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasAddress>中山區林森北路511號</ns1:hasAddress>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:longitude>121.5257922</ns1:longitude>
+    <ns1:hasTelephone>25714211#502</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0619832</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC224060">
+    <ns1:latitude>25.0628162</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市中山區民權東路1段69號</ns1:hasAddress>
+    <ns1:hasTelephone>25914085#36</ns1:hasTelephone>
+    <ns1:longitude>121.5256755</ns1:longitude>
+    <ns1:hasName>中山國小</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC641802">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasName>埤頭區民活動中心</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0457299</ns1:latitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:longitude>121.54309</ns1:longitude>
+    <ns1:hasAddress>市民大道3段209號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC748549">
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasAddress>錦州街222號2樓</ns1:hasAddress>
+    <ns1:hasName>松江區民活動中心</ns1:hasName>
+    <ns1:latitude>25.0601175</ns1:latitude>
+    <ns1:longitude>121.5321816</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC449141">
+    <ns1:latitude>25.0561172</ns1:latitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:longitude>121.5243194</ns1:longitude>
+    <ns1:hasAddress>中山北路2段59巷21號2樓</ns1:hasAddress>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasName>中山區民活動中心</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC926950">
+    <ns1:longitude>121.5334558</ns1:longitude>
+    <ns1:latitude>25.0644075</ns1:latitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasName>行政區民活動中心</ns1:hasName>
+    <ns1:hasAddress>松江路367號9樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>活動中心</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC264404">
+    <ns1:hasAddress>中山區濱江街107號</ns1:hasAddress>
+    <ns1:hasName>大佳國小</ns1:hasName>
+    <ns1:hasTelephone>25035816＃110</ns1:hasTelephone>
+    <ns1:latitude>25.0733443</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5363584</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC188770">
+    <ns1:longitude>121.520349</ns1:longitude>
+    <ns1:latitude>25.049385</ns1:latitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasName>長安區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasAddress>長安西路40巷9號1、2樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC830782">
+    <ns1:latitude>25.064993</ns1:latitude>
+    <ns1:hasName>新庄區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasAddress>新生北路3段特50之1號</ns1:hasAddress>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:longitude>121.527289</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC232195">
+    <ns1:hasTelephone>25054269-135</ns1:hasTelephone>
+    <ns1:hasName>大同高中</ns1:hasName>
+    <ns1:hasAddress>中山區長春路167號</ns1:hasAddress>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0549113</ns1:latitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5351609</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC527739">
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasName>吉林國小</ns1:hasName>
+    <ns1:hasAddress>中山區長春路116號</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>25219196</ns1:hasTelephone>
+    <ns1:longitude>121.5296463</ns1:longitude>
+    <ns1:latitude>25.054719</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC683381">
+    <ns1:hasTelephone>02-25702330#6508</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>運動場館</ns1:hasType>
+    <ns1:latitude>25.0685824</ns1:latitude>
+    <ns1:hasName>新生公園棒球場</ns1:hasName>
+    <ns1:longitude>121.5296094</ns1:longitude>
+    <ns1:hasAddress>臺北市中山區新生北路3段105號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC305348">
+    <ns1:hasTelephone>2502-7096</ns1:hasTelephone>
+    <ns1:hasAddress>長春路163巷18號</ns1:hasAddress>
+    <ns1:hasName>台北市圓玄學社</ns1:hasName>
+    <ns1:latitude>25.055565</ns1:latitude>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:longitude>121.5334321</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC446408">
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0499434</ns1:latitude>
+    <ns1:hasAddress>朱崙街63號</ns1:hasAddress>
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>財團法人台北市蓮友念佛團</ns1:hasName>
+    <ns1:longitude>121.5422058</ns1:longitude>
+    <ns1:hasTelephone>2771-4544</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC798422">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:longitude>121.529475</ns1:longitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasAddress>新生北路二段53號2樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>中原區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.061285</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC224727">
+    <ns1:latitude>25.061645</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasAddress>合江街137號4樓</ns1:hasAddress>
+    <ns1:hasName>松花區民活動中心</ns1:hasName>
+    <ns1:longitude>121.539362</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC057137">
+    <ns1:hasName>五常國中</ns1:hasName>
+    <ns1:hasTelephone>25014320#101</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5431062</ns1:longitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:latitude>25.0634834</ns1:latitude>
+    <ns1:hasAddress>中山區復興北路430巷1號</ns1:hasAddress>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC103859">
+    <ns1:hasType>寺廟</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>財團法人台北市永靜廟</ns1:hasName>
+    <ns1:hasTelephone>2541-6038</ns1:hasTelephone>
+    <ns1:longitude>121.52151</ns1:longitude>
+    <ns1:hasAddress>錦西街9號</ns1:hasAddress>
+    <ns1:latitude>25.060624</ns1:latitude>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC978353">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>中山區</ns1:hasDistrict>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.048643</ns1:latitude>
+    <ns1:longitude>121.524894</ns1:longitude>
+    <ns1:hasTelephone>25031369#119</ns1:hasTelephone>
+    <ns1:hasAddress>林森北路67巷7號2、3樓</ns1:hasAddress>
+    <ns1:hasName>林森區民活動中心</ns1:hasName>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,7 +1,7 @@
 // HTML SETUP
 var page = 1;
 var wardInfo = null;
-var points = null; 
+var points = null;
 
 
 $(document).ready(function() {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     document.getElementById("load1").onclick = showCityInfo;
     document.getElementById("load2").onclick = showPOSInfo;
     document.getElementById("confirm").onclick = completeSetup;
-    document.getElementById("cancel").onclick = closeCheck; 
+    document.getElementById("cancel").onclick = closeCheck;
 });
 
 
@@ -119,7 +119,7 @@ function prev_step2() {
 
 // Go to step 4
 function next_step3() {
- //TODO: need to add validation
+    //TODO: need to add validation
     if (validateStep(points)) {
         document.getElementById("third").style.display = "none";
         document.getElementById("fourth").style.display = "block";
@@ -157,13 +157,13 @@ function prev_step3() {
 
 function checkSetup() {
     $('.ui.modal')
-    .modal('setting', 'closable', false)
-    .modal('show');
+        .modal('setting', 'closable', false)
+        .modal('show');
 }
 
 function closeCheck() {
     $('.ui.modal')
-    .modal('hide');
+        .modal('hide');
 }
 
 // check if you can combine this with Save() in inputFacData()
@@ -172,19 +172,16 @@ function completeSetup() {
     jsonData = createJsonText();
     jsonData = JSON.stringify(jsonData);
 
-    //alert(jsonData);
-    //alert("dgdg");
-
     var hr = new XMLHttpRequest();
     var serverUrl = "http://140.109.22.197/send/";
     hr.open("POST", serverUrl, true);
     hr.send(jsonData);
-    
-    SendFacInfo();
+
+    sendFacInfo();
     document.getElementById('next').className = 'ui green button';
     document.getElementById('next').innerHTML = '<i class=\"loading icon\"></i> Saving';
 
-    setTimeout('window.location.replace("http://140.109.22.197/admin/home/")', 20000);
+    setTimeout('window.location.replace("http://140.109.22.197/admin/home/")', 90000);
 }
 
 
@@ -206,8 +203,6 @@ function initialize() {
         }
 
         // For each place, get the icon, place name, and location.
-        markers = [];
-        var bounds = new google.maps.LatLngBounds();
         for (var i = 0, place; place = places[i]; i++) {
             var image = {
                 url: place.icon,
@@ -352,9 +347,8 @@ function showWardBtn() {
         code = xmlDoc.getElementsByTagName("PostalCode")[i].childNodes[0].nodeValue;
 
         //Declare a New button and set properties
-        var ward_btn = $('<div class="ui button"></div>').text(region + code).attr(
-            "id", region);
-        
+        var ward_btn = $('<div class="ui button"></div>').text(region + code).attr("id", region);
+
         //Google map jump to District Scene when click the button.
         ward_btn.click(function() {
             setCenter(cityLocation + $(this).attr("id"));
@@ -404,7 +398,7 @@ function showPOSInfo() {
     for (var i = 0; i < xmlDoc.getElementsByTagName("POSSite").length; i = i + 50) {
 
         //Create new object to record each POS properties and push into an array.
-        var posObj = new Object();
+        var posObj = {};
         posObj.ward = xmlDoc.getElementsByTagName("District")[i].childNodes[0].nodeValue;
         posObj.special_id = xmlDoc.getElementsByTagName("ID")[i].childNodes[0].nodeValue;
         posObj.lat = xmlDoc.getElementsByTagName("Latitude")[i].childNodes[0].nodeValue;
@@ -417,7 +411,7 @@ function showPOSInfo() {
 
 //SETUP STEP 3
 function createMarker(pos) {
-    var marker = new google.maps.Marker({
+    var posMarker = new google.maps.Marker({
         position: new google.maps.LatLng(pos.lat, pos.lng),
         map: map3,
         title: pos.special_id,
@@ -428,15 +422,13 @@ function createJsonText() {
 
     key = document.getElementById('key').value;
     jsonText = {
-        "purpose" : "setup",
+        "purpose": "setup",
         "location": cityLocation,
         "latLng": coordinates,
         "posArray": pos,
-        //"posArray": posGroup,
         "wardInfo": wardInfo,
-        "key" : key
-        //"facArray": GetFacInfo()
-    }
+        "key": key
+    };
 
     return jsonText;
 }

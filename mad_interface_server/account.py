@@ -78,7 +78,7 @@ class PosView(sqla.ModelView):
         Create customized model view class.
     '''
     column_searchable_list = ('id',)
-    # list_template = 'listPOS.html'
+    # list_template = 'list_pos.html'
 
     @expose('/delete', methods=('GET', 'POST'))
     def deleteAll_view(self):
@@ -98,7 +98,7 @@ class FacView(sqla.ModelView):
         Create customized model view class.
     '''
     column_searchable_list = ('id',)
-    list_template = 'listFac.html'
+    list_template = 'list_fac.html'
 
     @expose('/delete', methods=('GET', 'POST'))
     def deleteAll_view(self):

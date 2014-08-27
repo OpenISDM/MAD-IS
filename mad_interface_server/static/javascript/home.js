@@ -39,7 +39,7 @@ window.onload = function() {
         $("#posEdit").hide();
         $("#tablecanvas").hide();
     });
-}
+};
 
 function init() {
     sidebarPosition();
@@ -99,7 +99,7 @@ function sidebarToggleActiveElement() {
     if ($(this).is("#listFac")) {
         $("#posMenu").sidebar("hide");
     }
-   
+
     // Hide all sidebars and reset buttons to inactive state
     if ($(this).is("#switchMode")) {
         $("#menus .sidebar").each(function() {
@@ -154,8 +154,8 @@ var facMarkers = [];
 var posMarkers = [];
 var geocoder = new google.maps.Geocoder();
 
-var boundArray = [];    //record each POS bound range
-var frontera = "";      //fusion table key
+var boundArray = []; //record each POS bound range
+var frontera = ""; //fusion table key
 var posServer = [];
 var fac = [];
 var allWard = [];
@@ -173,6 +173,7 @@ function setup() {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             //Receive Setup Information Server responses
             var configInfo = xmlhttp.responseText;
+
             //Add "()" and become json string for parsing
             var obj = eval("(" + configInfo + ")");
 
@@ -188,7 +189,7 @@ function setup() {
             setGeo(obj.wardInfo);
             showBoundary(obj.configInfo.key);
         }
-    }
+    };
     xmlhttp.open("POST", "http://140.109.22.197/fetch/", true);
     xmlhttp.send("setupInfo");
 }
@@ -198,7 +199,7 @@ function setFacility(facData) {
         $('.ui.modal').modal('show');
     } else {
         for (var i = 0; i < facData.length; i++) {
-            var facility = new Object();
+            var facility = {};
             facility.myid = facData[i].id;
             facility.myname = facData[i].name;
             facility.mytype = facData[i].type;
@@ -210,14 +211,14 @@ function setFacility(facData) {
             facility.lng = facData[i].longitude;
             facility.moreInfo = facData[i].description;
             fac.push(facility);
-            createMarker(facility, 'fac',i);
+            createMarker(facility, 'fac', i);
         }
     }
 }
 
 function setPOS(posData) {
     for (var i = 0; i < posData.length; i++) {
-        var pos = new Object();
+        var pos = {};
         pos.myname = posData[i].id;
 
         pos.myward = posData[i].district;
@@ -230,13 +231,13 @@ function setPOS(posData) {
         createMarker(pos, 'pos', i);
         setBound(pos, posData[i].bound_Latlng1, posData[i].bound_Latlng2);
         addToTable(pos, i);
-        addPOSList(pos,i);
+        addPOSList(pos, i);
     }
 }
 
-function addPOSList(posServer, i){
-	var html = $("#posMenu").html() + '<a class="ui fluid inverted purple button item" href="javascript:posPosition('+i+')">' + posServer.myname + '<\/a>';
-	$("#posMenu").html(html);
+function addPOSList(posServer, i) {
+    var html = $("#posMenu").html() + '<a class="ui fluid inverted purple button item" href="javascript:posPosition(' + i + ')">' + posServer.myname + '<\/a>';
+    $("#posMenu").html(html);
 }
 
 function posPosition(index) {
@@ -246,12 +247,12 @@ function posPosition(index) {
     } else {
         rectangleMethod(index);
     }
-	openInfoWindow(posMarkers[index], index, "");
+    openInfoWindow(posMarkers[index], index, "");
 }
 
 function createMarker(place, placeType, index) {
 
-	var content = "";
+    var content = "";
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(place.lat, place.lng),
         map: map,
@@ -259,51 +260,50 @@ function createMarker(place, placeType, index) {
     });
 
     if (placeType == 'fac') {
-        marker.setIcon('/static/img/facility.png')
+        marker.setIcon('/static/img/facility.png');
         marker.setMap(null);
         facMarkers.push(marker);
 
         content = getFacContent(index);
-        
+
         google.maps.event.addListener(marker, 'click', function() {
-    		openInfoWindow(marker, index, content);
-  		});
+            openInfoWindow(marker, index, content);
+        });
     } else {
         if (place.isexist == true) {
             marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
         }
         posMarkers.push(marker);
 
-        google.maps.event.addListener(marker, "click", function (e) { 
+        google.maps.event.addListener(marker, "click", function(e) {
             switchMethod(index);
             openInfoWindow(marker, index, content);
-            changeColumnVal(index,  getFacInfo(index));
-	    });
+            changeColumnVal(index, getFacInfo(index));
+        });
     }
 }
 
-function getFacContent(index){
+function getFacContent(index) {
 
-    var contentStr = '<div style="width: 400px; height: 150px">'+
-              '<b>Name : ' + fac[index].myname + '<\/b><br>' + 
-              '<b>District : ' + fac[index].myward + '<\/b><br>' + 
-              '<b>Type : ' + fac[index].mytype + '<\/b><br>' +
-              '<b>Category : ' + fac[index].kind + '<\/b><br>' +
-              '<b>Address : ' + fac[index].address + '<\/b><br>' +
-              '<b>Telephone : ' + fac[index].tel + '<\/b><br>' +
-              '<b>Detail : ' + fac[index].moreInfo + '<\/b><br>' + '<\/div>';
+    var contentStr = '<div style="width: 400px; height: 150px">' +
+        '<b>Name : ' + fac[index].myname + '<\/b><br>' +
+        '<b>District : ' + fac[index].myward + '<\/b><br>' +
+        '<b>Type : ' + fac[index].mytype + '<\/b><br>' +
+        '<b>Category : ' + fac[index].kind + '<\/b><br>' +
+        '<b>Address : ' + fac[index].address + '<\/b><br>' +
+        '<b>Telephone : ' + fac[index].tel + '<\/b><br>' +
+        '<b>Detail : ' + fac[index].moreInfo + '<\/b><br>' + '<\/div>';
 
     return contentStr;
-} 
+}
 
-function switchMethod(index){
-  if (posServer[index].cutWay == 'District') {
-      posServer[index].cutWay = 'Rectangle';
-      rectangleMethod(index);
-  } else {
-      posServer[index].cutWay = 'District';
-      districtMethod(index);
-  }
+function switchMethod(index) {
+    if (posServer[index].cutWay == 'District') {
+        rectangleMethod(index);
+    } else {
+        districtMethod(index);
+    }
+    postServer(index, "Update");
 }
 
 function openInfoWindow(marker, index, content) {
@@ -340,7 +340,7 @@ function setBound(pos, mixPoint, maxPoint) {
     var qx = Math.floor(dx / 0.01) + parseFloat(1);
 
     //Create new object that record the bounds of rectangle.
-    var bound = new Object();
+    var bound = {};
 
     if (pos.cutWay == "District") {
         bound.minLat = parseFloat(coordinates[0]) + ((parseFloat(0.005)) * qy) - parseFloat(0.005);
@@ -348,10 +348,10 @@ function setBound(pos, mixPoint, maxPoint) {
         bound.maxLat = parseFloat(coordinates[0]) + (parseFloat(0.005)) * qy;
         bound.maxLng = parseFloat(coordinates[1]) + (parseFloat(0.01)) * qx;
     } else {
-        bound.minLat = mixPoint.split(",")[0];
-        bound.minLng = mixPoint.split(",")[1];
-        bound.maxLat = maxPoint.split(",")[0];
-        bound.maxLng = maxPoint.split(",")[1];
+        bound.minLat = parseFloat(mixPoint.split(",")[0]);
+        bound.minLng = parseFloat(mixPoint.split(",")[1]);
+        bound.maxLat = parseFloat(maxPoint.split(",")[0]);
+        bound.maxLng = parseFloat(maxPoint.split(",")[1]);
     }
     bound.minPoint = bound.minLat + ',' + bound.minLng;
     bound.maxPoint = bound.maxLat + ',' + bound.maxLng;
@@ -395,11 +395,11 @@ function addToTable(pos, index) {
 function getFacInfo(index) {
     var jsonArrayText = [];
     var num = 0;
-    var html='';
+    var html = '';
     imgUrl = setImgInit(index);
 
     if (posServer[index].cutWay == 'District') {
-        imgUrl += "&zoom=14"
+        imgUrl += "&zoom=14";
         for (var k = 0; k < fac.length; k++) {
             if (fac[k].myward == posServer[index].myward) {
                 num++;
@@ -412,11 +412,12 @@ function getFacInfo(index) {
             }
         }
     } else {
-        imgUrl += "&zoom=14"
+        imgUrl += "&zoom=14";
         for (var m = 0; m < fac.length; m++) {
-            if (((boundArray[index].minLat < fac[m].lat) && (fac[m].lat < boundArray[index].maxLat)) && ((boundArray[index].minLng < fac[m].lng) && (fac[m].lng < boundArray[index].maxLng))) {
+            if (((boundArray[index].minLat < fac[m].lat) && (fac[m].lat < boundArray[index].maxLat)) && 
+                ((boundArray[index].minLng < fac[m].lng) && (fac[m].lng < boundArray[index].maxLng))) {
 
-                html += '<a class="ui fluid inverted purple button item" href="javascript:Fac_Position(' + m + ')">' + fac[m].myname + '<\/a>';
+                html += '<a class="ui fluid inverted purple button item" href="javascript:facPosition(' + m + ')">' + fac[m].myname + '<\/a>';
                 num++;
 
                 facElement = createFacElement(m);
@@ -457,7 +458,7 @@ function createFacElement(index) {
         "Latitude": fac[index].lat,
         "Longitude": fac[index].lng,
         "MoreInfo": fac[index].moreinfo
-    }
+    };
     return element;
 }
 
@@ -500,15 +501,17 @@ function showBoundary(key) {
 
 function fnOpen(type, index) {
     var sFeatures = fnSetValues();
+    var sDialogArguments = "";
+    var retValue = "";
     switch (type) {
         case "Text":
-            var sDialogArguments = topicText[index];
-            var retValue = window.showModalDialog("/textView/", sDialogArguments, sFeatures);
+            sDialogArguments = topicText[index];
+            retValue = window.showModalDialog("/textView/", sDialogArguments, sFeatures);
             break;
 
         case "Image":
-            var sDialogArguments = staticImg[index];
-            var retValue = window.showModalDialog("/imgView/", sDialogArguments, sFeatures);
+            sDialogArguments = staticImg[index];
+            retValue = window.showModalDialog("/imgView/", sDialogArguments, sFeatures);
             break;
 
         default:
@@ -526,40 +529,32 @@ function fnSetValues() {
 // TODO
 function postServer(index, purpose) {
     var serverUrl = "";
-    var str = "";
+    sendData = {
+        "posName": posServer[index].myname,
+        "posMethod": posServer[index].cutWay,
+        "boundMinPoint": boundArray[index].minPoint,
+        "boundMaxPoint": boundArray[index].maxPoint,
+        "textContent": topicText[index],
+        "imgUrl": staticImg[index]
+    };
     var hr = new XMLHttpRequest();
 
     switch (purpose) {
         case "Download":
-            str = 'download$' + posServer[index].myname + '$' + topicText[index] + '$' + staticImg[index];
-            serverUrl = "http://140.109.22.197/send/";
+            sendData.purpose = "download";
             break;
 
         case "Update":
-            str = 'update$' + posServer[index].myname + '$' + posServer[index].cutWay + '$' + boundArray[index].minPoint + '$' + boundArray[index].maxPoint + '$' + topicText[index] + '$' + staticImg[index];
-            serverUrl = "http://140.109.22.197/send/";
+            sendData.purpose = "update";
             break;
 
         default:
             break;
     }
-
-    //hr.open("POST", serverUrl, true);
-    //hr.send(str);
-}
-
-// SWITCH METHOD, DISTRICT METHOD, SWITCH AREA, SHOW FACILITY, RECTANGLE METHOD, SHOW REC, SHOW NEAR FAC, SHOW NEW RECT, POS_POSITION
-
-
-function SwitchMethod(selector) {
-    var posIndex = $(selector).attr("index");
-    if (selector.options[selector.selectedIndex].text == 'District') {
-        districtMethod(posIndex);
-    } else {
-        rectangleMethod(posIndex);
-    }
-    google.maps.event.trigger(posMarkers[posIndex], 'click');
-    postServer(posIndex, "Update");
+    sendData = JSON.stringify(sendData);
+    serverUrl = "http://140.109.22.197/send/";
+    hr.open("POST", serverUrl, true);
+    hr.send(sendData);
 }
 
 function switchArea(number) {
@@ -578,24 +573,24 @@ function showFacility(number) {
     for (var n = 0; n < fac.length; n++) {
         if (fac[n].myward == posServer[number].myward) {
             facMarkers[n].setMap(map);
-            html += '<a class="ui fluid inverted purple button item" href="javascript:Fac_Position(' + n + ')">' + fac[n].myname + '<\/a>';
+            html += '<a class="ui fluid inverted purple button item" href="javascript:facPosition(' + n + ')">' + fac[n].myname + '<\/a>';
         } else {
             facMarkers[n].setMap(null);
         }
     }
 
-    $("#facMenu").html(html)
+    $("#facMenu").html(html);
 }
 
-function Fac_Position(index) {
+function facPosition(index) {
     openInfoWindow(facMarkers[index], index, getFacContent(index));
 }
 
 function districtMethod(index) {
-  posServer[index].cutWay = 'District';
-  switchArea(index);
-  showFacility(index);
-  checkRec();
+    posServer[index].cutWay = 'District';
+    switchArea(index);
+    showFacility(index);
+    checkRec();
 }
 
 function rectangleMethod(index) {
@@ -609,40 +604,39 @@ function rectangleMethod(index) {
 
 function showRec(index) {
 
-  checkRec();
+    checkRec();
 
-  //Set bound range
-  var bounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(boundArray[index].minLat, boundArray[index].minLng),
-    new google.maps.LatLng(boundArray[index].maxLat, boundArray[index].maxLng)
-  );
+    //Set bound range
+    var bounds = new google.maps.LatLngBounds(
+        new google.maps.LatLng(boundArray[index].minLat, boundArray[index].minLng),
+        new google.maps.LatLng(boundArray[index].maxLat, boundArray[index].maxLng)
+    );
 
-  //Set rectangle properties
-  rectangle = new google.maps.Rectangle({
-    bounds: bounds,
-    editable: true
-  });
+    //Set rectangle properties
+    rectangle = new google.maps.Rectangle({
+        bounds: bounds,
+        editable: true
+    });
 
-  rectangle.setMap(map);
+    rectangle.setMap(map);
 }
 
 function checkRec() {
-  if (rectangle) {
-    rectangle.setMap(null);
-    google.maps.event.clearListeners(rectangle);
-    rectangle = null;
-  }
+    if (rectangle) {
+        rectangle.setMap(null);
+        google.maps.event.clearListeners(rectangle);
+        rectangle = null;
+    }
 }
 
-
 function showNearFac(index) {
-    var minX = boundArray[index].minLng - (parseFloat(0.01)) * 3;
-    var maxX = boundArray[index].maxLng + (parseFloat(0.01)) * 3;
-    var minY = boundArray[index].minLat - (parseFloat(0.005)) * 3;
-    var maxY = boundArray[index].maxLat + (parseFloat(0.005)) * 3;
+    var minX = parseFloat(boundArray[index].minLng) - (parseFloat(0.01 * 2));
+    var maxX = parseFloat(boundArray[index].maxLng) + (parseFloat(0.01 * 2));
+    var minY = parseFloat(boundArray[index].minLat) - (parseFloat(0.005 * 3));
+    var maxY = parseFloat(boundArray[index].maxLat) + (parseFloat(0.005 * 3));
+
     for (var k = 0; k < fac.length; k++) {
-        if (((minY < fac[k].lat) && (fac[k].lat < maxY)) && (
-            (minX < fac[k].lng) && (fac[k].lng < maxX))) {
+        if (((minY < fac[k].lat) && (fac[k].lat < maxY)) && ((minX < fac[k].lng) && (fac[k].lng < maxX))) {
             facMarkers[k].setMap(map);
         } else {
             facMarkers[k].setMap(null);
@@ -661,26 +655,26 @@ function showNewRect(event) {
     boundArray[posIndex].minPoint = boundArray[posIndex].minLat + ',' + boundArray[posIndex].minLng;
     boundArray[posIndex].maxPoint = boundArray[posIndex].maxLat + ',' + boundArray[posIndex].maxLng;
 
-    openInfoWindow(posMarkers[posIndex],posIndex,"");
-    changeColumnVal(posIndex,  getFacInfo(posIndex));
+    openInfoWindow(posMarkers[posIndex], posIndex, "");
+    changeColumnVal(posIndex, getFacInfo(posIndex));
 
     postServer(posIndex, "Update");
 }
 
 function changeColumnVal(index, number) {
-  index++;
-  var cell = document.getElementById('posTable').rows[index].cells;
-  cell[2].innerHTML = number;
+    index++;
+    var cell = document.getElementById('posTable').rows[index].cells;
+    cell[2].innerHTML = number;
 }
 
-function facHandle(){
+function facHandle() {
     setTimeout('window.location.replace("http://140.109.22.197/admin/facilityview/")', 100);
 }
 
-function posHandle(){
+function posHandle() {
     setTimeout('window.location.replace("http://140.109.22.197/admin/posview/")', 100);
 }
 
-function logout(){
+function logout() {
     setTimeout('window.location.replace("http://140.109.22.197/admin/logout/")', 100);
 }

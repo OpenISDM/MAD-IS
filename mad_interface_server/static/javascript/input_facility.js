@@ -76,7 +76,7 @@ function getResult() {
   //Declare a object that can be added key and value and insert it to array. 
   //Repeat these steps until there have no faility can be processed.
   for (var f = 0; f < facNumber; f++) {
-    var facObj = new Object();
+    var facObj = {};
     for (var k = 0; k < keyArray.length; k++) {
       var number = (f * (keyArray.length)) + k;
       facObj[keyArray[k]] = valueArray[number];
@@ -126,7 +126,7 @@ function expand() {
       fac.push(reOrderData[i][typeVal]);
     }
   }
-  CreateFacTable();
+  categoryTable();
   document.getElementById('expand').className = 'ui disabled button';
   document.getElementById('next').className = 'ui green button';
   $("#expand").off();
@@ -140,7 +140,7 @@ function expand() {
     start to let user sort out. 
 ----------------------------------------------------------------------------------------------------------------*/
 
-function CreateFacTable() {
+function categoryTable() {
   service = [];
 
   for (var f = 0; f < fac.length; f++) {
@@ -189,8 +189,8 @@ function CreateFacTable() {
     dbData - The text including facility information will be sent to server.
 ----------------------------------------------------------------------------------------------------------------*/
 
-function SendFacInfo() {
-  var selectKey = GetAllKey();
+function sendFacInfo() {
+  var selectKey = getAllKey();
 
   //var facGroup = [];
 
@@ -199,29 +199,25 @@ function SendFacInfo() {
       index = 1;
       facObj = {
         "purpose" : "facility",
-        "id":"FAC" + RandomNum(),
+        "id":"FAC" + randomNum(),
         "name":reOrderData[i][selectKey[index]],
         "type":reOrderData[i][selectKey[++index]],
-        "category":ClassFac(reOrderData[i][typeVal]),
+        "category":classFac(reOrderData[i][typeVal]),
         "district":reOrderData[i][selectKey[++index]],
         "address":reOrderData[i][selectKey[++index]],
         "telephone":reOrderData[i][selectKey[++index]],
         "latitude":reOrderData[i][selectKey[++index]],
         "longitude":reOrderData[i][selectKey[++index]],
         "description":reOrderData[i][selectKey[++index]]
-      }
-
-      //facGroup.push(facObj);
+      };
 
       facObj = JSON.stringify(facObj);
-      //alert(facObj);
+
       var hr = new XMLHttpRequest();
       var serverUrl = "http://140.109.22.197/send/";
       hr.open("POST", serverUrl, true);
       hr.send(facObj);
   }
-
-  //return facGroup;
 }
 /*---------------------------------------------------------------------------------------------------------------*/
 
@@ -232,7 +228,7 @@ function SendFacInfo() {
     selectKey - Store each menu's option user choose.
 ----------------------------------------------------------------------------------------------------------------*/
 
-function GetAllKey() {
+function getAllKey() {
   var selectKey = [];
   for (var n = 1; n < 9; n++) {
     var x = document.getElementById("select" + n).selectedIndex;
@@ -249,11 +245,11 @@ function GetAllKey() {
     kind - The purpose of facility such as shelter, rescue, etc.
 ----------------------------------------------------------------------------------------------------------------*/
 
-function ClassFac(place) {
+function classFac(place) {
   var kind = "";
   for (var k = 0; k < fac.length; k++) {
     if (place == fac[k]) {
-      kind = service[k]
+      kind = service[k];
     }
   }
   return kind;
@@ -267,8 +263,8 @@ function ClassFac(place) {
     A 6-digit number be ragard as partial of POS id.
 ----------------------------------------------------------------------------------------------------------------*/
 
-function RandomNum() {
-  var digit = ""
+function randomNum() {
+  var digit = "";
   for (var i = 0; i < 6; i++) {
     digit += Math.floor(Math.random() * 10);
   }

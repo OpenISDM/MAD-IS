@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://openisdm.com/MAD/property/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC313041">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasName>南港區民活動中心</ns1:hasName>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:longitude>121.6079597</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:latitude>25.0537317</ns1:latitude>
+    <ns1:hasAddress>臺北市南港區市民大道八段367號2樓</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC401550">
+    <ns1:hasTelephone>27828094#1500</ns1:hasTelephone>
+    <ns1:hasAddress>南港區富康街1巷42號</ns1:hasAddress>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:longitude>121.617051</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasName>誠正國中</ns1:hasName>
+    <ns1:latitude>25.053495</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC128820">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.055596</ns1:latitude>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:longitude>121.613082</ns1:longitude>
+    <ns1:hasName>三重區民活動中心</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市南港區興東街1號2號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC039134">
+    <ns1:hasAddress>南港區東新街108巷23號</ns1:hasAddress>
+    <ns1:latitude>25.045021</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.587729</ns1:longitude>
+    <ns1:hasName>成德國中</ns1:hasName>
+    <ns1:hasTelephone>2651-5636轉401</ns1:hasTelephone>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC975927">
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasName>中研區民活動中心</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:hasAddress>臺北市南港區研究院路2段70巷12號2樓</ns1:hasAddress>
+    <ns1:latitude>25.0454169</ns1:latitude>
+    <ns1:longitude>121.614487</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC136186">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:hasAddress>臺北市南港區舊莊街1段91巷11號</ns1:hasAddress>
+    <ns1:longitude>121.6194384</ns1:longitude>
+    <ns1:latitude>25.0413277</ns1:latitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasName>舊莊區民活動中心</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC259770">
+    <ns1:hasName>育成高中</ns1:hasName>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:longitude>121.6093328</ns1:longitude>
+    <ns1:hasTelephone>26530475#551</ns1:hasTelephone>
+    <ns1:latitude>25.0585978</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>臺北市南港區重陽路366號</ns1:hasAddress>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC870386">
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>臺北市南港區同德路100號3樓</ns1:hasAddress>
+    <ns1:longitude>121.586785</ns1:longitude>
+    <ns1:hasName>成德區民活動中心</ns1:hasName>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.046125</ns1:latitude>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC725034">
+    <ns1:hasTelephone>27836049-150</ns1:hasTelephone>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:latitude>25.0535838</ns1:latitude>
+    <ns1:hasName>玉成國小</ns1:hasName>
+    <ns1:hasAddress>南港區向陽路31號</ns1:hasAddress>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.5947448</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC327452">
+    <ns1:hasType>運動場館</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasName>臺北市南港運動中心</ns1:hasName>
+    <ns1:longitude>121.5818399</ns1:longitude>
+    <ns1:hasAddress>臺北市南港區玉成街69號</ns1:hasAddress>
+    <ns1:hasTelephone>25702330#6424 </ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.048938</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC688340">
+    <ns1:longitude>121.610112</ns1:longitude>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市南港區惠民街67號</ns1:hasAddress>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:latitude>25.0576893</ns1:latitude>
+    <ns1:hasName>南港國小</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27834678#2302</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC840686">
+    <ns1:longitude>121.5896297</ns1:longitude>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市南港區東新街118巷86號</ns1:hasAddress>
+    <ns1:hasName>修德國小</ns1:hasName>
+    <ns1:latitude>25.0455233</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasTelephone>27880500#151</ns1:hasTelephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC470546">
+    <ns1:hasAddress>臺北市南港區東新街170-1號</ns1:hasAddress>
+    <ns1:longitude>121.591209</ns1:longitude>
+    <ns1:latitude>25.046018</ns1:latitude>
+    <ns1:hasTelephone>2788-4255</ns1:hasTelephone>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasType>防災公園</ns1:hasType>
+    <ns1:hasName>南港公園</ns1:hasName>
+    <ns1:hasCategory>Shelter(Outdoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC946534">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:longitude>121.600061</ns1:longitude>
+    <ns1:hasName>東新區民活動中心</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:hasAddress>臺北市南港區東明街99號2樓</ns1:hasAddress>
+    <ns1:latitude>25.0545379</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC435175">
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasTelephone>02-25702330#6530</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasAddress>臺北市南港區忠孝東路七段382號</ns1:hasAddress>
+    <ns1:hasName>臺北市極限運動訓練中心</ns1:hasName>
+    <ns1:longitude>121.6097028</ns1:longitude>
+    <ns1:latitude>25.0524083</ns1:latitude>
+    <ns1:hasType>運動場館</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC419213">
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:longitude>121.5950265</ns1:longitude>
+    <ns1:hasTelephone>2783-7863轉241</ns1:hasTelephone>
+    <ns1:latitude>25.0524116</ns1:latitude>
+    <ns1:hasName>南港高中</ns1:hasName>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasAddress>南港區向陽路21號</ns1:hasAddress>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC089532">
+    <ns1:hasName>胡適國小</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0424041</ns1:latitude>
+    <ns1:hasTelephone>27824949-930</ns1:hasTelephone>
+    <ns1:longitude>121.6172458</ns1:longitude>
+    <ns1:hasAddress>南港區舊莊街1段1號</ns1:hasAddress>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasType>學校</ns1:hasType>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC679613">
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasName>九如活動中心</ns1:hasName>
+    <ns1:hasAddress>臺北市南港區研究院路3段68巷9號2樓</ns1:hasAddress>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:latitude>25.0352419</ns1:latitude>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:longitude>121.614332</ns1:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC922289">
+    <ns1:hasAddress>南港區興中路29號</ns1:hasAddress>
+    <ns1:latitude>25.0562158</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:longitude>121.6074293</ns1:longitude>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasTelephone>27825432#1506</ns1:hasTelephone>
+    <ns1:hasName>南港高工</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC897233">
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:longitude>121.590631</ns1:longitude>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:hasName>仁福區民活動中心</ns1:hasName>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+    <ns1:hasAddress>臺北市南港區福德街443號1樓</ns1:hasAddress>
+    <ns1:latitude>25.040003</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC324977">
+    <ns1:longitude>121.6194999</ns1:longitude>
+    <ns1:latitude>25.0402901</ns1:latitude>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasAddress>臺北市南港區舊莊街1段100號</ns1:hasAddress>
+    <ns1:hasTelephone>27821418#130</ns1:hasTelephone>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>舊莊國小</ns1:hasName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC120437">
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasTelephone>27851376-151</ns1:hasTelephone>
+    <ns1:hasType>優先安置學校</ns1:hasType>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasName>成德國小</ns1:hasName>
+    <ns1:hasAddress>南港區東新街65號</ns1:hasAddress>
+    <ns1:longitude>121.586908</ns1:longitude>
+    <ns1:latitude>25.0468797</ns1:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC415714">
+    <ns1:hasAddress>南港區興南街62號</ns1:hasAddress>
+    <ns1:hasType>學校</ns1:hasType>
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasName>東新國小</ns1:hasName>
+    <ns1:longitude>121.6021907</ns1:longitude>
+    <ns1:hasTelephone>27837577*34</ns1:hasTelephone>
+    <ns1:latitude>25.0554318</ns1:latitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://openisdm.com/MAD/facility/FAC033003">
+    <ns1:hasDistrict>南港區</ns1:hasDistrict>
+    <ns1:hasAddress>臺北市南港區成功路1段99號</ns1:hasAddress>
+    <ns1:hasType>活動中心</ns1:hasType>
+    <ns1:latitude>25.0578596</ns1:latitude>
+    <ns1:hasName>西新區民活動中心</ns1:hasName>
+    <ns1:longitude>121.5927309</ns1:longitude>
+    <ns1:hasCategory>Shelter(Indoor)</ns1:hasCategory>
+    <ns1:hasTelephone>27831343</ns1:hasTelephone>
+  </rdf:Description>
+</rdf:RDF>

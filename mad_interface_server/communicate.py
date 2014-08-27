@@ -246,11 +246,11 @@ def show_text():
     '''
         Display the topic content with text.
     '''
-    return render_template('textview.html')
+    return render_template('text_view.html')
 
 @demand.route('/imgView/')
 def show_img():
     '''
         Display the topic content with image.
     '''
-    return render_template('imageView.html')
+    return render_template('image_view.html')
