@@ -40,7 +40,7 @@ from flask import Flask, render_template
 from flask import jsonify
 from flask.ext import login
 
-from mad_interface_server.communicate import demand
+
 
 # Create Flask application
 app = Flask(__name__)
@@ -48,12 +48,10 @@ app = Flask(__name__)
 # Loading config file 'isconfig'
 app.config.from_object('isconfig')
 
+from mad_interface_server import communicate
 # app.register_blueprint(action)
-app.register_blueprint(demand)
+app.register_blueprint(communicate.demand)
 
-print app.config['WEB_URL']
-print app.config['APP_DIR']
-print app.config['TOPIC_DIR']
 
 @app.errorhandler(404)
 def not_found(error):
