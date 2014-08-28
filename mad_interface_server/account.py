@@ -153,7 +153,10 @@ class MyAdminIndexView(admin.AdminIndexView):
             start the setup.Otherwise, enter the view that have
             already finished the setup.
         """
-        return self.render('admin/setup.html')
+        if not login.current_user.is_authenticated():
+            return redirect(url_for('.login_view'))
+        else:
+            return self.render('admin/setup.html')
 
     @expose('/login/', methods=('GET', 'POST'))
     def login_view(self):
