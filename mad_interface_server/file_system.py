@@ -34,6 +34,7 @@
         2014/6/10: complete version 1.0
 '''
 
+from mad_interface_server import app
 
 import os
 import json
@@ -57,7 +58,8 @@ class FileSystem:
                 the folder name that want to name.
         '''
 
-        path = app.config['APP_DIR'] + foldername
+
+        path =app.config['APP_DIR']+foldername
 
         # if file not exist, create new.
         if not os.path.exists(path):
@@ -73,7 +75,9 @@ class FileSystem:
                 The xml content that will be inserted.
         '''
 
-        filedir = app.config['APP_DIR'] +"/District Info/"+city+'.xml'
+
+        filedir = app.config['APP_DIR']+"/District Info/"+city+'.xml'
+        
         f = open(filedir, "w")
         f.write(content)
         f.close()
