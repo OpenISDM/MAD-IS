@@ -48,8 +48,8 @@ app = Flask(__name__)
 # Loading config file 'isconfig'
 app.config.from_object('isconfig')
 
-from mad_interface_server import communicate
 # app.register_blueprint(action)
+from mad_interface_server.views import communicate
 app.register_blueprint(communicate.demand)
 
 
@@ -57,12 +57,12 @@ app.register_blueprint(communicate.demand)
 def not_found(error):
     return render_template('404.html'), 404
 
-from mad_interface_server import database, account
+from mad_interface_server import database
 # from mad_interface_server import account
 # Build a sample db on the fly, if one does not exist yet.
 if not os.path.exists(app.config['DATABASE_PATH']):
     database.build_sample_db()
-
+from mad_interface_server.views import account
 # Initialize flask-login
 account.init_login()
 account.init_admin()

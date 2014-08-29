@@ -69,7 +69,7 @@ def receive_req():
         Receive a request from client side and response
         according different demands
     '''
-    import information
+    from mad_interface_server import information
     response = information.answer(request.data)
     return jsonify(response)
 
@@ -80,7 +80,7 @@ def create_info():
         Receive the information from client side and store it.
     '''
 
-    import information
+    from mad_interface_server import information
     if request.method == 'POST':
         data = json.loads(request.data)
         information.build_info(data)
