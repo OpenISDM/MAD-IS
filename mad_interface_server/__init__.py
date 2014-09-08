@@ -36,7 +36,7 @@
 '''
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask import jsonify
 from flask.ext import login
 
@@ -56,6 +56,10 @@ app.register_blueprint(communicate.demand)
 @app.errorhandler(404)
 def not_found(error):
     return render_template('404.html'), 404
+
+@app.route('/')
+def rootindex():
+    return redirect(url_for('admin.index'))
 
 from mad_interface_server import database
 # from mad_interface_server import account
