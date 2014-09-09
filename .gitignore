@@ -18,6 +18,7 @@ include
 *.egg-info
 .project
 .pydevproject
+venv/
 
 # MAD-IS
 Topic

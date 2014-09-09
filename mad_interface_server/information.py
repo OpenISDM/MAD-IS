@@ -36,6 +36,7 @@
 '''
 
 from mad_interface_server.database import db, User, POS, Facility
+from mad_interface_server import app
 from flask.ext import login
 from file_system import FileSystem
 from configobj import ConfigObj
@@ -59,13 +60,13 @@ def answer(request):
     data = ""
 
     if request == 'geoInfo':
-        data = info.get_district('district', fs.mydir)
+        data = info.get_district('district', app.config['APP_DIR'])
     elif request == 'exist_Country&City':
         data = fs.search_dir_file('/ConfigFile')
     elif request == 'setupInfo':
         data = info.get_facility_info()
-        config_info = info.get_config(fs.mydir + '/ConfigFile')
-        ward_info = info.get_district('district', fs.mydir)
+        config_info = info.get_config(app.config['APP_DIR'] + '/ConfigFile')
+        ward_info = info.get_district('district', app.config['APP_DIR'])
         pos_info = info.get_pos_info()
         jsonText['configInfo'] = config_info
         jsonText['wardInfo'] = ward_info
@@ -74,16 +75,17 @@ def answer(request):
     jsonText['data'] = data
 
     return jsonText
-
+
+
 def build_info(data):
     info = Information()
     topic_path = '/static/Topic/'
     if data["purpose"] == 'setup':
         fs.create_folder('/ConfigFile/' + info.login)
         info.store_location(data["latLng"], data["location"])
-        info.create_config(fs.mydir, data["key"])
+        info.create_config(app.config['APP_DIR'], data["key"])
         fs.create_xml_file(info.login, data["wardInfo"].encode('utf-8'))
-        info.store_pos(data["location"], data["posArray"], fs.my_web_addr)
+        info.store_pos(data["location"], data["posArray"], app.config['WEB_URL'])
         info.finish_setup()
     elif data["purpose"] == 'facility':
         info.store_fac(info.location, data)
@@ -91,13 +93,15 @@ def build_info(data):
         sub_url = info.update_db(data)
         rdf_text = json2rdf.generate_rdf_text(data["textContent"])
         fs.download_file(topic_path, data["posName"], 'rdf', rdf_text, 'w')
-        fs.download_file(            topic_path, data["posName"], 'png', data["imgUrl"], 'wb')
+        fs.download_file(
+            topic_path, data["posName"], 'png', data["imgUrl"], 'wb')
         # content_distribution(sub_url)
     elif data["purpose"] == 'download':
         fs.create_folder(topic_path+data["posName"])
         rdf_text = json2rdf.generate_rdf_text(data["textContent"])
         fs.download_file(topic_path, data["posName"], 'rdf', rdf_text, 'w')
-        fs.download_file(            topic_path, data["posName"], 'png', data["imgUrl"], 'wb')
+        fs.download_file(
+            topic_path, data["posName"], 'png', data["imgUrl"], 'wb')
 
 
 class Information:
@@ -174,7 +178,8 @@ class Information:
 
             Returned Value:
                 If the function find the file, the returned is a json object
-                of configuration content;                otherwise, the returned value is null.
+                of configuration content;
+                otherwise, the returned value is null.
         """
 
         config = ConfigObj()

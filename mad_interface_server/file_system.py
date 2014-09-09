@@ -34,6 +34,7 @@
         2014/6/10: complete version 1.0
 '''
 
+from mad_interface_server import app
 
 import os
 import json
@@ -44,15 +45,9 @@ import urllib2
 
 class FileSystem:
     """
-        The class "FileSystem" allow you/me to build folder&file        on local computer.
+        The class "FileSystem" allow you/me to build folder&file
+        on local computer.
     """
-
-    # get the current directory path.
-    mydir = os.path.dirname(os.path.abspath(__file__))
-    # get local ip address
-    my_web_addr = 'http://'+socket.gethostbyname(socket.gethostname())
-
-    my_topic_dir = mydir + '/static/Topic/'
 
     def create_folder(self, foldername):
 
@@ -63,7 +58,8 @@ class FileSystem:
                 the folder name that want to name.
         '''
 
-        path = FileSystem.mydir+foldername
+
+        path =app.config['APP_DIR']+foldername
 
         # if file not exist, create new.
         if not os.path.exists(path):
@@ -79,7 +75,9 @@ class FileSystem:
                 The xml content that will be inserted.
         '''
 
-        filedir = FileSystem.mydir+"/District Info/"+city+'.xml'
+
+        filedir = app.config['APP_DIR']+"/District Info/"+city+'.xml'
+        
         f = open(filedir, "w")
         f.write(content)
         f.close()
@@ -99,7 +97,7 @@ class FileSystem:
             mode:
                 Write or Read.
         '''
-        filename = FileSystem.mydir+topic_dir+pos_id+'/'+pos_id+'.'+format
+        filename = app.config['APP_DIR']+topic_dir+pos_id+'/'+pos_id+'.'+format
         f = open(filename, mode)
         if format == "png":
             response = urllib2.urlopen(content)

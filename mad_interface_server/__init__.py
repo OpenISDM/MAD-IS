@@ -36,11 +36,11 @@
 '''
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from flask import jsonify
 from flask.ext import login
 
-from mad_interface_server.communicate import demand
+
 
 # Create Flask application
 app = Flask(__name__)
@@ -49,19 +49,24 @@ app = Flask(__name__)
 app.config.from_object('isconfig')
 
 # app.register_blueprint(action)
-app.register_blueprint(demand)
+from mad_interface_server.views import communicate
+app.register_blueprint(communicate.demand)
 
 
 @app.errorhandler(404)
 def not_found(error):
     return render_template('404.html'), 404
 
-from mad_interface_server import database, account
+@app.route('/')
+def rootindex():
+    return redirect(url_for('admin.index'))
+
+from mad_interface_server import database
 # from mad_interface_server import account
 # Build a sample db on the fly, if one does not exist yet.
 if not os.path.exists(app.config['DATABASE_PATH']):
     database.build_sample_db()
-
+from mad_interface_server.views import account
 # Initialize flask-login
 account.init_login()
 account.init_admin()
