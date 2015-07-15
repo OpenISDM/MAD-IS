@@ -49,7 +49,7 @@ def index():
 # 	return 'you chosen %s' % city_name
 
 @app.route('/taipei', methods = ['GET'])
-def json():
+def taipei():
 	with open('Geoparks.json', 'rb') as json_file:
 		json_data = json_file.read()
 	
@@ -58,7 +58,7 @@ def json():
 	return resp
 
 @app.route('/yokohama', methods = ['GET'])
-def json():
+def yokohama():
 	with open('Geoparks.json', 'rb') as json_file:
 		json_data = json_file.read()
 	
