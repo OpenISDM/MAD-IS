@@ -33,9 +33,12 @@ Copyright (c) 2014  OpenISDM
     Major Revision History:
         2014/7/14 
 """
+import os
+
 from flask import Flask, Response
 
-
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+APP_JSONFILES = os.path.join(APP_ROOT, 'Geojsonfiles')
 
 # Create Flask application
 app = Flask(__name__)
@@ -44,13 +47,10 @@ app = Flask(__name__)
 def index():
 	return "It works."
 
-# @app.route('/download/<city_name>', methods=['GET'])
-# def download(city_name):
-# 	return 'you chosen %s' % city_name
-
-@app.route('/taipei', methods = ['GET'])
-def taipei():
-	with open('Geoparks.json', 'rb') as json_file:
+@app.route('/datasets/<city_name>', methods=['GET'])
+def get_datasets(city_name):
+	filename = 'Geo'+ city_name + '.json'
+	with open(os.path.join(APP_JSONFILES, filename), 'rb') as json_file:
 		json_data = json_file.read().decode('utf-8')
 	
 	resp = Response(json_data)
@@ -58,15 +58,15 @@ def taipei():
 
 	return resp
 
-@app.route('/yokohama', methods = ['GET'])
-def yokohama():
-	with open('Geoparks.json', 'rb') as json_file:
-		json_data = json_file.read().decode('utf-8')
+# @app.route('/taipei', methods = ['GET'])
+# def taipei():
+# 	with open('Geoparks.json', 'rb') as json_file:
+# 		json_data = json_file.read().decode('utf-8')
 	
-	resp = Response(json_data)
-	resp.headers['Content-type'] = 'application/json; charset=utf-8'
-	
-	return resp
+# 	resp = Response(json_data)
+# 	resp.headers['Content-type'] = 'application/json; charset=utf-8'
+
+# 	return resp
 
 if __name__ == '__main__':
 	app.run(debug=True,host='0.0.0.0')
