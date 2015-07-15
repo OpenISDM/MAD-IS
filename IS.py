@@ -49,7 +49,7 @@ def index():
 
 @app.route('/datasets/<city_name>', methods=['GET'])
 def get_datasets(city_name):
-	filename = 'Geo'+ city_name + '.json'
+	filename = city_name + '.json'
 	with open(os.path.join(APP_JSONFILES, filename), 'rb') as json_file:
 		json_data = json_file.read().decode('utf-8')
 	
