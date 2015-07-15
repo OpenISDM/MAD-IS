@@ -51,19 +51,21 @@ def index():
 @app.route('/taipei', methods = ['GET'])
 def taipei():
 	with open('Geoparks.json', 'rb') as json_file:
-		json_data = json_file.read()
+		json_data = json_file.read().decode('utf-8')
 	
-	resp = Response(json_data, status=200, mimetype='application/json')
+	resp = Response(json_data)
+	resp.headers['Content-type'] = 'application/json; charset=utf-8'
 
 	return resp
 
 @app.route('/yokohama', methods = ['GET'])
 def yokohama():
 	with open('Geoparks.json', 'rb') as json_file:
-		json_data = json_file.read()
+		json_data = json_file.read().decode('utf-8')
 	
-	resp = Response(json_data, status=200, mimetype='application/json')
-
+	resp = Response(json_data)
+	resp.headers['Content-type'] = 'application/json; charset=utf-8'
+	
 	return resp
 
 if __name__ == '__main__':
