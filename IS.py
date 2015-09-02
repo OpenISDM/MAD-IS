@@ -31,11 +31,15 @@ Copyright (c) 2014  OpenISDM
         in file 'COPYING.txt', which is part of this source code package.
 
     Major Revision History:
-        2014/7/14 
+        2015/7/14
+        2015/9/1 
 """
 import os
+from os import walk
 
-from flask import Flask, Response
+import re
+
+from flask import Flask, Response, jsonify
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 APP_JSONFILES = os.path.join(APP_ROOT, 'Geojsonfiles')
@@ -49,24 +53,31 @@ def index():
 
 @app.route('/datasets/<city_name>', methods=['GET'])
 def get_datasets(city_name):
-	filename = city_name + '.json'
-	with open(os.path.join(APP_JSONFILES, filename), 'rb') as json_file:
+
+    filename = city_name + '.json'
+    with open(os.path.join(APP_JSONFILES, filename), 'rb') as json_file:
 		json_data = json_file.read().decode('utf-8')
-	
-	resp = Response(json_data)
-	resp.headers['Content-type'] = 'application/json; charset=utf-8'
 
-	return resp
+    resp = Response(json_data)
+    resp.headers['Content-type'] = 'application/json; charset=utf-8'
 
-# @app.route('/taipei', methods = ['GET'])
-# def taipei():
-# 	with open('Geoparks.json', 'rb') as json_file:
-# 		json_data = json_file.read().decode('utf-8')
-	
-# 	resp = Response(json_data)
-# 	resp.headers['Content-type'] = 'application/json; charset=utf-8'
+    return resp
 
-# 	return resp
+@app.route('/cities', methods=['GET'])
+def lookup_citylist():
+
+    citylist = []
+
+    for (dirpath, dirnames, filenames) in walk(APP_JSONFILES):
+        for count in filenames:
+            rec = re.findall("^[A-Z][a-z|A-Z]+[^_]", count)
+            citylist.extend(rec) 
+
+    print citylist
+
+    return jsonify(results=citylist)
+
+
 
 if __name__ == '__main__':
 	app.run(debug=True,host='0.0.0.0')
