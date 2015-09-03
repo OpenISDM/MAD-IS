@@ -37,6 +37,8 @@ Copyright (c) 2014  OpenISDM
 import os
 from os import walk
 
+from json import load, JSONEncoder
+
 import re
 
 from flask import Flask, Response, jsonify
@@ -51,17 +53,28 @@ app = Flask(__name__)
 def index():
 	return "It works."
 
+
 @app.route('/datasets/<city_name>', methods=['GET'])
 def get_datasets(city_name):
 
-    filename = city_name + '.json'
-    with open(os.path.join(APP_JSONFILES, filename), 'rb') as json_file:
-		json_data = json_file.read().decode('utf-8')
+    stringUpper = city_name.upper()
+    
+    json_data = ""
+    
+    regex = re.compile(r"^" + stringUpper + r".+", re.IGNORECASE)
 
-    resp = Response(json_data)
-    resp.headers['Content-type'] = 'application/json; charset=utf-8'
+    outjson = dict(type='FeatureCollection', features=[])
 
-    return resp
+    for (dirpath, dirnames, filenames) in walk(APP_JSONFILES):
+        for filename in filenames:
+            if stringUpper in filename:
+                result = regex.match(filename)
+                if result is not None:
+                    with open(os.path.join(APP_JSONFILES, result.group(0)), 'rb') as json_file:
+                        outjson['features'] += merge_geojsons(json_file)
+
+    return jsonify(results=outjson)
+
 
 @app.route('/cities', methods=['GET'])
 def lookup_citylist():
@@ -69,15 +82,28 @@ def lookup_citylist():
     citylist = []
 
     for (dirpath, dirnames, filenames) in walk(APP_JSONFILES):
-        for count in filenames:
-            rec = re.findall("^[A-Z][a-z|A-Z]+[^_]", count)
-            citylist.extend(rec) 
+        for filename in filenames:
+            list_result = re.findall("^[A-Z][a-z|A-Z]+[^_]", filename)
+            string_result = "".join(list_result).lower()
+            if string_result is not "":
+                citylist.append(string_result.title()) 
 
-    print citylist
+    citysets = list(set(citylist))
 
-    return jsonify(results=citylist)
+    return jsonify(results=citysets)
 
+def merge_geojsons(json_file):
+
+    injson = load(json_file)
+
+    if injson.get('type', None) != 'FeatureCollection':
+        raise Exception('Sorry, "%s" does not look like GeoJSON' % infile)
+                    
+    if type(injson.get('features', None)) != list:
+            raise Exception('Sorry, "%s" does not look like GeoJSON' % infile)
+
+    return injson['features']
 
 
 if __name__ == '__main__':
-	app.run(debug=True,host='0.0.0.0')
+    app.run(debug=True,host='0.0.0.0')
