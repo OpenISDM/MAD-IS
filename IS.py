@@ -73,7 +73,7 @@ def get_datasets(city_name):
                     with open(os.path.join(APP_JSONFILES, result.group(0)), 'rb') as json_file:
                         outjson['features'] += merge_geojsons(json_file)
 
-    return jsonify(results=outjson)
+    return jsonify(outjson)
 
 
 @app.route('/cities', methods=['GET'])
