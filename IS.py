@@ -63,7 +63,7 @@ def get_datasets(city_name):
     
     regex = re.compile(r"^" + stringUpper + r".+", re.IGNORECASE)
 
-    outjson = dict(type='FeatureCollection', features=[])
+    outjson = dict(features=[], type='FeatureCollection')
 
     for (dirpath, dirnames, filenames) in walk(APP_JSONFILES):
         for filename in filenames:
