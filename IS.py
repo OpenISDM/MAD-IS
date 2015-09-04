@@ -79,18 +79,22 @@ def get_datasets(city_name):
 @app.route('/cities', methods=['GET'])
 def lookup_citylist():
 
-    citylist = []
+    city_list = []
+    abbr_number = 3
 
     for (dirpath, dirnames, filenames) in walk(APP_JSONFILES):
         for filename in filenames:
-            list_result = re.findall("^[A-Z][a-z|A-Z]+[^_]", filename)
+            list_result = re.findall("^[A-Z][A-Z]*[^_]", filename)
             string_result = "".join(list_result).lower()
             if string_result is not "":
-                citylist.append(string_result.title()) 
+                if len(string_result) >= abbr_number:
+                    city_list.append(string_result.title()) 
+                else:
+                    city_list.append(string_result.upper())
 
-    citysets = list(set(citylist))
+    city_sets = list(set(city_list))
 
-    return jsonify(results=citysets)
+    return jsonify(results=city_sets)
 
 def merge_geojsons(json_file):
 
